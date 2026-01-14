@@ -60,7 +60,7 @@ function App() {
             target="_blank" 
             rel="dofollow"
             /* Added 'animate-nurture-mobile' for the heartbeat effect on phones */
-            className="group relative bg-[#1e293b]/80 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 hover:border-rose-500/50 transition-all duration-300 hover:-translate-y-1 active:scale-95 hover:shadow-lg hover:shadow-rose-500/10 animate-nurture-mobile"
+            className="group relative bg-[#1e293b]/80 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 hover:border-rose-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-rose-500/10 animate-nurture-mobile"
           >
             <div className="absolute top-6 right-6 text-slate-600 group-hover:text-rose-400 transition-colors">
               <ExternalLink className="w-5 h-5" />
@@ -82,7 +82,7 @@ function App() {
             target="_blank" 
             rel="dofollow"
             /* Added 'animate-rwrc-mobile' for the heartbeat effect on phones */
-            className="group relative bg-black/80 backdrop-blur-sm border border-zinc-800 rounded-2xl p-8 hover:border-[#D4FF00]/50 transition-all duration-300 hover:-translate-y-1 active:scale-95 hover:shadow-lg hover:shadow-[#D4FF00]/10 animate-rwrc-mobile"
+            className="group relative bg-black/80 backdrop-blur-sm border border-zinc-800 rounded-2xl p-8 hover:border-[#D4FF00]/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#D4FF00]/10 animate-rwrc-mobile"
           >
             <div className="absolute top-6 right-6 text-zinc-600 group-hover:text-[#D4FF00] transition-colors">
               <ExternalLink className="w-5 h-5" />
