@@ -8,12 +8,12 @@ function App() {
         {/* --- Header --- */}
         <section className="text-center space-y-6">
           {/* Photo Container */}
-          <div className="relative inline-block">
-            <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl mx-auto">
+          <div className="relative inline-block group">
+            <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl mx-auto transition-transform duration-500 group-hover:scale-105">
               <img 
                 src="/profile.jpg" 
                 alt="Sheridan Jamieson" 
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
               />
             </div>
             {/* Status Dot */}
@@ -30,7 +30,7 @@ function App() {
           </div>
 
           <p className="text-slate-300 text-lg md:text-xl leading-relaxed max-w-lg mx-auto">
-            I believe in the power of structured progress—whether that’s organizing complex data or mastering physiological training zones.
+            Helping ambitious people and businesses find their edge. From untangling financial complexity to optimising training performance, I provide the structure needed for sustainable growth.
           </p>
 
           {/* Social Links */}
@@ -38,7 +38,6 @@ function App() {
             <a href="https://www.linkedin.com/in/sheridanjamieson" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
               <Linkedin className="w-6 h-6" />
             </a>
-            {/* UPDATED EMAIL BELOW */}
             <a href="mailto:sheridan@nurture.kiwi" className="text-slate-400 hover:text-white transition-colors">
               <Mail className="w-6 h-6" />
             </a>
@@ -59,14 +58,13 @@ function App() {
               <ExternalLink className="w-5 h-5" />
             </div>
             
-            {/* LOGO UPDATE: Replaced Icon with Image */}
             <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-slate-800 group-hover:scale-105 transition-all duration-300">
                <img src="/nurture.png" alt="Nurture Logo" className="w-full h-full object-cover" />
             </div>
 
             <h2 className="text-2xl font-bold text-white mb-2 group-hover:text-rose-400 transition-colors">Nurture</h2>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Founder & Data Consultant. Helping NZ businesses structure their intelligence and unlock value from their data.
+              Founder & Virtual CFO. Empowering impactful businesses with strategic financial guidance. Not just numbers—strategic oversight for clarity and balance.
             </p>
           </a>
 
@@ -81,14 +79,13 @@ function App() {
               <ExternalLink className="w-5 h-5" />
             </div>
 
-            {/* LOGO UPDATE: Replaced Icon with Image */}
             <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-zinc-900 group-hover:scale-105 transition-all duration-300">
                <img src="/rwrc.png" alt="Run Club Logo" className="w-full h-full object-cover" />
             </div>
 
             <h2 className="text-2xl font-bold text-white mb-2 group-hover:text-[#D4FF00] transition-colors">Run With Run Club</h2>
             <p className="text-zinc-400 text-sm leading-relaxed">
-              Head Coach. Adaptive training plans for busy professionals who want performance without burnout.
+              Head Coach. Adaptive plans that take you from 'Jogger' to 'Athlete'. Serious training delivered with empathy to prevent burnout and hit goals.
             </p>
           </a>
 
