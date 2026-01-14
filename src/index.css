@@ -56,6 +56,7 @@ body {
 
 .animate-rwrc-mobile {
   animation: pulseNeon 2s infinite ease-in-out;
+  animation-delay: 1s; /* <--- Adds the alternating rhythm */
 }
 
 /* Disable on Desktop so Hover works instead */
