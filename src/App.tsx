@@ -2,14 +2,20 @@ import { Linkedin, Mail, ExternalLink, MapPin } from 'lucide-react';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#0f172a] flex flex-col items-center justify-center p-6 selection:bg-rose-500 selection:text-white">
-      <main className="max-w-2xl w-full space-y-12">
+    <div className="min-h-screen bg-[#0f172a] relative overflow-hidden flex flex-col items-center justify-center p-6 selection:bg-rose-500 selection:text-white">
+      
+      {/* --- Background Studio Light (The "Glow") --- */}
+      <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-indigo-500/20 rounded-full blur-[120px] pointer-events-none z-0"></div>
+
+      {/* --- Main Content (With Fade-In Animation) --- */}
+      <main className="max-w-2xl w-full space-y-12 relative z-10 animate-enter">
         
         {/* --- Header --- */}
         <section className="text-center space-y-6">
+          
           {/* Photo Container */}
           <div className="relative inline-block group">
-            <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl mx-auto transition-transform duration-500 group-hover:scale-105">
+            <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl mx-auto transition-transform duration-500 group-hover:scale-105 relative z-10 bg-slate-800">
               <img 
                 src="/profile.jpg" 
                 alt="Sheridan Jamieson" 
@@ -17,7 +23,7 @@ function App() {
               />
             </div>
             {/* Status Dot */}
-            <div className="absolute bottom-2 right-2 w-4 h-4 bg-emerald-500 border-4 border-[#0f172a] rounded-full"></div>
+            <div className="absolute bottom-2 right-2 w-4 h-4 bg-emerald-500 border-4 border-[#0f172a] rounded-full z-20"></div>
           </div>
 
           <div className="space-y-2">
@@ -35,10 +41,10 @@ function App() {
 
           {/* Social Links */}
           <div className="flex justify-center gap-6 pt-2">
-            <a href="https://www.linkedin.com/in/sheridanjamieson" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
+            <a href="https://www.linkedin.com/in/sheridanjamieson" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="mailto:sheridan@nurture.kiwi" className="text-slate-400 hover:text-white transition-colors">
+            <a href="mailto:sheridan@nurture.kiwi" className="text-slate-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
               <Mail className="w-6 h-6" />
             </a>
           </div>
@@ -52,13 +58,13 @@ function App() {
             href="https://nurture.kiwi/" 
             target="_blank" 
             rel="dofollow"
-            className="group relative bg-[#1e293b] border border-slate-700 rounded-2xl p-8 hover:border-rose-500/50 transition-all duration-300 hover:-translate-y-1"
+            className="group relative bg-[#1e293b]/80 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 hover:border-rose-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-rose-500/10"
           >
             <div className="absolute top-6 right-6 text-slate-600 group-hover:text-rose-400 transition-colors">
               <ExternalLink className="w-5 h-5" />
             </div>
             
-            <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-slate-800 group-hover:scale-105 transition-all duration-300">
+            <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-slate-800 group-hover:scale-105 transition-all duration-300 shadow-inner">
                <img src="/nurture.png" alt="Nurture Logo" className="w-full h-full object-cover" />
             </div>
 
@@ -73,13 +79,13 @@ function App() {
             href="https://runwith.club/" 
             target="_blank" 
             rel="dofollow"
-            className="group relative bg-black border border-zinc-800 rounded-2xl p-8 hover:border-[#D4FF00]/50 transition-all duration-300 hover:-translate-y-1"
+            className="group relative bg-black/80 backdrop-blur-sm border border-zinc-800 rounded-2xl p-8 hover:border-[#D4FF00]/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#D4FF00]/10"
           >
             <div className="absolute top-6 right-6 text-zinc-600 group-hover:text-[#D4FF00] transition-colors">
               <ExternalLink className="w-5 h-5" />
             </div>
 
-            <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-zinc-900 group-hover:scale-105 transition-all duration-300">
+            <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-zinc-900 group-hover:scale-105 transition-all duration-300 shadow-inner">
                <img src="/rwrc.png" alt="Run Club Logo" className="w-full h-full object-cover" />
             </div>
 
@@ -90,6 +96,12 @@ function App() {
           </a>
 
         </div>
+        
+        {/* Footer */}
+        <div className="text-center pb-6">
+            <p className="text-slate-600 text-xs uppercase tracking-widest font-medium">Est. 2019</p>
+        </div>
+
       </main>
     </div>
   );
