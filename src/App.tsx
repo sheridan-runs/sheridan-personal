@@ -82,11 +82,8 @@ function App() {
             </div>
 
             <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-zinc-900 group-hover:scale-105 transition-all duration-300 shadow-inner">
-               {/* FIX: Using [clip-path:inset(2px_round_8px)]
-                  This surgically trims 2px off every edge to hide white pixels, 
-                  then re-applies an 8px corner radius.
-               */}
-               <img src="/rwrc.png?v=5" alt="Run Club Logo" className="w-full h-full object-contain p-1 [clip-path:inset(2px_round_8px)]" />
+               {/* FIX: removed clip-path, using standard rounded-lg and cache bust */}
+               <img src="/rwrc.png?v=FORCE_NEW" alt="Run Club Logo" className="w-full h-full object-contain p-1 rounded-lg" />
             </div>
 
             <h2 className="text-xl font-bold text-white mb-2 group-hover:text-[#D4FF00] transition-colors">Run With Run Club</h2>
@@ -108,7 +105,7 @@ function App() {
 
             <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-slate-800 group-hover:scale-105 transition-all duration-300 shadow-inner group-hover:bg-white/5">
                <img 
-                 src="/opc.png" 
+                 src="/opc.png?v=FORCE_NEW" 
                  alt="One Percent Logo" 
                  className="w-full h-full object-contain p-1.5" 
                  onError={(e) => {
