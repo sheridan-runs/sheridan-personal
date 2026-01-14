@@ -22,47 +22,44 @@ body {
   animation: fadeInUp 0.8s ease-out forwards;
 }
 
-/* MOBILE HEARTBEAT ANIMATIONS */
-/* We use the exact same timing (2s) and easing to keep them locked in sync */
+/* --- MOBILE HEARTBEAT ANIMATIONS --- */
 
-/* Nurture (Rose) */
+/* 1. Nurture (Rose) */
 @keyframes pulseRose {
-  0%, 100% { 
-    border-color: rgb(51 65 85); /* slate-700 */
-    box-shadow: 0 0 0 transparent;
-  }
-  50% { 
-    border-color: rgba(244, 63, 94, 0.8); /* rose-400 (Brighter) */
-    box-shadow: 0 0 15px rgba(244, 63, 94, 0.4); /* tighter glow */
-  }
+  0%, 100% { border-color: rgb(51 65 85); box-shadow: 0 0 0 transparent; }
+  50% { border-color: rgba(244, 63, 94, 0.8); box-shadow: 0 0 15px rgba(244, 63, 94, 0.4); }
 }
 
-/* Run Club (Neon) */
+/* 2. Run Club (Neon) */
 @keyframes pulseNeon {
-  0%, 100% { 
-    border-color: rgb(39 39 42); /* zinc-800 */
-    box-shadow: 0 0 0 transparent;
-  }
-  50% { 
-    border-color: rgba(212, 255, 0, 0.8); /* neon (Brighter) */
-    box-shadow: 0 0 15px rgba(212, 255, 0, 0.4); /* tighter glow */
-  }
+  0%, 100% { border-color: rgb(39 39 42); box-shadow: 0 0 0 transparent; }
+  50% { border-color: rgba(212, 255, 0, 0.8); box-shadow: 0 0 15px rgba(212, 255, 0, 0.4); }
 }
 
-/* Apply the animations */
+/* 3. One Percent (Red/Orange) */
+@keyframes pulseRed {
+  0%, 100% { border-color: rgb(51 65 85); box-shadow: 0 0 0 transparent; }
+  50% { border-color: rgba(239, 68, 68, 0.8); box-shadow: 0 0 15px rgba(239, 68, 68, 0.4); }
+}
+
+/* Apply Animations with Staggered Timing */
 .animate-nurture-mobile {
-  animation: pulseRose 2s infinite ease-in-out;
+  animation: pulseRose 3s infinite ease-in-out;
 }
 
 .animate-rwrc-mobile {
-  animation: pulseNeon 2s infinite ease-in-out;
-  animation-delay: 1s; /* <--- Adds the alternating rhythm */
+  animation: pulseNeon 3s infinite ease-in-out;
+  animation-delay: 1s;
 }
 
-/* Disable on Desktop so Hover works instead */
+.animate-opc-mobile {
+  animation: pulseRed 3s infinite ease-in-out;
+  animation-delay: 2s; /* Creates a 1-2-3 rhythm */
+}
+
+/* Disable on Desktop */
 @media (min-width: 768px) {
-  .animate-nurture-mobile,
-  .animate-rwrc-mobile {
+  .animate-nurture-mobile, .animate-rwrc-mobile, .animate-opc-mobile {
     animation: none;
   }
 }
