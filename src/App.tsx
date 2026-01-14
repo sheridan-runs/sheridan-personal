@@ -82,8 +82,8 @@ function App() {
             </div>
 
             <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-zinc-900 group-hover:scale-105 transition-all duration-300 shadow-inner">
-               {/* FIXED: Added 'rounded' to the image itself to crop off the white corners */}
-               <img src="/rwrc.png" alt="Run Club Logo" className="w-full h-full object-contain p-1 rounded" />
+               {/* FIXED: Added '?v=2' to force browser to load new transparent image. Removed clip-path. */}
+               <img src="/rwrc.png?v=2" alt="Run Club Logo" className="w-full h-full object-contain p-1" />
             </div>
 
             <h2 className="text-xl font-bold text-white mb-2 group-hover:text-[#D4FF00] transition-colors">Run With Run Club</h2>
@@ -104,9 +104,9 @@ function App() {
             </div>
 
             <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-slate-800 group-hover:scale-105 transition-all duration-300 shadow-inner group-hover:bg-white/5">
-               {/* UPDATED: Points to 'opc.png' (The new round logo) */}
+               {/* NOTE: Filename is 'opc.png' as requested. Added '?v=2' just in case. */}
                <img 
-                 src="/opc.png" 
+                 src="/opc.png?v=2" 
                  alt="One Percent Logo" 
                  className="w-full h-full object-contain p-1.5" 
                  onError={(e) => {
