@@ -4,17 +4,14 @@ function App() {
   return (
     <div className="min-h-screen bg-[#0f172a] relative overflow-hidden flex flex-col items-center justify-center p-6 selection:bg-rose-500 selection:text-white">
       
-      {/* --- Background Studio Light (Optimized Gradient) --- */}
+      {/* --- Background Studio Light --- */}
       <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-[radial-gradient(circle,rgba(99,102,241,0.15)_0%,transparent_70%)] pointer-events-none z-0"></div>
 
       {/* --- Main Content --- */}
-      {/* Widened to max-w-5xl to fit 3 columns comfortably */}
       <main className="max-w-5xl w-full space-y-12 relative z-10 animate-enter">
         
         {/* --- Header --- */}
         <section className="text-center space-y-6">
-          
-          {/* Photo Container */}
           <div className="relative inline-block group">
             <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl mx-auto transition-transform duration-500 group-hover:scale-105 relative z-10 bg-slate-800">
               <img 
@@ -23,7 +20,6 @@ function App() {
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
               />
             </div>
-            {/* Status Dot */}
             <div className="absolute bottom-2 right-2 w-4 h-4 bg-emerald-500 border-4 border-[#0f172a] rounded-full z-20"></div>
           </div>
 
@@ -40,7 +36,6 @@ function App() {
             Helping ambitious people and businesses find their edge. From untangling financial complexity to optimising training performance, I provide the structure needed for sustainable growth.
           </p>
 
-          {/* Social Links */}
           <div className="flex justify-center gap-6 pt-2">
             <a href="https://www.linkedin.com/in/sheridanjamieson" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
               <Linkedin className="w-6 h-6" />
@@ -51,10 +46,10 @@ function App() {
           </div>
         </section>
 
-        {/* --- The Trio Cards (3 Cols) --- */}
+        {/* --- The Trio Cards --- */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           
-          {/* 1. Nurture (Data) */}
+          {/* 1. Nurture (Data) - Slate Background */}
           <a 
             href="https://nurture.kiwi/" 
             target="_blank" 
@@ -65,8 +60,9 @@ function App() {
               <ExternalLink className="w-5 h-5" />
             </div>
             
+            {/* FIXED: Added 'p-1' and 'object-contain' so the logo fits without cutting off */}
             <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-slate-800 group-hover:scale-105 transition-all duration-300 shadow-inner">
-               <img src="/nurture.png" alt="Nurture Logo" className="w-full h-full object-cover" />
+               <img src="/nurture.png" alt="Nurture Logo" className="w-full h-full object-contain p-1" />
             </div>
 
             <h2 className="text-xl font-bold text-white mb-2 group-hover:text-rose-400 transition-colors">Nurture</h2>
@@ -75,7 +71,7 @@ function App() {
             </p>
           </a>
 
-          {/* 2. Run With Run Club (Sport) */}
+          {/* 2. Run With Run Club (Sport) - Black Background */}
           <a 
             href="https://runwith.club/" 
             target="_blank" 
@@ -86,8 +82,9 @@ function App() {
               <ExternalLink className="w-5 h-5" />
             </div>
 
+            {/* FIXED: 'object-contain' ensures the R logo is fully visible */}
             <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-zinc-900 group-hover:scale-105 transition-all duration-300 shadow-inner">
-               <img src="/rwrc.png" alt="Run Club Logo" className="w-full h-full object-cover" />
+               <img src="/rwrc.png" alt="Run Club Logo" className="w-full h-full object-contain p-1" />
             </div>
 
             <h2 className="text-xl font-bold text-white mb-2 group-hover:text-[#D4FF00] transition-colors">Run With Run Club</h2>
@@ -96,23 +93,24 @@ function App() {
             </p>
           </a>
 
-          {/* 3. One Percent Collective (Charity) */}
+          {/* 3. One Percent Collective (Charity) - Slate Background (Matched to Nurture) */}
           <a 
             href="https://www.onepercentcollective.org/" 
             target="_blank" 
             rel="dofollow"
-            className="group relative bg-white/[0.03] backdrop-blur-sm border border-slate-700 rounded-2xl p-6 hover:border-red-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-500/10 animate-opc-mobile flex flex-col"
+            /* CHANGED: Background matches Nurture for visual consistency */
+            className="group relative bg-[#1e293b]/80 backdrop-blur-sm border border-slate-700 rounded-2xl p-6 hover:border-red-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-500/10 animate-opc-mobile flex flex-col"
           >
             <div className="absolute top-6 right-6 text-slate-600 group-hover:text-red-400 transition-colors">
               <ExternalLink className="w-5 h-5" />
             </div>
 
-            <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-slate-800 group-hover:scale-105 transition-all duration-300 shadow-inner group-hover:bg-white/10">
-               {/* NOTE: Upload a logo named 'opc.png' or this will default to the Heart icon */}
+            {/* FIXED: Changed background to White (bg-white) so the Red logo pops and is legible. */}
+            <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-white group-hover:scale-105 transition-all duration-300 shadow-inner">
                <img 
                  src="/opc.png" 
                  alt="One Percent Logo" 
-                 className="w-full h-full object-cover" 
+                 className="w-full h-full object-contain p-1" /* Ensures logo fits inside the white box */
                  onError={(e) => {
                    e.currentTarget.style.display = 'none';
                    e.currentTarget.nextElementSibling?.classList.remove('hidden');
@@ -129,7 +127,6 @@ function App() {
 
         </div>
         
-        {/* Footer */}
         <div className="text-center pb-6">
             <p className="text-slate-600 text-xs uppercase tracking-widest font-medium">
                 &copy; {new Date().getFullYear()} Sheridan Jamieson. All Rights Reserved.
