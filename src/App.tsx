@@ -82,7 +82,7 @@ function App() {
             </div>
 
             <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-zinc-900 group-hover:scale-105 transition-all duration-300 shadow-inner">
-               {/* THE FIX: Aggressive 3px trim off all sides, then round the corners. */}
+               {/* Fixed RWRC Logo */}
                <img src="/rwrc.png?v=FINAL_CUT" alt="Run Club Logo" className="w-full h-full object-contain p-1 [clip-path:inset(3px_round_12px)]" />
             </div>
 
@@ -103,7 +103,8 @@ function App() {
               <ExternalLink className="w-5 h-5" />
             </div>
 
-            <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-slate-800 group-hover:scale-105 transition-all duration-300 shadow-inner group-hover:bg-white/5">
+            {/* FIX: Removed 'group-hover:bg-white/5'. Now the background stays slate-800 on hover, matching Nurture. */}
+            <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-slate-800 group-hover:scale-105 transition-all duration-300 shadow-inner">
                <img 
                  src="/opc.png" 
                  alt="One Percent Logo" 
