@@ -49,7 +49,7 @@ function App() {
         {/* --- The Trio Cards --- */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           
-          {/* 1. Nurture (Data) - Slate Background */}
+          {/* 1. Nurture (Data) */}
           <a 
             href="https://nurture.kiwi/" 
             target="_blank" 
@@ -60,7 +60,6 @@ function App() {
               <ExternalLink className="w-5 h-5" />
             </div>
             
-            {/* FIXED: Added 'p-1' and 'object-contain' so the logo fits without cutting off */}
             <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-slate-800 group-hover:scale-105 transition-all duration-300 shadow-inner">
                <img src="/nurture.png" alt="Nurture Logo" className="w-full h-full object-contain p-1" />
             </div>
@@ -71,7 +70,7 @@ function App() {
             </p>
           </a>
 
-          {/* 2. Run With Run Club (Sport) - Black Background */}
+          {/* 2. Run With Run Club (Sport) */}
           <a 
             href="https://runwith.club/" 
             target="_blank" 
@@ -82,9 +81,9 @@ function App() {
               <ExternalLink className="w-5 h-5" />
             </div>
 
-            {/* FIXED: 'object-contain' ensures the R logo is fully visible */}
             <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-zinc-900 group-hover:scale-105 transition-all duration-300 shadow-inner">
-               <img src="/rwrc.png" alt="Run Club Logo" className="w-full h-full object-contain p-1" />
+               {/* FIXED: Added 'rounded' to the image itself to crop off the white corners */}
+               <img src="/rwrc.png" alt="Run Club Logo" className="w-full h-full object-contain p-1 rounded" />
             </div>
 
             <h2 className="text-xl font-bold text-white mb-2 group-hover:text-[#D4FF00] transition-colors">Run With Run Club</h2>
@@ -93,33 +92,32 @@ function App() {
             </p>
           </a>
 
-          {/* 3. One Percent Collective (Charity) - Slate Background (Matched to Nurture) */}
+          {/* 3. One Percent Collective (Charity) */}
           <a 
             href="https://www.onepercentcollective.org/" 
             target="_blank" 
             rel="dofollow"
-            /* CHANGED: Background matches Nurture for visual consistency */
-            className="group relative bg-[#1e293b]/80 backdrop-blur-sm border border-slate-700 rounded-2xl p-6 hover:border-red-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-500/10 animate-opc-mobile flex flex-col"
+            className="group relative bg-[#1e293b]/80 backdrop-blur-sm border border-slate-700 rounded-2xl p-6 hover:border-orange-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-orange-500/10 animate-opc-mobile flex flex-col"
           >
-            <div className="absolute top-6 right-6 text-slate-600 group-hover:text-red-400 transition-colors">
+            <div className="absolute top-6 right-6 text-slate-600 group-hover:text-orange-400 transition-colors">
               <ExternalLink className="w-5 h-5" />
             </div>
 
-            {/* FIXED: Changed background to White (bg-white) so the Red logo pops and is legible. */}
-            <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-white group-hover:scale-105 transition-all duration-300 shadow-inner">
+            <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-slate-800 group-hover:scale-105 transition-all duration-300 shadow-inner group-hover:bg-white/5">
+               {/* UPDATED: Points to 'opc.png' (The new round logo) */}
                <img 
                  src="/opc.png" 
                  alt="One Percent Logo" 
-                 className="w-full h-full object-contain p-1" /* Ensures logo fits inside the white box */
+                 className="w-full h-full object-contain p-1.5" 
                  onError={(e) => {
                    e.currentTarget.style.display = 'none';
                    e.currentTarget.nextElementSibling?.classList.remove('hidden');
                  }} 
                 />
-               <Heart className="hidden w-6 h-6 text-red-500" />
+               <Heart className="hidden w-6 h-6 text-orange-500" />
             </div>
 
-            <h2 className="text-xl font-bold text-white mb-2 group-hover:text-red-400 transition-colors">One Percent Collective</h2>
+            <h2 className="text-xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">One Percent Collective</h2>
             <p className="text-slate-400 text-sm leading-relaxed flex-grow">
               Head of Operations. Making regular giving easy. 100% of your donation goes to charity, helping smaller Kiwi charities thrive.
             </p>
