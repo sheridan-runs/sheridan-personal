@@ -82,8 +82,10 @@ function App() {
             </div>
 
             <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-zinc-900 group-hover:scale-105 transition-all duration-300 shadow-inner">
-               {/* Fixed RWRC Logo */}
-               <img src="/rwrc.png?v=FINAL_CUT" alt="Run Club Logo" className="w-full h-full object-contain p-1 [clip-path:inset(3px_round_12px)]" />
+               {/* THE FIX: Removed padding (p-1) and scaled up (scale-110). 
+                   This pushes the white corners out of view, leaving a perfect green tile 
+                   that matches the container's rounded-lg shape exactly. */}
+               <img src="/rwrc.png?v=ZOOM_FIX" alt="Run Club Logo" className="w-full h-full object-cover scale-110" />
             </div>
 
             <h2 className="text-xl font-bold text-white mb-2 group-hover:text-[#D4FF00] transition-colors">Run With Run Club</h2>
@@ -103,7 +105,6 @@ function App() {
               <ExternalLink className="w-5 h-5" />
             </div>
 
-            {/* FIX: Removed 'group-hover:bg-white/5'. Now the background stays slate-800 on hover, matching Nurture. */}
             <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-slate-800 group-hover:scale-105 transition-all duration-300 shadow-inner">
                <img 
                  src="/opc.png" 
