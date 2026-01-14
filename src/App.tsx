@@ -4,10 +4,10 @@ function App() {
   return (
     <div className="min-h-screen bg-[#0f172a] relative overflow-hidden flex flex-col items-center justify-center p-6 selection:bg-rose-500 selection:text-white">
       
-      {/* --- Background Studio Light (Optimized Gradient) --- */}
-<div className="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-[radial-gradient(circle,rgba(99,102,241,0.15)_0%,transparent_70%)] pointer-events-none z-0"></div>
+      {/* --- Background Studio Light (Optimized Gradient - Fast!) --- */}
+      <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-[radial-gradient(circle,rgba(99,102,241,0.15)_0%,transparent_70%)] pointer-events-none z-0"></div>
 
-      {/* --- Main Content (With Fade-In Animation) --- */}
+      {/* --- Main Content --- */}
       <main className="max-w-2xl w-full space-y-12 relative z-10">
         
         {/* --- Header --- */}
@@ -31,7 +31,7 @@ function App() {
               Sheridan Jamieson
             </h1>
             <p className="text-slate-400 text-lg flex items-center justify-center gap-2">
-              <MapPin className="w-4 h-4" /> Palmerston North, NZ
+              <MapPin className="w-4 h-6" /> Palmerston North, NZ
             </p>
           </div>
 
