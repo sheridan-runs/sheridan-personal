@@ -1,15 +1,15 @@
-import { Linkedin, Mail, ExternalLink, MapPin } from 'lucide-react';
+import { Linkedin, Mail, ExternalLink, MapPin, Heart } from 'lucide-react';
 
 function App() {
   return (
     <div className="min-h-screen bg-[#0f172a] relative overflow-hidden flex flex-col items-center justify-center p-6 selection:bg-rose-500 selection:text-white">
       
       {/* --- Background Studio Light (Optimized Gradient) --- */}
-      <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-[radial-gradient(circle,rgba(99,102,241,0.15)_0%,transparent_70%)] pointer-events-none z-0"></div>
+      <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-[radial-gradient(circle,rgba(99,102,241,0.15)_0%,transparent_70%)] pointer-events-none z-0"></div>
 
       {/* --- Main Content --- */}
-      {/* Added 'animate-enter' back here for the Fade In effect */}
-      <main className="max-w-2xl w-full space-y-12 relative z-10 animate-enter">
+      {/* Widened to max-w-5xl to fit 3 columns comfortably */}
+      <main className="max-w-5xl w-full space-y-12 relative z-10 animate-enter">
         
         {/* --- Header --- */}
         <section className="text-center space-y-6">
@@ -51,16 +51,15 @@ function App() {
           </div>
         </section>
 
-        {/* --- The Split Cards --- */}
-        <div className="grid md:grid-cols-2 gap-6">
+        {/* --- The Trio Cards (3 Cols) --- */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           
           {/* 1. Nurture (Data) */}
           <a 
             href="https://nurture.kiwi/" 
             target="_blank" 
             rel="dofollow"
-            /* Added 'animate-nurture-mobile' for the heartbeat effect on phones */
-            className="group relative bg-[#1e293b]/80 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 hover:border-rose-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-rose-500/10 animate-nurture-mobile"
+            className="group relative bg-[#1e293b]/80 backdrop-blur-sm border border-slate-700 rounded-2xl p-6 hover:border-rose-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-rose-500/10 animate-nurture-mobile flex flex-col"
           >
             <div className="absolute top-6 right-6 text-slate-600 group-hover:text-rose-400 transition-colors">
               <ExternalLink className="w-5 h-5" />
@@ -70,9 +69,9 @@ function App() {
                <img src="/nurture.png" alt="Nurture Logo" className="w-full h-full object-cover" />
             </div>
 
-            <h2 className="text-2xl font-bold text-white mb-2 group-hover:text-rose-400 transition-colors">Nurture</h2>
-            <p className="text-slate-400 text-sm leading-relaxed">
-              Founder & Virtual CFO. Empowering impactful businesses with strategic financial guidance. Not just numbers—strategic oversight for clarity and balance.
+            <h2 className="text-xl font-bold text-white mb-2 group-hover:text-rose-400 transition-colors">Nurture</h2>
+            <p className="text-slate-400 text-sm leading-relaxed flex-grow">
+              Director & vCFO. Empowering impactful businesses with strategic financial guidance. Not just numbers—strategic oversight for clarity and balance.
             </p>
           </a>
 
@@ -81,8 +80,7 @@ function App() {
             href="https://runwith.club/" 
             target="_blank" 
             rel="dofollow"
-            /* Added 'animate-rwrc-mobile' for the heartbeat effect on phones */
-            className="group relative bg-black/80 backdrop-blur-sm border border-zinc-800 rounded-2xl p-8 hover:border-[#D4FF00]/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#D4FF00]/10 animate-rwrc-mobile"
+            className="group relative bg-black/80 backdrop-blur-sm border border-zinc-800 rounded-2xl p-6 hover:border-[#D4FF00]/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#D4FF00]/10 animate-rwrc-mobile flex flex-col"
           >
             <div className="absolute top-6 right-6 text-zinc-600 group-hover:text-[#D4FF00] transition-colors">
               <ExternalLink className="w-5 h-5" />
@@ -92,9 +90,40 @@ function App() {
                <img src="/rwrc.png" alt="Run Club Logo" className="w-full h-full object-cover" />
             </div>
 
-            <h2 className="text-2xl font-bold text-white mb-2 group-hover:text-[#D4FF00] transition-colors">Run With Run Club</h2>
-            <p className="text-zinc-400 text-sm leading-relaxed">
-              Head Coach. Adaptive plans that take you from 'Jogger' to 'Athlete'. Serious training delivered with empathy to prevent burnout and hit goals.
+            <h2 className="text-xl font-bold text-white mb-2 group-hover:text-[#D4FF00] transition-colors">Run With Run Club</h2>
+            <p className="text-zinc-400 text-sm leading-relaxed flex-grow">
+              Founder & Coach. Adaptive plans that take you from 'Jogger' to 'Athlete'. Serious training delivered with empathy to prevent burnout.
+            </p>
+          </a>
+
+          {/* 3. One Percent Collective (Charity) */}
+          <a 
+            href="https://www.onepercentcollective.org/" 
+            target="_blank" 
+            rel="dofollow"
+            className="group relative bg-white/[0.03] backdrop-blur-sm border border-slate-700 rounded-2xl p-6 hover:border-red-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-red-500/10 animate-opc-mobile flex flex-col"
+          >
+            <div className="absolute top-6 right-6 text-slate-600 group-hover:text-red-400 transition-colors">
+              <ExternalLink className="w-5 h-5" />
+            </div>
+
+            <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-slate-800 group-hover:scale-105 transition-all duration-300 shadow-inner group-hover:bg-white/10">
+               {/* NOTE: Upload a logo named 'opc.png' or this will default to the Heart icon */}
+               <img 
+                 src="/opc.png" 
+                 alt="One Percent Logo" 
+                 className="w-full h-full object-cover" 
+                 onError={(e) => {
+                   e.currentTarget.style.display = 'none';
+                   e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                 }} 
+                />
+               <Heart className="hidden w-6 h-6 text-red-500" />
+            </div>
+
+            <h2 className="text-xl font-bold text-white mb-2 group-hover:text-red-400 transition-colors">One Percent Collective</h2>
+            <p className="text-slate-400 text-sm leading-relaxed flex-grow">
+              Head of Operations. Making regular giving easy. 100% of your donation goes to charity, helping smaller Kiwi charities thrive.
             </p>
           </a>
 
