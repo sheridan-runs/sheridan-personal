@@ -8,7 +8,7 @@ function App() {
       <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-indigo-500/20 rounded-full blur-[120px] pointer-events-none z-0"></div>
 
       {/* --- Main Content (With Fade-In Animation) --- */}
-      <main className="max-w-2xl w-full space-y-12 relative z-10 animate-enter">
+      <main className="max-w-2xl w-full space-y-12 relative z-10">
         
         {/* --- Header --- */}
         <section className="text-center space-y-6">
