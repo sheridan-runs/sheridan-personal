@@ -40,48 +40,4 @@ function App() {
             <a href="https://www.linkedin.com/in/sheridanjamieson" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="mailto:sheridan@nurture.kiwi" className="text-slate-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
-              <Mail className="w-6 h-6" />
-            </a>
-          </div>
-        </section>
-
-        {/* --- The Trio Cards --- */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          
-          {/* 1. Nurture (Data) */}
-          <a 
-            href="https://nurture.kiwi/" 
-            target="_blank" 
-            rel="dofollow"
-            className="group relative bg-[#1e293b]/80 backdrop-blur-sm border border-slate-700 rounded-2xl p-6 hover:border-rose-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-rose-500/10 animate-nurture-mobile flex flex-col"
-          >
-            <div className="absolute top-6 right-6 text-slate-600 group-hover:text-rose-400 transition-colors">
-              <ExternalLink className="w-5 h-5" />
-            </div>
-            
-            <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-slate-800 group-hover:scale-105 transition-all duration-300 shadow-inner">
-               <img src="/nurture.png" alt="Nurture Logo" className="w-full h-full object-contain p-1" />
-            </div>
-
-            <h2 className="text-xl font-bold text-white mb-2 group-hover:text-rose-400 transition-colors">Nurture</h2>
-            <p className="text-slate-400 text-sm leading-relaxed flex-grow">
-              Director & vCFO. Empowering impactful businesses with strategic financial guidance. Not just numbers—strategic oversight for clarity and balance.
-            </p>
-          </a>
-
-          {/* 2. Run With Run Club (Sport) */}
-          <a 
-            href="https://runwith.club/" 
-            target="_blank" 
-            rel="dofollow"
-            className="group relative bg-black/80 backdrop-blur-sm border border-zinc-800 rounded-2xl p-6 hover:border-[#D4FF00]/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#D4FF00]/10 animate-rwrc-mobile flex flex-col"
-          >
-            <div className="absolute top-6 right-6 text-zinc-600 group-hover:text-[#D4FF00] transition-colors">
-              <ExternalLink className="w-5 h-5" />
-            </div>
-
-            <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-zinc-900 group-hover:scale-105 transition-all duration-300 shadow-inner">
-               {/* FIX: [clip-path:inset(2px_round_8px)] 
-                  - 'inset(2px...' cuts 2px off every edge (removing the white bleed).
-                  - '...round 8px)' re-applies the curve so it looks like a logo, not a square.
+            <a href="mailto:sheridan@nurture.kiwi" className="text-slate-400 hover:text-white transition-colors hover:
