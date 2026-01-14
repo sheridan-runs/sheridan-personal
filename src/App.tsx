@@ -99,7 +99,9 @@ function App() {
         
         {/* Footer */}
         <div className="text-center pb-6">
-            <p className="text-slate-600 text-xs uppercase tracking-widest font-medium">Est. 2019</p>
+            <p className="text-slate-600 text-xs uppercase tracking-widest font-medium">
+                &copy; {new Date().getFullYear()} Sheridan Jamieson. All Rights Reserved.
+            </p>
         </div>
 
       </main>
