@@ -4,11 +4,12 @@ function App() {
   return (
     <div className="min-h-screen bg-[#0f172a] relative overflow-hidden flex flex-col items-center justify-center p-6 selection:bg-rose-500 selection:text-white">
       
-      {/* --- Background Studio Light (Optimized Gradient - Fast!) --- */}
+      {/* --- Background Studio Light (Optimized Gradient) --- */}
       <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-[radial-gradient(circle,rgba(99,102,241,0.15)_0%,transparent_70%)] pointer-events-none z-0"></div>
 
       {/* --- Main Content --- */}
-      <main className="max-w-2xl w-full space-y-12 relative z-10">
+      {/* Added 'animate-enter' back here for the Fade In effect */}
+      <main className="max-w-2xl w-full space-y-12 relative z-10 animate-enter">
         
         {/* --- Header --- */}
         <section className="text-center space-y-6">
@@ -58,7 +59,8 @@ function App() {
             href="https://nurture.kiwi/" 
             target="_blank" 
             rel="dofollow"
-            className="group relative bg-[#1e293b]/80 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 hover:border-rose-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-rose-500/10"
+            /* Added 'animate-nurture-mobile' for the heartbeat effect on phones */
+            className="group relative bg-[#1e293b]/80 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 hover:border-rose-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-rose-500/10 animate-nurture-mobile"
           >
             <div className="absolute top-6 right-6 text-slate-600 group-hover:text-rose-400 transition-colors">
               <ExternalLink className="w-5 h-5" />
@@ -79,7 +81,8 @@ function App() {
             href="https://runwith.club/" 
             target="_blank" 
             rel="dofollow"
-            className="group relative bg-black/80 backdrop-blur-sm border border-zinc-800 rounded-2xl p-8 hover:border-[#D4FF00]/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#D4FF00]/10"
+            /* Added 'animate-rwrc-mobile' for the heartbeat effect on phones */
+            className="group relative bg-black/80 backdrop-blur-sm border border-zinc-800 rounded-2xl p-8 hover:border-[#D4FF00]/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#D4FF00]/10 animate-rwrc-mobile"
           >
             <div className="absolute top-6 right-6 text-zinc-600 group-hover:text-[#D4FF00] transition-colors">
               <ExternalLink className="w-5 h-5" />
