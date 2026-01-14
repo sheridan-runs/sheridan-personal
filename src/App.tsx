@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Database, TrendingUp, Linkedin, Mail, ExternalLink, MapPin } from 'lucide-react';
 
 function App() {
