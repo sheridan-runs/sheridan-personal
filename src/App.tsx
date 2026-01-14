@@ -5,7 +5,7 @@ function App() {
     <div className="min-h-screen bg-[#0f172a] relative overflow-hidden flex flex-col items-center justify-center p-6 selection:bg-rose-500 selection:text-white">
       
       {/* --- Background Studio Light (The "Glow") --- */}
-      
+      <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-indigo-500/20 rounded-full blur-[120px] pointer-events-none z-0"></div>
 
       {/* --- Main Content (With Fade-In Animation) --- */}
       <main className="max-w-2xl w-full space-y-12 relative z-10">
