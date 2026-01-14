@@ -1,5 +1,4 @@
-
-import { Database, TrendingUp, Linkedin, Mail, ExternalLink, MapPin } from 'lucide-react';
+import { Linkedin, Mail, ExternalLink, MapPin } from 'lucide-react';
 
 function App() {
   return (
@@ -39,7 +38,8 @@ function App() {
             <a href="https://www.linkedin.com/in/sheridanjamieson" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="mailto:hello@sheridanjamieson.com" className="text-slate-400 hover:text-white transition-colors">
+            {/* UPDATED EMAIL BELOW */}
+            <a href="mailto:sheridan@nurture.kiwi" className="text-slate-400 hover:text-white transition-colors">
               <Mail className="w-6 h-6" />
             </a>
           </div>
@@ -48,7 +48,7 @@ function App() {
         {/* --- The Split Cards --- */}
         <div className="grid md:grid-cols-2 gap-6">
           
-          {/* 1. Nurture (Data) - Rose Pink Branding */}
+          {/* 1. Nurture (Data) */}
           <a 
             href="https://nurture.kiwi/" 
             target="_blank" 
@@ -58,16 +58,19 @@ function App() {
             <div className="absolute top-6 right-6 text-slate-600 group-hover:text-rose-400 transition-colors">
               <ExternalLink className="w-5 h-5" />
             </div>
-            <div className="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center mb-6 text-rose-400 group-hover:bg-rose-500/10 group-hover:scale-110 transition-all">
-              <Database className="w-6 h-6" />
+            
+            {/* LOGO UPDATE: Replaced Icon with Image */}
+            <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-slate-800 group-hover:scale-105 transition-all duration-300">
+               <img src="/nurture.png" alt="Nurture Logo" className="w-full h-full object-cover" />
             </div>
+
             <h2 className="text-2xl font-bold text-white mb-2 group-hover:text-rose-400 transition-colors">Nurture</h2>
             <p className="text-slate-400 text-sm leading-relaxed">
               Founder & Data Consultant. Helping NZ businesses structure their intelligence and unlock value from their data.
             </p>
           </a>
 
-          {/* 2. Run With Run Club (Sport) - Volt Green Branding */}
+          {/* 2. Run With Run Club (Sport) */}
           <a 
             href="https://runwith.club/" 
             target="_blank" 
@@ -77,9 +80,12 @@ function App() {
             <div className="absolute top-6 right-6 text-zinc-600 group-hover:text-[#D4FF00] transition-colors">
               <ExternalLink className="w-5 h-5" />
             </div>
-            <div className="w-12 h-12 bg-zinc-900 rounded-lg flex items-center justify-center mb-6 text-[#D4FF00] group-hover:bg-[#D4FF00]/10 group-hover:scale-110 transition-all">
-              <TrendingUp className="w-6 h-6" />
+
+            {/* LOGO UPDATE: Replaced Icon with Image */}
+            <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-zinc-900 group-hover:scale-105 transition-all duration-300">
+               <img src="/rwrc.png" alt="Run Club Logo" className="w-full h-full object-cover" />
             </div>
+
             <h2 className="text-2xl font-bold text-white mb-2 group-hover:text-[#D4FF00] transition-colors">Run With Run Club</h2>
             <p className="text-zinc-400 text-sm leading-relaxed">
               Head Coach. Adaptive training plans for busy professionals who want performance without burnout.
