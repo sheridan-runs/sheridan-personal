@@ -61,7 +61,8 @@ function App() {
             </div>
             
             <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-slate-800 group-hover:scale-105 transition-all duration-300 shadow-inner">
-               <img src="/nurture.png" alt="Nurture Logo" className="w-full h-full object-contain p-1" />
+               {/* UPDATED: Now using 'object-cover scale-110' for consistent size */}
+               <img src="/nurture.png" alt="Nurture Logo" className="w-full h-full object-cover scale-110" />
             </div>
 
             <h2 className="text-xl font-bold text-white mb-2 group-hover:text-rose-400 transition-colors">Nurture</h2>
@@ -82,9 +83,7 @@ function App() {
             </div>
 
             <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-zinc-900 group-hover:scale-105 transition-all duration-300 shadow-inner">
-               {/* THE FIX: Removed padding (p-1) and scaled up (scale-110). 
-                   This pushes the white corners out of view, leaving a perfect green tile 
-                   that matches the container's rounded-lg shape exactly. */}
+               {/* Already using 'object-cover scale-110' */}
                <img src="/rwrc.png?v=ZOOM_FIX" alt="Run Club Logo" className="w-full h-full object-cover scale-110" />
             </div>
 
@@ -106,10 +105,11 @@ function App() {
             </div>
 
             <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-slate-800 group-hover:scale-105 transition-all duration-300 shadow-inner">
+               {/* UPDATED: Now using 'object-cover scale-110' for consistent size */}
                <img 
                  src="/opc.png" 
                  alt="One Percent Logo" 
-                 className="w-full h-full object-contain p-1.5" 
+                 className="w-full h-full object-cover scale-110" 
                  onError={(e) => {
                    e.currentTarget.style.display = 'none';
                    e.currentTarget.nextElementSibling?.classList.remove('hidden');
