@@ -82,58 +82,6 @@ function App() {
             </div>
 
             <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-zinc-900 group-hover:scale-105 transition-all duration-300 shadow-inner">
-               {/* FIXED: Added '?v=2' to force browser to load new transparent image. Removed clip-path. */}
-               <img src="/rwrc.png?v=2" alt="Run Club Logo" className="w-full h-full object-contain p-1" />
-            </div>
-
-            <h2 className="text-xl font-bold text-white mb-2 group-hover:text-[#D4FF00] transition-colors">Run With Run Club</h2>
-            <p className="text-zinc-400 text-sm leading-relaxed flex-grow">
-              Founder & Coach. Adaptive plans that take you from 'Jogger' to 'Athlete'. Serious training delivered with empathy to prevent burnout.
-            </p>
-          </a>
-
-          {/* 3. One Percent Collective (Charity) */}
-          <a 
-            href="https://www.onepercentcollective.org/" 
-            target="_blank" 
-            rel="dofollow"
-            className="group relative bg-[#1e293b]/80 backdrop-blur-sm border border-slate-700 rounded-2xl p-6 hover:border-orange-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-orange-500/10 animate-opc-mobile flex flex-col"
-          >
-            <div className="absolute top-6 right-6 text-slate-600 group-hover:text-orange-400 transition-colors">
-              <ExternalLink className="w-5 h-5" />
-            </div>
-
-            <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-slate-800 group-hover:scale-105 transition-all duration-300 shadow-inner group-hover:bg-white/5">
-               {/* NOTE: Filename is 'opc.png' as requested. Added '?v=2' just in case. */}
-               <img 
-                 src="/opc.png?v=2" 
-                 alt="One Percent Logo" 
-                 className="w-full h-full object-contain p-1.5" 
-                 onError={(e) => {
-                   e.currentTarget.style.display = 'none';
-                   e.currentTarget.nextElementSibling?.classList.remove('hidden');
-                 }} 
-                />
-               <Heart className="hidden w-6 h-6 text-orange-500" />
-            </div>
-
-            <h2 className="text-xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">One Percent Collective</h2>
-            <p className="text-slate-400 text-sm leading-relaxed flex-grow">
-              Head of Operations. Making regular giving easy. 100% of your donation goes to charity, helping smaller Kiwi charities thrive.
-            </p>
-          </a>
-
-        </div>
-        
-        <div className="text-center pb-6">
-            <p className="text-slate-600 text-xs uppercase tracking-widest font-medium">
-                &copy; {new Date().getFullYear()} Sheridan Jamieson. All Rights Reserved.
-            </p>
-        </div>
-
-      </main>
-    </div>
-  );
-}
-
-export default App;
+               {/* FIX: [clip-path:inset(2px_round_8px)] 
+                  - 'inset(2px...' cuts 2px off every edge (removing the white bleed).
+                  - '...round 8px)' re-applies the curve so it looks like a logo, not a square.
