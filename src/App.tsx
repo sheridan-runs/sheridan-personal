@@ -1,5 +1,18 @@
 import { Linkedin, Mail, ExternalLink, MapPin, Heart } from 'lucide-react';
 
+// Custom Strava Icon Component to match Lucide style
+const Strava = ({ className }: { className?: string }) => (
+  <svg 
+    viewBox="0 0 24 24" 
+    fill="currentColor" 
+    className={className}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M15.387 17.944l-2.089-4.116h-3.065l5.154 10.172 5.155-10.172h-3.066l-2.089 4.116zm-5.155-2.58l-1.91-3.764h-2.18l4.09 8.07 4.09-8.07h-2.179l-1.911 3.764z"/>
+    <path d="M10.232 9.876l2.089-4.117 2.088 4.117h3.065l-5.153-10.171-5.154 10.171h3.065z" />
+  </svg>
+);
+
 function App() {
   return (
     <div className="min-h-screen bg-[#0f172a] relative overflow-hidden flex flex-col items-center justify-center p-6 selection:bg-rose-500 selection:text-white">
@@ -32,15 +45,22 @@ function App() {
             </p>
           </div>
 
-          {/* UPDATED: Added 'underline decoration-dotted decoration-slate-600' as a subtle hint */}
           <p className="text-slate-300 text-lg md:text-xl leading-relaxed max-w-lg mx-auto">
             Helping <span className="underline decoration-dotted decoration-slate-600 underline-offset-4 hover:text-white transition-colors duration-300 cursor-default">ambitious people</span> and businesses find their edge. From untangling <span className="underline decoration-dotted decoration-slate-600 underline-offset-4 hover:text-emerald-400 transition-colors duration-300 cursor-default">financial complexity</span> to optimising <span className="underline decoration-dotted decoration-slate-600 underline-offset-4 hover:text-[#D4FF00] transition-colors duration-300 cursor-default">training performance</span>, I provide the structure needed for sustainable growth and <span className="underline decoration-dotted decoration-slate-600 underline-offset-4 hover:text-orange-500 transition-colors duration-300 cursor-default">meaningful impact</span>.
           </p>
 
-          <div className="flex justify-center gap-6 pt-2">
+          <div className="flex justify-center gap-6 pt-2 items-center">
+            {/* LinkedIn */}
             <a href="https://www.linkedin.com/in/sheridanjamieson" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
               <Linkedin className="w-6 h-6" />
             </a>
+            
+            {/* Strava - CORRECTED LINK */}
+            <a href="https://www.strava.com/athletes/106248796" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-[#fc4c02] transition-colors hover:scale-110 transform duration-200">
+              <Strava className="w-6 h-6" />
+            </a>
+
+            {/* Email */}
             <a href="mailto:sheridan@nurture.kiwi" className="text-slate-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
               <Mail className="w-6 h-6" />
             </a>
