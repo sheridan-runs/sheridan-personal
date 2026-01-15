@@ -55,17 +55,17 @@ function App() {
           </p>
 
           <div className="flex justify-center gap-6 pt-2 items-center">
-            {/* LinkedIn */}
-            <a href="https://www.linkedin.com/in/sheridanjamieson" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
+            {/* LinkedIn - Updated to Official Blue (#0077b5) */}
+            <a href="https://www.linkedin.com/in/sheridanjamieson" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-[#0077b5] transition-colors hover:scale-110 transform duration-200">
               <Linkedin className="w-6 h-6" />
             </a>
             
-            {/* Strava - CORRECTED LOGO GEOMETRY */}
+            {/* Strava - Brand Orange */}
             <a href="https://www.strava.com/athletes/106248796" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-[#fc4c02] transition-colors hover:scale-110 transform duration-200">
               <Strava className="w-6 h-6" />
             </a>
 
-            {/* Email */}
+            {/* Email - White */}
             <a href="mailto:sheridan@nurture.kiwi" className="text-slate-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
               <Mail className="w-6 h-6" />
             </a>
