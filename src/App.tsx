@@ -32,9 +32,9 @@ function App() {
             </p>
           </div>
 
-          {/* UPDATED: Interactive Text. Keywords glow with their specific brand colors on hover. */}
+          {/* UPDATED: Added 'underline decoration-dotted decoration-slate-600' as a subtle hint */}
           <p className="text-slate-300 text-lg md:text-xl leading-relaxed max-w-lg mx-auto">
-            Helping <span className="hover:text-white transition-colors duration-300 cursor-default">ambitious people</span> and businesses find their edge. From untangling <span className="hover:text-emerald-400 transition-colors duration-300 cursor-default">financial complexity</span> to optimising <span className="hover:text-[#D4FF00] transition-colors duration-300 cursor-default">training performance</span>, I provide the structure needed for sustainable growth and <span className="hover:text-orange-500 transition-colors duration-300 cursor-default">meaningful impact</span>.
+            Helping <span className="underline decoration-dotted decoration-slate-600 underline-offset-4 hover:text-white transition-colors duration-300 cursor-default">ambitious people</span> and businesses find their edge. From untangling <span className="underline decoration-dotted decoration-slate-600 underline-offset-4 hover:text-emerald-400 transition-colors duration-300 cursor-default">financial complexity</span> to optimising <span className="underline decoration-dotted decoration-slate-600 underline-offset-4 hover:text-[#D4FF00] transition-colors duration-300 cursor-default">training performance</span>, I provide the structure needed for sustainable growth and <span className="underline decoration-dotted decoration-slate-600 underline-offset-4 hover:text-orange-500 transition-colors duration-300 cursor-default">meaningful impact</span>.
           </p>
 
           <div className="flex justify-center gap-6 pt-2">
