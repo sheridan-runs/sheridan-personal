@@ -1,6 +1,8 @@
 import { Linkedin, Mail, ExternalLink, MapPin, Heart } from 'lucide-react';
 
-// Custom Strava Icon Component to match Lucide style
+// Custom Strava Icon Component - Corrected Geometry
+// Path 1: The "Large A" (Upward Chevron)
+// Path 2: The "Small V" (Downward Chevron to the right)
 const Strava = ({ className }: { className?: string }) => (
   <svg 
     viewBox="0 0 24 24" 
@@ -8,8 +10,11 @@ const Strava = ({ className }: { className?: string }) => (
     className={className}
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path d="M15.387 17.944l-2.089-4.116h-3.065l5.154 10.172 5.155-10.172h-3.066l-2.089 4.116zm-5.155-2.58l-1.91-3.764h-2.18l4.09 8.07 4.09-8.07h-2.179l-1.911 3.764z"/>
-    <path d="M10.232 9.876l2.089-4.117 2.088 4.117h3.065l-5.153-10.171-5.154 10.171h3.065z" />
+    {/* The Upward Pointing Chevron (The 'A') */}
+    <path d="M10.2325 9.87618L12.3215 5.75918L14.4095 9.87618H17.4745L12.3215 -0.294824L7.16748 9.87618H10.2325Z" transform="translate(0 2)" />
+    
+    {/* The Downward Pointing Chevron (The 'V') */}
+    <path d="M15.3875 17.944L13.2985 13.828H10.2335L15.3875 24.0001L20.5425 13.828H17.4765L15.3875 17.944Z" transform="translate(0 -2)" />
   </svg>
 );
 
@@ -55,7 +60,7 @@ function App() {
               <Linkedin className="w-6 h-6" />
             </a>
             
-            {/* Strava - CORRECTED LINK */}
+            {/* Strava - CORRECTED LOGO GEOMETRY */}
             <a href="https://www.strava.com/athletes/106248796" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-[#fc4c02] transition-colors hover:scale-110 transform duration-200">
               <Strava className="w-6 h-6" />
             </a>
