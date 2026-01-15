@@ -32,8 +32,9 @@ function App() {
             </p>
           </div>
 
+          {/* UPDATED: Interactive Text. Keywords glow with their specific brand colors on hover. */}
           <p className="text-slate-300 text-lg md:text-xl leading-relaxed max-w-lg mx-auto">
-            Helping ambitious people and businesses find their edge. From untangling financial complexity to optimising training performance, I provide the structure needed for sustainable growth <span className="text-white font-medium">and meaningful impact.</span>
+            Helping <span className="hover:text-white transition-colors duration-300 cursor-default">ambitious people</span> and businesses find their edge. From untangling <span className="hover:text-emerald-400 transition-colors duration-300 cursor-default">financial complexity</span> to optimising <span className="hover:text-[#D4FF00] transition-colors duration-300 cursor-default">training performance</span>, I provide the structure needed for sustainable growth and <span className="hover:text-orange-500 transition-colors duration-300 cursor-default">meaningful impact</span>.
           </p>
 
           <div className="flex justify-center gap-6 pt-2">
