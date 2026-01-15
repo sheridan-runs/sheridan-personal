@@ -33,7 +33,7 @@ function App() {
           </div>
 
           <p className="text-slate-300 text-lg md:text-xl leading-relaxed max-w-lg mx-auto">
-            Helping ambitious people and businesses find their edge. From untangling financial complexity to optimising training performance, I provide the structure needed for sustainable growth.
+            Helping ambitious people and businesses find their edge. From untangling financial complexity to optimising training performance, I provide the structure needed for sustainable growth <span className="text-white font-medium">and meaningful impact.</span>
           </p>
 
           <div className="flex justify-center gap-6 pt-2">
@@ -61,7 +61,6 @@ function App() {
             </div>
             
             <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-slate-800 group-hover:scale-105 transition-all duration-300 shadow-inner">
-               {/* UPDATED: Now using 'object-cover scale-110' for consistent size */}
                <img src="/nurture.png" alt="Nurture Logo" className="w-full h-full object-cover scale-110" />
             </div>
 
@@ -83,7 +82,6 @@ function App() {
             </div>
 
             <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-zinc-900 group-hover:scale-105 transition-all duration-300 shadow-inner">
-               {/* Already using 'object-cover scale-110' */}
                <img src="/rwrc.png?v=ZOOM_FIX" alt="Run Club Logo" className="w-full h-full object-cover scale-110" />
             </div>
 
@@ -105,7 +103,6 @@ function App() {
             </div>
 
             <div className="w-12 h-12 mb-6 rounded-lg overflow-hidden flex items-center justify-center bg-slate-800 group-hover:scale-105 transition-all duration-300 shadow-inner">
-               {/* UPDATED: Now using 'object-cover scale-110' for consistent size */}
                <img 
                  src="/opc.png" 
                  alt="One Percent Logo" 
