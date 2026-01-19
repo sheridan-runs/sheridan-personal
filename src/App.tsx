@@ -1,8 +1,6 @@
-import { Linkedin, Mail, ExternalLink, MapPin, Heart } from 'lucide-react';
+import { Linkedin, Mail, ExternalLink, MapPin, Heart, Wrench } from 'lucide-react';
 
-// Custom Strava Icon Component - Corrected Geometry
-// Path 1: The "Large A" (Upward Chevron)
-// Path 2: The "Small V" (Downward Chevron to the right)
+// Custom Strava Icon Component
 const Strava = ({ className }: { className?: string }) => (
   <svg 
     viewBox="0 0 24 24" 
@@ -10,10 +8,7 @@ const Strava = ({ className }: { className?: string }) => (
     className={className}
     xmlns="http://www.w3.org/2000/svg"
   >
-    {/* The Upward Pointing Chevron (The 'A') */}
     <path d="M10.2325 9.87618L12.3215 5.75918L14.4095 9.87618H17.4745L12.3215 -0.294824L7.16748 9.87618H10.2325Z" transform="translate(0 2)" />
-    
-    {/* The Downward Pointing Chevron (The 'V') */}
     <path d="M15.3875 17.944L13.2985 13.828H10.2335L15.3875 24.0001L20.5425 13.828H17.4765L15.3875 17.944Z" transform="translate(0 -2)" />
   </svg>
 );
@@ -55,17 +50,17 @@ function App() {
           </p>
 
           <div className="flex justify-center gap-6 pt-2 items-center">
-            {/* LinkedIn - Updated to Official Blue (#0077b5) */}
+            {/* LinkedIn */}
             <a href="https://www.linkedin.com/in/sheridanjamieson" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-[#0077b5] transition-colors hover:scale-110 transform duration-200">
               <Linkedin className="w-6 h-6" />
             </a>
             
-            {/* Strava - Brand Orange */}
+            {/* Strava */}
             <a href="https://www.strava.com/athletes/106248796" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-[#fc4c02] transition-colors hover:scale-110 transform duration-200">
               <Strava className="w-6 h-6" />
             </a>
 
-            {/* Email - White */}
+            {/* Email */}
             <a href="mailto:sheridan@nurture.kiwi" className="text-slate-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
               <Mail className="w-6 h-6" />
             </a>
@@ -149,6 +144,15 @@ function App() {
 
         </div>
         
+        {/* --- PROJECTS LINK (New!) --- */}
+        <div className="flex justify-center">
+             <a href="/projects.html" className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-slate-800/50 border border-slate-700 text-slate-400 hover:text-white hover:bg-slate-800 hover:border-slate-500 transition-all group">
+                <Wrench className="w-4 h-4 group-hover:rotate-12 transition-transform" />
+                <span className="font-medium">View Tools & Projects</span>
+             </a>
+        </div>
+        
+        {/* --- Footer --- */}
         <div className="text-center pb-6">
             <p className="text-slate-600 text-xs uppercase tracking-widest font-medium">
                 &copy; {new Date().getFullYear()} Sheridan Jamieson. All Rights Reserved.
