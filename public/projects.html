@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools & Projects | Sheridan Jamieson</title>
+    <meta name="description" content="Web tools and projects by Sheridan Jamieson, including Sprix and YourBudget.">
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    
+    <style>
+        /* Exact Theme Match based on your screenshot */
+        :root {
+            --bg: #0f172a;       /* Deep Navy background */
+            --card-bg: #162032;  /* Slightly lighter card */
+            --text: #ffffff;
+            --text-muted: #94a3b8;
+            --border: rgba(255,255,255,0.08);
+            --accent-red: #dc2626;    /* Sprix */
+            --accent-green: #10b981;  /* Budget */
+            --accent-blue: #3b82f6;   /* Sheets */
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 4rem 1.5rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Profile Header */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* The Grid */
+        .grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        /* Cards */
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s ease;
+            display: block;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(255,255,255,0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .card-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.75rem;
+        }
+
+        .logo-box {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 0 0 0.5rem 0;
+        }
+
+        .desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .arrow {
+            color: var(--text-muted);
+            opacity: 0.5;
+        }
+        .card:hover .arrow { opacity: 1; color: white; }
+
+        /* Back Link */
+        .back-nav {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        .back-nav:hover { color: white; }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 4rem;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="/" class="back-nav">← Back to Profile</a>
+
+    <div class="header">
+        <h1>Projects & Tools</h1>
+        <p class="subtitle">Utilities I've built to solve specific problems.</p>
+    </div>
+
+    <div class="grid">
+        
+        <a href="https://sprix.run" target="_blank" class="card">
+            <div class="card-top">
+                <div class="logo-box" style="background: var(--accent-red);">S</div>
+                <span class="arrow">↗</span>
+            </div>
+            <h3 class="title">Sprix</h3>
+            <p class="desc">Marathon pace band generator and race strategy calculator. Visualize splits and print wristbands.</p>
+        </a>
+
+        <a href="https://yourbudget.xyz" target="_blank" class="card">
+            <div class="card-top">
+                <div class="logo-box" style="background: var(--accent-green);">Y</div>
+                <span class="arrow">↗</span>
+            </div>
+            <h3 class="title">YourBudget</h3>
+            <p class="desc">Simple, privacy-focused personal finance tracking. No bank connections, just clarity.</p>
+        </a>
+
+        <a href="https://spreadsheet.school" target="_blank" class="card">
+            <div class="card-top">
+                <div class="logo-box" style="background: var(--accent-blue);">#</div>
+                <span class="arrow">↗</span>
+            </div>
+            <h3 class="title">Spreadsheet School</h3>
+            <p class="desc">Tutorials and templates for mastering Excel and Google Sheets.</p>
+        </a>
+
+    </div>
+
+    <div class="footer">
+        © 2026 Sheridan Jamieson
+    </div>
+</div>
+
+</body>
+</html>
