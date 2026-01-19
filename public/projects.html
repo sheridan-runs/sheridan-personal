@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tools & Projects | Sheridan Jamieson</title>
-    <meta name="description" content="Web tools and projects by Sheridan Jamieson, including Sprix and YourBudget.">
+    <meta name="description" content="Web tools and projects by Sheridan Jamieson, including Sprix.">
     <link rel="icon" type="image/png" href="/favicon.png" />
     
     <style>
-        /* Exact Theme Match based on your screenshot */
         :root {
-            --bg: #0f172a;       /* Deep Navy background */
-            --card-bg: #162032;  /* Slightly lighter card */
+            --bg: #0f172a;       
+            --card-bg: #162032;  
             --text: #ffffff;
             --text-muted: #94a3b8;
             --border: rgba(255,255,255,0.08);
-            --accent-red: #dc2626;    /* Sprix */
-            --accent-green: #10b981;  /* Budget */
-            --accent-blue: #3b82f6;   /* Sheets */
+            --accent-red: #dc2626;    
         }
 
         body {
@@ -29,36 +26,16 @@
             line-height: 1.6;
         }
 
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-        }
+        .container { max-width: 600px; margin: 0 auto; }
 
-        /* Profile Header */
-        .header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
+        .header { text-align: center; margin-bottom: 3rem; }
         
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            letter-spacing: -0.02em;
-        }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; letter-spacing: -0.02em; }
+        .subtitle { color: var(--text-muted); font-size: 1.1rem; }
 
-        .subtitle {
-            color: var(--text-muted);
-            font-size: 1.1rem;
-        }
+        .grid { display: grid; gap: 1.5rem; }
 
-        /* The Grid */
-        .grid {
-            display: grid;
-            gap: 1.5rem;
-        }
-
-        /* Cards */
+        /* Active Card Style */
         .card {
             background: var(--card-bg);
             border: 1px solid var(--border);
@@ -68,7 +45,6 @@
             color: inherit;
             transition: all 0.2s ease;
             display: block;
-            position: relative;
         }
 
         .card:hover {
@@ -77,62 +53,34 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
 
-        .card-top {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 0.75rem;
+        /* Coming Soon Style */
+        .card.disabled {
+            opacity: 0.6;
+            cursor: default;
+            background: rgba(22, 32, 50, 0.5);
+            border-style: dashed;
         }
+        .card.disabled:hover { transform: none; box-shadow: none; border-color: var(--border); }
+
+        .card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem; }
 
         .logo-box {
-            width: 40px;
-            height: 40px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 900;
-            font-size: 1.2rem;
-            color: white;
+            width: 40px; height: 40px; border-radius: 8px;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 900; font-size: 1.2rem; color: white;
         }
 
-        .title {
-            font-size: 1.25rem;
-            font-weight: 700;
-            margin: 0 0 0.5rem 0;
-        }
+        .title { font-size: 1.25rem; font-weight: 700; margin: 0 0 0.5rem 0; }
+        .desc { color: var(--text-muted); font-size: 0.95rem; margin: 0; line-height: 1.5; }
+        .badge { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; padding: 2px 8px; border-radius: 4px; background: rgba(255,255,255,0.1); color: var(--text-muted); }
 
-        .desc {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            margin: 0;
-            line-height: 1.5;
-        }
-
-        .arrow {
-            color: var(--text-muted);
-            opacity: 0.5;
-        }
+        .arrow { color: var(--text-muted); opacity: 0.5; }
         .card:hover .arrow { opacity: 1; color: white; }
 
-        /* Back Link */
-        .back-nav {
-            display: inline-block;
-            margin-bottom: 2rem;
-            color: var(--text-muted);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.9rem;
-        }
+        .back-nav { display: inline-block; margin-bottom: 2rem; color: var(--text-muted); text-decoration: none; font-weight: 500; font-size: 0.9rem; }
         .back-nav:hover { color: white; }
 
-        /* Footer */
-        .footer {
-            text-align: center;
-            margin-top: 4rem;
-            color: var(--text-muted);
-            font-size: 0.8rem;
-        }
+        .footer { text-align: center; margin-top: 4rem; color: var(--text-muted); font-size: 0.8rem; }
     </style>
 </head>
 <body>
@@ -156,23 +104,14 @@
             <p class="desc">Marathon pace band generator and race strategy calculator. Visualize splits and print wristbands.</p>
         </a>
 
-        <a href="https://yourbudget.xyz" target="_blank" class="card">
+        <div class="card disabled">
             <div class="card-top">
-                <div class="logo-box" style="background: var(--accent-green);">Y</div>
-                <span class="arrow">↗</span>
+                <div class="logo-box" style="background: #334155;">?</div>
+                <span class="badge">Coming Soon</span>
             </div>
-            <h3 class="title">YourBudget</h3>
-            <p class="desc">Simple, privacy-focused personal finance tracking. No bank connections, just clarity.</p>
-        </a>
-
-        <a href="https://spreadsheet.school" target="_blank" class="card">
-            <div class="card-top">
-                <div class="logo-box" style="background: var(--accent-blue);">#</div>
-                <span class="arrow">↗</span>
-            </div>
-            <h3 class="title">Spreadsheet School</h3>
-            <p class="desc">Tutorials and templates for mastering Excel and Google Sheets.</p>
-        </a>
+            <h3 class="title">More Tools In Development</h3>
+            <p class="desc">I am currently building tools for personal finance (YourBudget) and spreadsheet education. Check back soon.</p>
+        </div>
 
     </div>
 
