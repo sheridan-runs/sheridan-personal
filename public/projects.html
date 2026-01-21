@@ -9,12 +9,12 @@
     
     <style>
         :root {
-            --bg: #0f172a;       
-            --card-bg: #162032;  
+            --bg: #0f172a;        
+            --card-bg: #162032;   
             --text: #ffffff;
             --text-muted: #94a3b8;
             --border: rgba(255,255,255,0.08);
-            --accent-red: #dc2626;    
+            --accent-red: #dc2626;     
         }
 
         body {
@@ -53,15 +53,6 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
 
-        /* Coming Soon Style */
-        .card.disabled {
-            opacity: 0.6;
-            cursor: default;
-            background: rgba(22, 32, 50, 0.5);
-            border-style: dashed;
-        }
-        .card.disabled:hover { transform: none; box-shadow: none; border-color: var(--border); }
-
         .card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem; }
 
         .logo-box {
@@ -72,8 +63,7 @@
 
         .title { font-size: 1.25rem; font-weight: 700; margin: 0 0 0.5rem 0; }
         .desc { color: var(--text-muted); font-size: 0.95rem; margin: 0; line-height: 1.5; }
-        .badge { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; padding: 2px 8px; border-radius: 4px; background: rgba(255,255,255,0.1); color: var(--text-muted); }
-
+        
         .arrow { color: var(--text-muted); opacity: 0.5; }
         .card:hover .arrow { opacity: 1; color: white; }
 
@@ -113,14 +103,14 @@
             <p class="desc">Privacy-first cash flow modelling for startups. Visualise your burn rate and zero-cash date without connecting bank accounts.</p>
         </a>
 
-        <div class="card" style="opacity: 0.6; cursor: default;">
+        <a href="https://spreadsheet.school" target="_blank" class="card">
             <div class="card-top">
                 <div class="logo-box" style="background: #10b981;">#</div>
-                <span style="font-size: 10px; font-weight: bold; background: #334155; color: white; padding: 4px 8px; border-radius: 4px; letter-spacing: 1px;">COMING SOON</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
             </div>
             <h3 class="title">Spreadsheet School</h3>
-            <p class="desc">Mastering Google Sheets for business. No-nonsense tutorials, templates, and cheat sheets for founders.</p>
-        </div>
+            <p class="desc">Stop memorising syntax. Instant formula generators for VLOOKUP, IF, SUMIFS, and more. A free cheat sheet for founders.</p>
+        </a>
 
     </div>
 
