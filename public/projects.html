@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools & Projects | Sheridan Jamieson</title>
+    <meta name="description" content="Web tools and projects by Sheridan Jamieson, including Sprix.">
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    
+    <style>
+        :root {
+            --bg: #0f172a;        
+            --card-bg: #162032;   
+            --text: #ffffff;
+            --text-muted: #94a3b8;
+            --border: rgba(255,255,255,0.08);
+            --accent-red: #dc2626;     
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 4rem 1.5rem;
+            line-height: 1.6;
+        }
+
+        .container { max-width: 600px; margin: 0 auto; }
+
+        .header { text-align: center; margin-bottom: 3rem; }
+        
+        h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; letter-spacing: -0.02em; }
+        .subtitle { color: var(--text-muted); font-size: 1.1rem; }
+
+        .grid { display: grid; gap: 1.5rem; }
+
+        /* Active Card Style */
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s ease;
+            display: block;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(255,255,255,0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem; }
+
+        .logo-box {
+            width: 40px; height: 40px; border-radius: 8px;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 900; font-size: 1.2rem; color: white;
+        }
+
+        .title { font-size: 1.25rem; font-weight: 700; margin: 0 0 0.5rem 0; }
+        .desc { color: var(--text-muted); font-size: 0.95rem; margin: 0; line-height: 1.5; }
+        
+        .arrow { color: var(--text-muted); opacity: 0.5; }
+        .card:hover .arrow { opacity: 1; color: white; }
+
+        .back-nav { display: inline-block; margin-bottom: 2rem; color: var(--text-muted); text-decoration: none; font-weight: 500; font-size: 0.9rem; }
+        .back-nav:hover { color: white; }
+
+        .footer { text-align: center; margin-top: 4rem; color: var(--text-muted); font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="/" class="back-nav">← Back to Profile</a>
+
+    <div class="header">
+        <h1>Projects & Tools</h1>
+        <p class="subtitle">Utilities I've built to solve specific problems.</p>
+    </div>
+
+    <div class="grid">
+        
+        <a href="https://sprix.run" target="_blank" class="card">
+            <div class="card-top">
+                <div class="logo-box" style="background: #ef4444;">S</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </div>
+            <h3 class="title">Sprix</h3>
+            <p class="desc">Marathon pace band generator and race strategy calculator. Visualise splits and print wristbands.</p>
+        </a>
+
+        <a href="https://yourbudget.xyz" target="_blank" class="card">
+            <div class="card-top">
+                <div class="logo-box" style="background: #3b82f6;">$</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </div>
+            <h3 class="title">Runway.Visualiser</h3>
+            <p class="desc">Privacy-first cash flow modelling for startups. Visualise your burn rate and zero-cash date without connecting bank accounts.</p>
+        </a>
+
+        <a href="https://spreadsheet.school" target="_blank" class="card">
+            <div class="card-top">
+                <div class="logo-box" style="background: #10b981;">#</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </div>
+            <h3 class="title">Spreadsheet School</h3>
+            <p class="desc">Stop memorising syntax. Instant formula generators for VLOOKUP, IF, SUMIFS, and more. A free cheat sheet for founders.</p>
+        </a>
+
+    </div>
+
+    <div class="footer">
+        © 2026 Sheridan Jamieson
+    </div>
+</div>
+
+</body>
+</html>

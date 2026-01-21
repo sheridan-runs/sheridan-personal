@@ -5,3 +5,61 @@
 body {
   @apply bg-[#0f172a] text-slate-200 antialiased;
 }
+
+/* FADE IN ANIMATION */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-enter {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* --- MOBILE HEARTBEAT ANIMATIONS --- */
+
+/* 1. Nurture (Rose) */
+@keyframes pulseRose {
+  0%, 100% { border-color: rgb(51 65 85); box-shadow: 0 0 0 transparent; }
+  50% { border-color: rgba(244, 63, 94, 0.8); box-shadow: 0 0 15px rgba(244, 63, 94, 0.4); }
+}
+
+/* 2. Run Club (Neon) */
+@keyframes pulseNeon {
+  0%, 100% { border-color: rgb(39 39 42); box-shadow: 0 0 0 transparent; }
+  50% { border-color: rgba(212, 255, 0, 0.8); box-shadow: 0 0 15px rgba(212, 255, 0, 0.4); }
+}
+
+/* 3. One Percent (Red/Orange) */
+@keyframes pulseRed {
+  0%, 100% { border-color: rgb(51 65 85); box-shadow: 0 0 0 transparent; }
+  50% { border-color: rgba(239, 68, 68, 0.8); box-shadow: 0 0 15px rgba(239, 68, 68, 0.4); }
+}
+
+/* Apply Animations with Staggered Timing */
+.animate-nurture-mobile {
+  animation: pulseRose 3s infinite ease-in-out;
+}
+
+.animate-rwrc-mobile {
+  animation: pulseNeon 3s infinite ease-in-out;
+  animation-delay: 1s;
+}
+
+.animate-opc-mobile {
+  animation: pulseRed 3s infinite ease-in-out;
+  animation-delay: 2s; /* Creates a 1-2-3 rhythm */
+}
+
+/* Disable on Desktop */
+@media (min-width: 768px) {
+  .animate-nurture-mobile, .animate-rwrc-mobile, .animate-opc-mobile {
+    animation: none;
+  }
+}
