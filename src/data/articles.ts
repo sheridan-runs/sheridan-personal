@@ -4,7 +4,7 @@ export interface Article {
   seoTitle: string;
   description: string;
   publishDate: string;
-  category: "Engineering" | "Design" | "Strategy";
+  category: "Software" | "Design" | "Finance" | "Running & Training" | "Strategy";
   content: string; // HTML string
 }
 
