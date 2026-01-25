@@ -111,7 +111,8 @@ export const articles: Article[] = [
         You no longer have the excuse of "not being technical." If you can write clear instructions and think logically, you are a developer. The barrier to entry has never been lower. Start building (it might even be fun).
       </p>
     `
-  }
+  },
+  
 // --- ARTICLE 2: RUNNING JOURNEY (COMING SOON) ---
   {
     slug: "training-journey",
