@@ -13,7 +13,7 @@ export const articles: Article[] = [
     slug: "building-ai-apps-gemini-vercel",
     title: "How I build apps using Gemini, GitHub & Vercel",
     seoTitle: "The AI Stack: Building SaaS with Gemini & Vercel | Sheridan Jamieson",
-    description: "Stop coding from scratch. A guide to the 'AI Stack' workflow that helps solopreneurs ship production-ready apps in 24 hours using Gemini Pro.",
+    description: "Stop coding from scratch. A guide to the 'AI Stack' workflow that helps people ship production-ready apps in 24 hours using Gemini Pro.",
     publishDate: "2026-01-25",
     category: "Software",
     content: `
