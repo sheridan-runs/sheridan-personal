@@ -112,4 +112,34 @@ export const articles: Article[] = [
       </p>
     `
   }
+// --- ARTICLE 2: RUNNING JOURNEY (COMING SOON) ---
+  {
+    slug: "training-journey",
+    title: "From Jogger to Athlete: My Training Journey",
+    seoTitle: "Marathon Training Journey & Run With Run Club | Sheridan Jamieson",
+    description: "How purposeful training changed my running and why I built Run With Run Club to help others do the same.",
+    publishDate: "Coming Soon", // Displayed date
+    category: "Running & Training", 
+    content: `
+      <p class="lead text-xl text-slate-300 mb-8">I used to run hard all that time but never got faster and it never felt easier. But when I started training with purpose, everything changed.</p>
+
+      <div class="flex items-center gap-4 bg-amber-500/10 border border-amber-500/20 p-6 rounded-xl my-12">
+          <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-amber-500"></span>
+          </span>
+          <div>
+              <h3 class="text-amber-400 font-bold text-lg m-0 leading-none mb-1">Coming Soon</h3>
+              <p class="text-amber-200/70 m-0 text-sm">I am currently finalizing the write-up for this story. Check back shortly.</p>
+          </div>
+      </div>
+      
+      <div class="mt-12 text-center border-t border-slate-800 pt-8">
+        <p class="text-slate-400 text-sm mb-4">Can't wait? See the platform I built:</p>
+        <a href="https://runwith.club" target="_blank" class="inline-flex items-center gap-2 bg-[#D4FF00] text-black font-bold px-6 py-3 rounded-full hover:bg-white transition-all hover:scale-105">
+          Visit Run With Run Club ↗
+        </a>
+      </div>
+    `
+  }
 ];
