@@ -3,7 +3,8 @@ import { HelmetProvider } from "react-helmet-async";
 import Home from "./pages/Home";
 import Articles from "./pages/Articles";
 import ArticlePost from "./pages/ArticlePost";
-import ScrollToTop from "./components/ScrollToTop"; // Ensure this component exists, or remove this line if you don't have it
+import Projects from "./pages/Projects"; // <--- IMPORT THE NEW PAGE
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} /> {/* <--- ADDED NEW ROUTE */}
           <Route path="/articles" element={<Articles />} />
           <Route path="/articles/:slug" element={<ArticlePost />} />
           
