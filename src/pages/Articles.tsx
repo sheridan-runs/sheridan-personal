@@ -8,7 +8,7 @@ const Articles = () => {
     <>
       <Helmet>
         <title>Articles | Sheridan Jamieson</title>
-        <meta name="description" content="Thoughts on building software, running methodology, and financial strategy." />
+        <meta name="description" content="Thoughts on building software, business, running methodology, and financial strategy." />
       </Helmet>
 
       <div className="min-h-screen bg-[#0f172a] text-slate-300 p-6 md:p-12 selection:bg-rose-500 selection:text-white">
@@ -19,7 +19,7 @@ const Articles = () => {
               <ArrowLeft size={20} /> Back home
             </Link>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Articles</h1>
-            <p className="text-xl text-slate-400">Notes on engineering, strategy, and running.</p>
+            <p className="text-xl text-slate-400">Notes on business, software, strategy, and running.</p>
           </div>
 
           {/* Article Grid */}
