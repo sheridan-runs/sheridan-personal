@@ -15,7 +15,7 @@ export const articles: Article[] = [
     seoTitle: "The AI Stack: Building SaaS with Gemini & Vercel | Sheridan Jamieson",
     description: "Stop coding from scratch. A guide to the 'AI Stack' workflow that helps solopreneurs ship production-ready apps in 24 hours using Gemini Pro.",
     publishDate: "2026-01-25",
-    category: "Engineering",
+    category: "Software",
     content: `
       <p class="lead text-xl text-slate-300 mb-8">I had ideas—a running calculator, a formula fixer—but I didn't have 6 months to learn React from scratch. I needed a bridge between Logic and Syntax. Here is how I ship production-ready apps in 24 hours using the "AI Stack".</p>
 
