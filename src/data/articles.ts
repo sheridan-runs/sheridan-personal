@@ -64,7 +64,7 @@ export const articles: Article[] = [
 
       <div class="my-6 bg-slate-900/50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
         <span class="text-xs font-bold text-emerald-500 tracking-widest uppercase mb-2 block">The Prompt</span>
-        <p class="italic text-slate-300">"Here is my current App.tsx and App.css plus a screenshot of the UI. I need to add a toggle switch that changes the output from Kilometers to Miles. Please provide the FULL updated code for App.tsx."</p>
+        <p class="italic text-slate-300">"Here is a screenshot of the UI. I need to add a toggle switch that changes the output from Kilometers to Miles. Please provide the FULL updated code and instructions for where to copy/paste this to."</p>
       </div>
 
       <h3 class="text-xl font-semibold text-white mt-8 mb-4">Step 3: "Vibes Coding" (Iteration)</h3>
