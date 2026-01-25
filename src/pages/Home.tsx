@@ -152,13 +152,13 @@ function Home() {
           {/* --- NAVIGATION LINKS --- */}
           <div className="flex flex-col md:flex-row justify-center gap-4 pt-4">
               
-              <a 
-                href="/projects.html" 
-                className="inline-flex items-center justify-center gap-3 px-6 py-3 rounded-full bg-slate-800/50 border border-slate-700 text-slate-400 hover:text-white hover:bg-slate-800 hover:border-slate-500 transition-all group w-full md:w-auto"
-              >
-                 <Wrench className="w-4 h-4 group-hover:rotate-12 transition-transform" />
-                 <span className="font-medium">View Tools & Projects</span>
-              </a>
+              <Link 
+  to="/projects" 
+  className="inline-flex items-center justify-center gap-3 px-6 py-3 rounded-full bg-slate-800/50 border border-slate-700 text-slate-400 hover:text-white hover:bg-slate-800 hover:border-slate-500 transition-all group w-full md:w-auto"
+>
+   <Wrench className="w-4 h-4 group-hover:rotate-12 transition-transform" />
+   <span className="font-medium">View Tools & Projects</span>
+</Link>
 
               <Link 
                 to="/articles" 
