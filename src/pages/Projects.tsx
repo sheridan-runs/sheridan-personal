@@ -52,6 +52,7 @@ const Projects = () => {
                 <p className="text-slate-400 leading-relaxed">Privacy-first cash flow modelling for startups. Visualise your burn rate and zero-cash date without connecting bank accounts.</p>
               </div>
             </div>
+               </a>
 
             {/* Spreadsheet School */}
             <a href="https://spreadsheet.school" target="_blank" rel="noreferrer" className="block group">
