@@ -131,7 +131,7 @@ export const articles: Article[] = [
           </span>
           <div>
               <h3 class="text-amber-400 font-bold text-lg m-0 leading-none mb-1">Coming Soon</h3>
-              <p class="text-amber-200/70 m-0 text-sm">I am currently finalizing the write-up for this story. Check back shortly.</p>
+              <p class="text-amber-200/70 m-0 text-sm">I am currently finalising the write-up for this story. Check back shortly.</p>
           </div>
       </div>
       
