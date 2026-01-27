@@ -179,9 +179,9 @@ export const articles: Article[] = [
           <p class="text-slate-300">The breakthrough: <strong>3:22:42</strong>. A well-planned peak week, fine-tuned taper, and strict fueling strategy.</p>
         </div>
 
-        <div class="bg-slate-900/80 p-5 rounded-xl border-l-4 border-emerald-500">
+        <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
           <div class="flex items-center gap-3 mb-2">
-            <span class="text-2xl">🏆</span>
+            <span class="text-2xl">⚡️</span>
             <strong class="text-emerald-400 text-lg">May 2024: Palmy Return</strong>
           </div>
           <p class="text-white font-medium">Ran a <strong>3:18:39</strong>. That is 1st in my age grade and 51 minutes faster than my time on the same course two years prior.</p>
@@ -202,7 +202,7 @@ export const articles: Article[] = [
           Run With Run Club provides the structure, the plan, and the community to take you from "jogger" to "athlete," just like I did.
         </p>
         <a href="https://runwith.club" target="_blank" class="inline-block bg-black text-white font-bold px-8 py-4 rounded-full hover:bg-slate-800 transition-colors">
-          Start your journey at Run With ↗
+          Start your journey at Run With Run Club ↗
         </a>
       </div>
 
