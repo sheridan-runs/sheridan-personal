@@ -68,7 +68,7 @@ export const articles: Article[] = [
         <p class="italic text-slate-300">"Here is a screenshot of the UI. I need to add a toggle switch that changes the output from Kilometers to Miles. Please provide the FULL updated code and instructions for where to copy/paste this to."</p>
       </div>
 
-      <h3 class="text-xl font-semibold text-white mt-8 mb-4">Step 3: "Vibes Coding" (Iteration)</h3>
+      <h3 class="text-xl font-semibold text-white mt-8 mb-4">Step 3: "Vibe Coding" (Iteration)</h3>
       <p class="mb-4">Often, the first result works logic-wise but looks broken. I don't try to debug the styling myself. I take a screenshot of the ugly button, paste the image back into Gemini, and say:</p>
 
       <div class="my-6 bg-slate-900/50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
