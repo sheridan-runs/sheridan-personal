@@ -1,5 +1,5 @@
 // --- DRAFT: FINANCE PILLAR ---
-{
+export const financeDraft = {
   slug: "profit-is-theory-cash-is-reality",
   title: "Profit is Theory, Cash is Reality",
   seoTitle: "Cash Flow Forecasting vs P&L: A Guide for Business Owners | Sheridan Jamieson",
@@ -103,4 +103,4 @@
       </a>
     </div>
     `
-}
+};
