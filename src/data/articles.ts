@@ -181,7 +181,7 @@ export const articles: Article[] = [
 
         <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
           <div class="flex items-center gap-3 mb-2">
-            <span class="text-2xl">⚡️</span>
+            <span class="text-2xl">🏆</span>
             <strong class="text-emerald-400 text-lg">May 2024: Palmy Return</strong>
           </div>
           <p class="text-white font-medium">Ran a <strong>3:18:39</strong>. 1st in my age grade and 51 minutes faster than my time on the same course two years prior.</p>
