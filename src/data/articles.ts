@@ -134,7 +134,7 @@ export const articles: Article[] = [
         In 2019, while traveling across Europe, I made the impulsive decision to run the Budapest Marathon. At that point, I had never even run a half marathon.
       </p>
       <p class="mb-6">
-        My "training" was practically non-existent by modern standards. Every week consisted of five runs, all run at the exact same medium-hard intensity. There was no structure, no variety—just an attempt to run slightly further than the week before. I didn’t use gels. I didn't understand fueling. I bonked pretty much every single run.
+        My "training" was practically non-existent by modern standards. Every week consisted of five runs, all run at the exact same medium-hard intensity. There was no structure, no variety - just an attempt to run slightly further than the week before. I didn’t use gels. I didn't understand fueling. I bonked pretty much every single run.
       </p>
       <p class="mb-6">
         On marathon day, I ran to 30km (which was a miracle in itself) and pretty much walked the rest of the way. I crossed the finish line broken. A few months later, I picked up an injury and promptly fell out of love with running.
@@ -142,10 +142,10 @@ export const articles: Article[] = [
 
       <h2 class="text-2xl font-bold text-white mb-6">The Turning Point (2021)</h2>
       <p class="mb-6">
-        Fast forward to 2021. I saw a picture of myself and, frankly, I wasn’t happy with what I was seeing. I had let my exercise habits slip—we had just welcomed our first baby, so I cut myself some slack—but I realized I needed to take action.
+        Fast forward to 2021. I saw a picture of myself and, frankly, I wasn’t happy with what I was seeing. I had let my exercise habits slip - we had just welcomed our first baby, so I cut myself some slack - but I realized I needed to take action.
       </p>
       <p class="mb-6">
-        Enter <strong>Coach Bennett</strong> and the Nike Run Club app. The guided runs voiced by Coach Bennett introduced me to the concept of <em>running properly</em>. For the first time, I learned the difference between easy runs, tempo runs, intervals, and long runs.
+        Enter <strong>Coach Bennett and the Nike Run Club app</strong>. The guided runs voiced by Coach Bennett introduced me to the concept of <em>running properly</em>. For the first time, I learned the difference between easy runs, tempo runs, intervals, and long runs.
       </p>
       <p class="mb-6">
         My fitness platform was being rebuilt from the ground up, and for possibly the first time in my life, I was actually enjoying running.
@@ -176,7 +176,7 @@ export const articles: Article[] = [
             <span class="text-2xl">⚡️</span>
             <strong class="text-emerald-400 text-lg">Oct 2023: Auckland Marathon</strong>
           </div>
-          <p class="text-slate-300">The breakthrough: <strong>3:22:42</strong>. A well-planned peak week, fine-tuned taper, and strict fueling strategy.</p>
+          <p class="text-slate-300">The breakthrough: <strong>3:22:42</strong>. A well-planned peak week, fine-tuned taper, and refined fueling strategy.</p>
         </div>
 
         <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
@@ -184,7 +184,7 @@ export const articles: Article[] = [
             <span class="text-2xl">⚡️</span>
             <strong class="text-emerald-400 text-lg">May 2024: Palmy Return</strong>
           </div>
-          <p class="text-white font-medium">Ran a <strong>3:18:39</strong>. That is 1st in my age grade and 51 minutes faster than my time on the same course two years prior.</p>
+          <p class="text-white font-medium">Ran a <strong>3:18:39</strong>. 1st in my age grade and 51 minutes faster than my time on the same course two years prior.</p>
         </div>
       </div>
 
@@ -193,7 +193,7 @@ export const articles: Article[] = [
         Reflecting on that first Budapest Marathon, the ridiculous thing is that there was an aid station at 40km filled with flat Coke and lollies. I remember taking on carbs there and feeling instantly better... yet it took me another four years to truly learn the lesson of fueling!
       </p>
       <p class="mb-6">
-        I realized that <strong>most runners are stuck in that 2019 phase.</strong> They are running hard, guessing their fueling, and wondering why they aren't getting faster. I wanted to bridge that gap. I wanted to take the lessons I learned—structure, fueling, and community—and make them accessible to everyone.
+        I realized that <strong>most runners are stuck in that 2019 phase.</strong> They are running hard, guessing their fueling, and wondering why they aren't getting faster. I wanted to bridge that gap. I wanted to take the lessons I learned - structure, fueling, and community - and make them accessible to everyone.
       </p>
 
       <div class="bg-[#D4FF00] p-8 rounded-2xl text-center my-12 transform hover:scale-[1.01] transition-transform duration-300 shadow-xl shadow-emerald-900/20">
