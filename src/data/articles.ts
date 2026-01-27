@@ -35,7 +35,7 @@ export const articles: Article[] = [
       <div class="grid gap-4 mb-10 not-prose">
         <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
           <strong class="text-emerald-400 block text-lg mb-2">1. The Brain: Gemini Pro</strong>
-          <p class="text-slate-400 text-sm">It has a massive context window, meaning I can paste my entire codebase into it so it "knows" my project.</p>
+          <p class="text-slate-400 text-sm">It digests the entire codebase to understand the architecture, then translates my plain-language instructions into production-ready code.</p>
         </div>
         <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
           <strong class="text-emerald-400 block text-lg mb-2">2. The Vault: GitHub</strong>
