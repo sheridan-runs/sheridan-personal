@@ -9,12 +9,13 @@ export interface Article {
 }
 
 export const articles: Article[] = [
+  // --- ARTICLE 1: AI STACK (Backdated to create cadence) ---
   {
     slug: "building-ai-apps-gemini-vercel",
     title: "How I build apps using Gemini, GitHub & Vercel",
     seoTitle: "The AI Stack: Building SaaS with Gemini & Vercel | Sheridan Jamieson",
     description: "Stop coding from scratch. A guide to the 'AI Stack' workflow that helps people ship production-ready apps in 24 hours using Gemini Pro.",
-    publishDate: "2026-01-25",
+    publishDate: "2026-01-12", // Changed from Jan 25 to create a 2-week gap
     category: "Software",
     content: `
       <p class="text-xl text-slate-300 leading-relaxed mb-8">
@@ -112,35 +113,103 @@ export const articles: Article[] = [
       </p>
     `
   },
-  
-// --- ARTICLE 2: RUNNING JOURNEY (COMING SOON) ---
-  {
-    slug: "training-journey",
-    title: "From Jogger to Athlete: My Training Journey",
-    seoTitle: "Marathon Training Journey & Run With Run Club | Sheridan Jamieson",
-    description: "How purposeful training changed my running and why I built Run With Run Club to help others do the same.",
-    publishDate: "Coming Soon", // Displayed date
-    category: "Running & Training", 
-    content: `
-      <p class="lead text-xl text-slate-300 mb-8">I used to run hard all that time but never got faster and it never felt easier. But when I started training with purpose, everything changed.</p>
 
-      <div class="flex items-center gap-4 bg-amber-500/10 border border-amber-500/20 p-6 rounded-xl my-12">
-          <span class="relative flex h-3 w-3">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-3 w-3 bg-amber-500"></span>
-          </span>
-          <div>
-              <h3 class="text-amber-400 font-bold text-lg m-0 leading-none mb-1">Coming Soon</h3>
-              <p class="text-amber-200/70 m-0 text-sm">I am currently finalising the write-up for this story. Check back shortly.</p>
+  // --- ARTICLE 2: RUNNING JOURNEY ---
+  {
+    slug: "from-jogger-to-athlete-training-journey",
+    title: "From Jogger to Athlete: My Training Journey",
+    seoTitle: "How Purposeful Training Changed My Running | Sheridan Jamieson",
+    description: "I used to run hard every day and never got faster. Here is how switching to purposeful training shaved 51 minutes off my marathon time.",
+    publishDate: "2026-01-27",
+    category: "Running & Training",
+    content: `
+      <p class="text-xl text-slate-300 leading-relaxed mb-8">
+        I used to run hard all the time. I thought that was the only way to get faster. The reality? I never got faster, and it never felt easier. But when I stopped "just running" and started <strong>training with purpose</strong>, everything changed.
+      </p>
+
+      <hr class="border-slate-800 my-8" />
+
+      <h2 class="text-2xl font-bold text-white mb-6">The "Grey Zone" Years (2019)</h2>
+      <p class="mb-6">
+        In 2019, while traveling across Europe, I made the impulsive decision to run the Budapest Marathon. At that point, I had never even run a half marathon.
+      </p>
+      <p class="mb-6">
+        My "training" was practically non-existent by modern standards. Every week consisted of five runs, all run at the exact same medium-hard intensity. There was no structure, no variety—just an attempt to run slightly further than the week before. I didn’t use gels. I didn't understand fueling. I bonked pretty much every single run.
+      </p>
+      <p class="mb-6">
+        On marathon day, I ran to 30km (which was a miracle in itself) and pretty much walked the rest of the way. I crossed the finish line broken. A few months later, I picked up an injury and promptly fell out of love with running.
+      </p>
+
+      <h2 class="text-2xl font-bold text-white mb-6">The Turning Point (2021)</h2>
+      <p class="mb-6">
+        Fast forward to 2021. I saw a picture of myself and, frankly, I wasn’t happy with what I was seeing. I had let my exercise habits slip—we had just welcomed our first baby, so I cut myself some slack—but I realized I needed to take action.
+      </p>
+      <p class="mb-6">
+        Enter <strong>Coach Bennett</strong> and the Nike Run Club app. The guided runs voiced by Coach Bennett introduced me to the concept of <em>running properly</em>. For the first time, I learned the difference between easy runs, tempo runs, intervals, and long runs.
+      </p>
+      <p class="mb-6">
+        My fitness platform was being rebuilt from the ground up, and for possibly the first time in my life, I was actually enjoying running.
+      </p>
+
+      <h2 class="text-2xl font-bold text-white mb-6">The Progression</h2>
+      <p class="mb-6">Once I embraced purposeful training, the results started compounding.</p>
+
+      <div class="grid gap-4 mb-10 not-prose">
+        <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-2xl">📅</span>
+            <strong class="text-emerald-400 text-lg">Early 2022: Palmy Marathon</strong>
           </div>
+          <p class="text-slate-300">Clocked a <strong>4:09</strong>. Not the sub-4 I wanted, but a ~25-minute PB built off consistent structure.</p>
+        </div>
+
+        <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-2xl">📅</span>
+            <strong class="text-emerald-400 text-lg">Late 2022: Rotorua Marathon</strong>
+          </div>
+          <p class="text-slate-300">Crossed in <strong>3:47</strong>. Ticking the sub-4 box was a glorious feeling. The result of chaining training blocks together.</p>
+        </div>
+
+        <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-2xl">⚡️</span>
+            <strong class="text-emerald-400 text-lg">Oct 2023: Auckland Marathon</strong>
+          </div>
+          <p class="text-slate-300">The breakthrough: <strong>3:22:42</strong>. A well-planned peak week, fine-tuned taper, and strict fueling strategy.</p>
+        </div>
+
+        <div class="bg-slate-900/80 p-5 rounded-xl border-l-4 border-emerald-500">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="text-2xl">🏆</span>
+            <strong class="text-emerald-400 text-lg">May 2024: Palmy Return</strong>
+          </div>
+          <p class="text-white font-medium">Ran a <strong>3:18:39</strong>. That is 1st in my age grade and 51 minutes faster than my time on the same course two years prior.</p>
+        </div>
       </div>
-      
-      <div class="mt-12 text-center border-t border-slate-800 pt-8">
-        <p class="text-slate-400 text-sm mb-4">Can't wait? See the platform I built:</p>
-        <a href="https://runwith.club" target="_blank" class="inline-flex items-center gap-2 bg-[#D4FF00] text-black font-bold px-6 py-3 rounded-full hover:bg-white transition-all hover:scale-105">
-          Visit Run With Run Club ↗
+
+      <h2 class="text-2xl font-bold text-white mb-6">The Lesson (And Why I Built 'Run With')</h2>
+      <p class="mb-6">
+        Reflecting on that first Budapest Marathon, the ridiculous thing is that there was an aid station at 40km filled with flat Coke and lollies. I remember taking on carbs there and feeling instantly better... yet it took me another four years to truly learn the lesson of fueling!
+      </p>
+      <p class="mb-6">
+        I realized that <strong>most runners are stuck in that 2019 phase.</strong> They are running hard, guessing their fueling, and wondering why they aren't getting faster. I wanted to bridge that gap. I wanted to take the lessons I learned—structure, fueling, and community—and make them accessible to everyone.
+      </p>
+
+      <div class="bg-[#D4FF00] p-8 rounded-2xl text-center my-12 transform hover:scale-[1.01] transition-transform duration-300 shadow-xl shadow-emerald-900/20">
+        <h3 class="text-black font-bold text-2xl mb-4">Ready to stop guessing?</h3>
+        <p class="text-black/80 text-lg mb-6 max-w-lg mx-auto">
+          Run With Run Club provides the structure, the plan, and the community to take you from "jogger" to "athlete," just like I did.
+        </p>
+        <a href="https://runwith.club" target="_blank" class="inline-block bg-black text-white font-bold px-8 py-4 rounded-full hover:bg-slate-800 transition-colors">
+          Start your journey at Run With ↗
         </a>
       </div>
+
+      <h2 class="text-2xl font-bold text-white mb-6">What's Next?</h2>
+      <p class="text-lg text-slate-300 mb-8">
+        The most exciting part is that I know I’m still in the first half of this journey. I’ve just signed up for my next marathon, and the goalposts are moving again. Watch this space.
+      </p>
     `
   }
 ];
