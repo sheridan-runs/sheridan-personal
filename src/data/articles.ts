@@ -410,7 +410,7 @@ export const articles: Article[] = [
           <h4 class="text-2xl font-bold text-white mb-3">See the system in action.</h4>
           <p class="text-slate-400 mb-6 max-w-lg">Check out the live site to see how the visual language works in practice.</p>
           <a href="https://runwith.club" target="_blank" class="inline-flex items-center justify-center px-6 py-3 font-bold text-[#0F172A] transition-all duration-200 bg-[#D4FF00] rounded-lg hover:bg-white hover:scale-105">
-             Visit RunWith.Club ↗
+             Visit runwith.club ↗
           </a>
         </div>
       </div>
