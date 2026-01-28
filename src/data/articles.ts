@@ -320,12 +320,12 @@ export const articles: Article[] = [
     `
   },
 
-  // --- DRAFT: BRAND CASE STUDY (Now inside the array) ---
+  // --- DRAFT: BRAND CASE STUDY ---
   {
     slug: "case-study-run-with-run-club-brand",
-    title: "Case Study: Designing a 'Digital-First' Running Brand",
+    title: "Case Study: Designing a 'Utility-First' Running Brand",
     seoTitle: "Building the Run With Run Club Brand Identity | Sheridan Jamieson",
-    description: "How we built a visual identity that bridges the gap between 'jogging' and 'athletics'—treating fitness coaching like a software product.",
+    description: "How we built a visual identity that bridges the gap between 'jogging' and 'athletics'—treating fitness coaching like a precision tool.",
     publishDate: "2026-02-05",
     category: "Design",
     content: `
@@ -348,7 +348,7 @@ export const articles: Article[] = [
       </p>
       
       <div class="my-8 rounded-xl overflow-hidden border border-slate-700 shadow-2xl">
-        <img src="/Hero.webp" alt="Run With Run Club Website Header" class="w-full h-auto" />
+        <img src="/Hero.png" alt="Run With Run Club Website Header" class="w-full h-auto" />
         <div class="bg-slate-900/80 p-4 text-sm text-slate-400 italic">
           The aesthetic is "Digital Utility." Clean lines, high contrast, zero fluff.
         </div>
@@ -401,7 +401,7 @@ export const articles: Article[] = [
 
       <h2 class="text-2xl font-bold text-white mb-6">Conclusion</h2>
       <p class="text-lg text-slate-300 mb-10">
-        By treating the coaching service as a brand rather than a hobby, we attracted exactly the right kind of client: people who want results without the rah-rah nonsense. The design system acts as a filter: if you want fluff, go elsewhere. If you want a plan that works, you're in the club.
+        By treating the coaching service as a utility rather than a lifestyle brand, we attracted exactly the right kind of client: people who are busy, ambitious, and looking for clarity. The design system isn't about being elite; it's about being effective. It signals that we take your training as seriously as you take the rest of your life.
       </p>
       
       <div class="bg-[#0F172A] border border-slate-700 rounded-2xl p-8 relative overflow-hidden group">
@@ -410,7 +410,7 @@ export const articles: Article[] = [
           <h4 class="text-2xl font-bold text-white mb-3">See the system in action.</h4>
           <p class="text-slate-400 mb-6 max-w-lg">Check out the live site to see how the visual language works in practice.</p>
           <a href="https://runwith.club" target="_blank" class="inline-flex items-center justify-center px-6 py-3 font-bold text-[#0F172A] transition-all duration-200 bg-[#D4FF00] rounded-lg hover:bg-white hover:scale-105">
-             Visit runwith.club ↗
+             Visit RunWith.Club ↗
           </a>
         </div>
       </div>
