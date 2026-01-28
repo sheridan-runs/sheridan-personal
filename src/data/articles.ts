@@ -348,7 +348,7 @@ export const articles: Article[] = [
       </p>
       
       <div class="my-8 rounded-xl overflow-hidden border border-slate-700 shadow-2xl">
-        <img src="/Hero.png" alt="Run With Run Club Website Header" class="w-full h-auto" />
+        <img src="/Hero.webp" alt="Run With Run Club Website Header" class="w-full h-auto" />
         <div class="bg-slate-900/80 p-4 text-sm text-slate-400 italic">
           The aesthetic is "Digital Utility." Clean lines, high contrast, zero fluff.
         </div>
