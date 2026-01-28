@@ -377,7 +377,7 @@ export const articles: Article[] = [
         I paired <strong>Space Grotesk</strong> (Headers) with <strong>Inter</strong> (Body).
       </p>
       <p class="mb-6">
-        Space Grotesk brings the "streetwear" feel—it’s bold, quirky, and feels almost brutalist. It implies that the training plans are built with precision. Inter keeps the communication clear and readable, ensuring that whether you're reading on a phone or a laptop, the message lands.
+        Space Grotesk brings the "streetwear" feel - it’s bold, quirky, and feels almost brutalist. It implies that the training plans are built with precision. Inter keeps the communication clear and readable, ensuring that whether you're reading on a phone or a laptop, the message lands.
       </p>
 
       <div class="my-8 rounded-xl overflow-hidden border border-slate-700 shadow-2xl">
