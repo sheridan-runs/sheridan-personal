@@ -330,21 +330,21 @@ export const articles: Article[] = [
     category: "Design",
     content: `
       <p class="text-xl text-slate-300 leading-relaxed mb-8">
-        The running industry is generally split into two visual camps: the "traditional club" aesthetic (singlets, clip art, dated) or the "elite" aesthetic (Olympians, unobtainable, perfect). When building <strong>Run With Run Club</strong>, we identified a gap for a third option.
+        The running industry is generally split into two visual camps: the "traditional club" aesthetic (singlets, clip art, dated) or the "elite" aesthetic (Olympians, unobtainable, perfect). When building <strong>Run With Run Club</strong>, I identified a gap for a third option.
       </p>
 
       <hr class="border-slate-800 my-8" />
 
       <p class="mb-6">
-        Our target audience isn't trying to make the Olympics, but they aren't just "jogging" either. They are shift workers, tradies, and busy parents who train hard but have real lives. They didn't need a cheerleader. They needed a system that works when life gets messy.
+        The target audience isn't trying to make the Olympics, but they aren't just "jogging" either. They are shift workers, tradies, and busy parents who train hard but have real lives. They didn't need a cheerleader. They needed a system that works when life gets messy.
       </p>
       <p class="mb-8">
-        We set out to build a brand that sat at the intersection of <strong>Strava and Streetwear</strong>. Data-driven, bold, but deeply human.
+        I set out to build a brand that sat at the intersection of <strong>Strava and Streetwear</strong>. Data-driven, bold, but deeply human.
       </p>
 
       <h2 class="text-2xl font-bold text-white mb-6">1. The Strategy: "Structure that Bends"</h2>
       <p class="mb-6">
-        The core value proposition of the club is <strong>Adaptive Structure</strong>. We use training theory to build the plan, but we use reality to adjust it. Therefore, the brand identity had to look engineered, but not rigid.
+        The core value proposition of the club is <strong>Adaptive Structure</strong>. I use training theory to build the plan, but we use reality to adjust it. Therefore, the brand identity had to look engineered, but not rigid.
       </p>
       
       <div class="my-8 rounded-xl overflow-hidden border border-slate-700 shadow-2xl">
@@ -361,7 +361,7 @@ export const articles: Article[] = [
 
       <h2 class="text-2xl font-bold text-white mb-6">2. Visual Identity: High-Vis Utility</h2>
       <p class="mb-6">
-        We avoided the standard "blue and white" club colors. Instead, we looked to technical apparel and night-running culture. We used a deep <strong>Midnight Navy</strong> base to ground the brand, making it feel substantial and modern.
+        I avoided the standard "blue and white" club colors. Instead, I looked to technical apparel and night-running culture. I used a deep <strong>Midnight Navy</strong> base to ground the brand, making it feel substantial and modern.
       </p>
 
       <div class="my-8 rounded-xl overflow-hidden border border-slate-700 shadow-2xl">
@@ -374,10 +374,10 @@ export const articles: Article[] = [
 
       <h2 class="text-2xl font-bold text-white mb-6">3. Typography: Industrial Function</h2>
       <p class="mb-6">
-        We paired <strong>Space Grotesk</strong> (Headers) with <strong>Inter</strong> (Body).
+        I paired <strong>Space Grotesk</strong> (Headers) with <strong>Inter</strong> (Body).
       </p>
       <p class="mb-6">
-        Space Grotesk brings the "streetwear" feel—it’s bold, quirky, and feels almost brutalist. It implies that the training plans are built with precision. Inter keeps the communication clear and readable, ensuring that whether you're reading a plan on a phone or a watch, the message lands.
+        Space Grotesk brings the "streetwear" feel—it’s bold, quirky, and feels almost brutalist. It implies that the training plans are built with precision. Inter keeps the communication clear and readable, ensuring that whether you're reading on a phone or a laptop, the message lands.
       </p>
 
       <div class="my-8 rounded-xl overflow-hidden border border-slate-700 shadow-2xl">
@@ -386,7 +386,7 @@ export const articles: Article[] = [
 
       <h2 class="text-2xl font-bold text-white mb-6">4. Service Design: Real Life Rules</h2>
       <p class="mb-6">
-        A brand is more than a logo; it's how you communicate. Our documents show that we are "Life-First."
+        A brand is more than a logo; it's how you communicate. The documents show that we are "Life-First."
       </p>
       
       <div class="grid md:grid-cols-2 gap-6 my-8">
@@ -395,13 +395,13 @@ export const articles: Article[] = [
         </div>
         <div class="flex flex-col justify-center bg-slate-800/30 p-6 rounded-xl border border-slate-700">
            <p class="text-slate-300 italic mb-4">"We explicitly include the 'Niggle Rule': If you feel sharp pain... stop. It's better to miss one run than to miss three months."</p>
-           <p class="text-sm text-slate-400">This sets the tone immediately: We are partners in longevity. We respect the fact that you have a job to go to tomorrow.</p>
+           <p class="text-sm text-slate-400">This sets the tone immediately: We are partners in longevity. I respect the fact that you have a job to go to tomorrow.</p>
         </div>
       </div>
 
       <h2 class="text-2xl font-bold text-white mb-6">Conclusion</h2>
       <p class="text-lg text-slate-300 mb-10">
-        By treating the coaching service as a support system rather than just a spreadsheet, we attracted exactly the right kind of client: people who want results, but have real responsibilities. The design signals that we understand the data, but we also respect your schedule.
+        By treating the coaching service as a support system rather than just a spreadsheet, I attracted exactly the right kind of client: people who want results, but have real responsibilities. The design signals that I understand the data, but I also respect your schedule.
       </p>
       
       <div class="bg-[#0F172A] border border-slate-700 rounded-2xl p-8 relative overflow-hidden group">
@@ -410,7 +410,7 @@ export const articles: Article[] = [
           <h4 class="text-2xl font-bold text-white mb-3">See the system in action.</h4>
           <p class="text-slate-400 mb-6 max-w-lg">Check out the live site to see how the visual language works in practice.</p>
           <a href="https://runwith.club" target="_blank" class="inline-flex items-center justify-center px-6 py-3 font-bold text-[#0F172A] transition-all duration-200 bg-[#D4FF00] rounded-lg hover:bg-white hover:scale-105">
-             Visit RunWith.Club ↗
+             Visit runwith.club ↗
           </a>
         </div>
       </div>
