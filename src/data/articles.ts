@@ -348,7 +348,7 @@ export const articles: Article[] = [
       </p>
       
       <div class="my-8 rounded-xl overflow-hidden border border-slate-700 shadow-2xl">
-        <img src="/images/Hero.png" alt="Run With Run Club Website Header" class="w-full h-auto" />
+        <img src="/public/Hero.png" alt="Run With Run Club Website Header" class="w-full h-auto" />
         <div class="bg-slate-900/80 p-4 text-sm text-slate-400 italic">
           The aesthetic is "Digital Utility." Clean lines, high contrast, zero fluff.
         </div>
@@ -365,7 +365,7 @@ export const articles: Article[] = [
       </p>
 
       <div class="my-8 rounded-xl overflow-hidden border border-slate-700 shadow-2xl">
-        <img src="/images/Colours.png" alt="Color Palette: Neon Volt and Midnight Navy" class="w-full h-auto" />
+        <img src="/public/Colours.png" alt="Color Palette: Neon Volt and Midnight Navy" class="w-full h-auto" />
       </div>
 
       <p class="mb-6">
@@ -381,7 +381,7 @@ export const articles: Article[] = [
       </p>
 
       <div class="my-8 rounded-xl overflow-hidden border border-slate-700 shadow-2xl">
-        <img src="/images/Typography.png" alt="Typography: Space Grotesk and Inter" class="w-full h-auto" />
+        <img src="/public/Typography.png" alt="Typography: Space Grotesk and Inter" class="w-full h-auto" />
       </div>
 
       <h2 class="text-2xl font-bold text-white mb-6">4. Service Design: Real Life Rules</h2>
@@ -391,7 +391,7 @@ export const articles: Article[] = [
       
       <div class="grid md:grid-cols-2 gap-6 my-8">
         <div class="rounded-xl overflow-hidden border border-slate-700 shadow-xl">
-           <img src="/images/Onboard.png" alt="Onboarding Guide Header" class="w-full h-auto" />
+           <img src="/public/Onboard.png" alt="Onboarding Guide Header" class="w-full h-auto" />
         </div>
         <div class="flex flex-col justify-center bg-slate-800/30 p-6 rounded-xl border border-slate-700">
            <p class="text-slate-300 italic mb-4">"We explicitly include the 'Niggle Rule': If you feel sharp pain... stop. It's better to miss one run than to miss three months."</p>
