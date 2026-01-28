@@ -348,7 +348,7 @@ export const articles: Article[] = [
       </p>
       
       <div class="my-8 rounded-xl overflow-hidden border border-slate-700 shadow-2xl">
-        <img src="/public/Hero.png" alt="Run With Run Club Website Header" class="w-full h-auto" />
+        <img src="/Hero.png" alt="Run With Run Club Website Header" class="w-full h-auto" />
         <div class="bg-slate-900/80 p-4 text-sm text-slate-400 italic">
           The aesthetic is "Digital Utility." Clean lines, high contrast, zero fluff.
         </div>
@@ -365,7 +365,7 @@ export const articles: Article[] = [
       </p>
 
       <div class="my-8 rounded-xl overflow-hidden border border-slate-700 shadow-2xl">
-        <img src="/public/Colours.png" alt="Color Palette: Neon Volt and Midnight Navy" class="w-full h-auto" />
+        <img src="/Colours.png" alt="Color Palette: Neon Volt and Midnight Navy" class="w-full h-auto" />
       </div>
 
       <p class="mb-6">
@@ -381,7 +381,7 @@ export const articles: Article[] = [
       </p>
 
       <div class="my-8 rounded-xl overflow-hidden border border-slate-700 shadow-2xl">
-        <img src="/public/Typography.png" alt="Typography: Space Grotesk and Inter" class="w-full h-auto" />
+        <img src="/Typography.png" alt="Typography: Space Grotesk and Inter" class="w-full h-auto" />
       </div>
 
       <h2 class="text-2xl font-bold text-white mb-6">4. Service Design: Real Life Rules</h2>
@@ -391,7 +391,7 @@ export const articles: Article[] = [
       
       <div class="grid md:grid-cols-2 gap-6 my-8">
         <div class="rounded-xl overflow-hidden border border-slate-700 shadow-xl">
-           <img src="/public/Onboard.png" alt="Onboarding Guide Header" class="w-full h-auto" />
+           <img src="/Onboard.png" alt="Onboarding Guide Header" class="w-full h-auto" />
         </div>
         <div class="flex flex-col justify-center bg-slate-800/30 p-6 rounded-xl border border-slate-700">
            <p class="text-slate-300 italic mb-4">"We explicitly include the 'Niggle Rule': If you feel sharp pain... stop. It's better to miss one run than to miss three months."</p>
@@ -400,14 +400,19 @@ export const articles: Article[] = [
       </div>
 
       <h2 class="text-2xl font-bold text-white mb-6">Conclusion</h2>
-      <p class="text-lg text-slate-300 mb-8">
+      <p class="text-lg text-slate-300 mb-10">
         By treating the coaching service as a brand rather than a hobby, we attracted exactly the right kind of client: people who want results without the rah-rah nonsense. The design system acts as a filter: if you want fluff, go elsewhere. If you want a plan that works, you're in the club.
       </p>
       
-      <div class="bg-slate-800 p-6 rounded-xl border-l-4 border-[#D4FF00]">
-        <h4 class="text-white font-bold mb-2">See the system in action</h4>
-        <p class="text-slate-400 mb-4">Check out the live site to see how the visual language works in practice.</p>
-        <a href="https://runwith.club" target="_blank" class="text-[#D4FF00] hover:text-white font-medium transition-colors">Visit RunWith.Club &rarr;</a>
+      <div class="bg-[#0F172A] border border-slate-700 rounded-2xl p-8 relative overflow-hidden group">
+        <div class="absolute top-0 left-0 w-1.5 h-full bg-[#D4FF00]"></div>
+        <div class="relative z-10">
+          <h4 class="text-2xl font-bold text-white mb-3">See the system in action.</h4>
+          <p class="text-slate-400 mb-6 max-w-lg">Check out the live site to see how the visual language works in practice.</p>
+          <a href="https://runwith.club" target="_blank" class="inline-flex items-center justify-center px-6 py-3 font-bold text-[#0F172A] transition-all duration-200 bg-[#D4FF00] rounded-lg hover:bg-white hover:scale-105">
+             Visit RunWith.Club ↗
+          </a>
+        </div>
       </div>
     `
   }
