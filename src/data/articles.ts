@@ -325,7 +325,7 @@ export const articles: Article[] = [
     slug: "case-study-run-with-run-club-brand",
     title: "Case Study: Designing an 'Adaptive' Running Brand",
     seoTitle: "Building the Run With Run Club Brand Identity | Sheridan Jamieson",
-    description: "How we built a visual identity that bridges the gap between 'jogging' and 'athletics'—treating fitness coaching as an adaptive system for real life.",
+    description: "How I built a visual identity that bridges the gap between 'jogging' and 'athletics' - treating fitness coaching as an adaptive system for real life.",
     publishDate: "2026-02-05",
     category: "Design",
     content: `
