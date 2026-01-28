@@ -323,9 +323,9 @@ export const articles: Article[] = [
   // --- DRAFT: BRAND CASE STUDY ---
   {
     slug: "case-study-run-with-run-club-brand",
-    title: "Case Study: Designing a 'Utility-First' Running Brand",
+    title: "Case Study: Designing an 'Adaptive' Running Brand",
     seoTitle: "Building the Run With Run Club Brand Identity | Sheridan Jamieson",
-    description: "How we built a visual identity that bridges the gap between 'jogging' and 'athletics'—treating fitness coaching like a precision tool.",
+    description: "How we built a visual identity that bridges the gap between 'jogging' and 'athletics'—treating fitness coaching as an adaptive system for real life.",
     publishDate: "2026-02-05",
     category: "Design",
     content: `
@@ -336,21 +336,21 @@ export const articles: Article[] = [
       <hr class="border-slate-800 my-8" />
 
       <p class="mb-6">
-        Our target audience isn't trying to make the Olympics, but they aren't just "jogging" either. They are shift workers, tradies, and busy parents who train hard but have real lives. They didn't need a cheerleader. They needed a utility brand.
+        Our target audience isn't trying to make the Olympics, but they aren't just "jogging" either. They are shift workers, tradies, and busy parents who train hard but have real lives. They didn't need a cheerleader. They needed a system that works when life gets messy.
       </p>
       <p class="mb-8">
-        We set out to build a brand that sat at the intersection of <strong>Strava and Streetwear</strong>. Functional, bold, and unapologetically digital.
+        We set out to build a brand that sat at the intersection of <strong>Strava and Streetwear</strong>. Data-driven, bold, but deeply human.
       </p>
 
-      <h2 class="text-2xl font-bold text-white mb-6">1. The Strategy: "Tools, Not Toys"</h2>
+      <h2 class="text-2xl font-bold text-white mb-6">1. The Strategy: "Structure that Bends"</h2>
       <p class="mb-6">
-        The core value proposition of the club is <strong>Structure</strong>. We take the guesswork out of training. Therefore, the brand identity couldn't feel loose or chaotic. It had to feel engineered.
+        The core value proposition of the club is <strong>Adaptive Structure</strong>. We use training theory to build the plan, but we use reality to adjust it. Therefore, the brand identity had to look engineered, but not rigid.
       </p>
       
       <div class="my-8 rounded-xl overflow-hidden border border-slate-700 shadow-2xl">
-        <img src="/Hero.png" alt="Run With Run Club Website Header" class="w-full h-auto" />
+        <img src="/Hero.webp" alt="Run With Run Club Website Header" class="w-full h-auto" />
         <div class="bg-slate-900/80 p-4 text-sm text-slate-400 italic">
-          The aesthetic is "Digital Utility." Clean lines, high contrast, zero fluff.
+          The aesthetic is "Digital Utility." It signals that there is a methodology behind the madness.
         </div>
       </div>
 
@@ -386,7 +386,7 @@ export const articles: Article[] = [
 
       <h2 class="text-2xl font-bold text-white mb-6">4. Service Design: Real Life Rules</h2>
       <p class="mb-6">
-        A brand is more than a logo; it's how you communicate. Our documents don't look like medical forms; they look like technical manuals.
+        A brand is more than a logo; it's how you communicate. Our documents show that we are "Life-First."
       </p>
       
       <div class="grid md:grid-cols-2 gap-6 my-8">
@@ -401,7 +401,7 @@ export const articles: Article[] = [
 
       <h2 class="text-2xl font-bold text-white mb-6">Conclusion</h2>
       <p class="text-lg text-slate-300 mb-10">
-        By treating the coaching service as a utility rather than a lifestyle brand, we attracted exactly the right kind of client: people who are busy, ambitious, and looking for clarity. The design system isn't about being elite; it's about being effective. It signals that we take your training as seriously as you take the rest of your life.
+        By treating the coaching service as a support system rather than just a spreadsheet, we attracted exactly the right kind of client: people who want results, but have real responsibilities. The design signals that we understand the data, but we also respect your schedule.
       </p>
       
       <div class="bg-[#0F172A] border border-slate-700 rounded-2xl p-8 relative overflow-hidden group">
