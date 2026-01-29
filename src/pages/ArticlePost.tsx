@@ -25,7 +25,8 @@ const ArticlePost = () => {
         <meta name="description" content={article.description} />
         <meta property="og:title" content={article.seoTitle} />
         <meta property="og:description" content={article.description} />
-        <link rel="canonical" href={`https://sheridanjamieson.com/articles/${article.slug}`} />
+        {/* FIXED: Added 'www' to match your primary domain settings */}
+        <link rel="canonical" href={`https://www.sheridanjamieson.com/articles/${article.slug}`} />
       </Helmet>
 
       {/* --- MATCHING YOUR EXACT WRAPPER --- */}
