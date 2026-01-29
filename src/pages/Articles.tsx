@@ -9,6 +9,8 @@ const Articles = () => {
       <Helmet>
         <title>Articles | Sheridan Jamieson</title>
         <meta name="description" content="Thoughts on building software, business, running methodology, and financial strategy." />
+        {/* ADDED: Canonical Tag for the Articles List Page */}
+        <link rel="canonical" href="https://www.sheridanjamieson.com/articles" />
       </Helmet>
 
       <div className="min-h-screen bg-[#0f172a] text-slate-300 p-6 md:p-12 selection:bg-rose-500 selection:text-white">
