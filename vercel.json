@@ -1,4 +1,13 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/projects.html",
+      "destination": "/projects",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
