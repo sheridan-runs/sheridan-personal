@@ -8,6 +8,8 @@ const Projects = () => {
       <Helmet>
         <title>Projects & Tools | Sheridan Jamieson</title>
         <meta name="description" content="Utilities I've built to solve specific problems." />
+        {/* ADD THIS LINE BELOW: */}
+        <link rel="canonical" href="https://www.sheridanjamieson.com/projects" />
       </Helmet>
 
       {/* --- MATCHING YOUR EXACT WRAPPER --- */}
@@ -40,9 +42,8 @@ const Projects = () => {
               </div>
             </a>
 
-            {/* Runway */}
+            {/* Runway - (Fixed duplicated div nesting here) */}
              <a href="https://yourbudget.xyz" target="_blank" rel="noreferrer" className="block group">
-            <div className="block group">
               <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-blue-500/50 transition-all hover:shadow-lg hover:shadow-blue-500/10 relative">
                 <div className="absolute top-8 right-8 text-slate-600 group-hover:text-blue-500 transition-colors">
                   <ExternalLink size={20} />
@@ -51,8 +52,7 @@ const Projects = () => {
                 <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">Runway.Visualiser</h2>
                 <p className="text-slate-400 leading-relaxed">Privacy-first cash flow modelling for startups. Visualise your burn rate and zero-cash date without connecting bank accounts.</p>
               </div>
-            </div>
-               </a>
+            </a>
 
             {/* Spreadsheet School */}
             <a href="https://spreadsheet.school" target="_blank" rel="noreferrer" className="block group">
