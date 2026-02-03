@@ -241,7 +241,7 @@ export const articles: Article[] = [
       </p>
       
       <div class="my-8 rounded-xl overflow-hidden border border-slate-700 shadow-2xl">
-        <img src="/images/Hero.png" alt="Run With Run Club Website Header" class="w-full h-auto" />
+        <img src="/images/Hero.webp" alt="Run With Run Club Website Header" class="w-full h-auto" />
         <div class="bg-slate-900/80 p-4 text-sm text-slate-400 italic">
           The aesthetic is "Digital Utility." Clean lines, high contrast, zero fluff.
         </div>
@@ -300,7 +300,7 @@ export const articles: Article[] = [
       <div class="bg-slate-800 p-6 rounded-xl border-l-4 border-[#D4FF00]">
         <h4 class="text-white font-bold mb-2">See the system in action</h4>
         <p class="text-slate-400 mb-4">Check out the live site to see how the visual language works in practice.</p>
-        <a href="https://runwith.club" target="_blank" class="text-[#D4FF00] hover:text-white font-medium transition-colors">Visit RunWith.Club &rarr;</a>
+        <a href="https://runwith.club" target="_blank" class="text-[#D4FF00] hover:text-white font-medium transition-colors">Visit runwith.club &rarr;</a>
       </div>
     `
 }
