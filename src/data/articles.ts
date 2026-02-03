@@ -303,7 +303,8 @@ export const articles: Article[] = [
         <a href="https://runwith.club" target="_blank" class="text-[#D4FF00] hover:text-white font-medium transition-colors">Visit RunWith.Club &rarr;</a>
       </div>
     `
-};
+}
+  ];
 
 
 
