@@ -211,5 +211,99 @@ export const articles: Article[] = [
         The most exciting part is that I know I’m still in the first half of this journey. I’ve just signed up for my next marathon, and the goalposts are moving again. Watch this space.
       </p>
     `
-  }
-];
+  },
+  
+   // --- ARTICLE 3: RUN WITH RUN CLUB BRAND CASE STUDY ---
+  {
+  slug: "case-study-run-with-run-club-brand",
+  title: "Case Study: Designing a 'Digital-First' Running Brand",
+  seoTitle: "Building the Run With Run Club Brand Identity | Sheridan Jamieson",
+  description: "How we built a visual identity that bridges the gap between 'jogging' and 'athletics'—treating fitness coaching like a software product.",
+  publishDate: "2026-02-03", 
+  category: "Design",
+  content: `
+      <p class="text-xl text-slate-300 leading-relaxed mb-8">
+        The running industry is generally split into two visual camps: the "traditional club" aesthetic (singlets, clip art, dated) or the "elite" aesthetic (Olympians, unobtainable, perfect). When building <strong>Run With Run Club</strong>, we identified a gap for a third option.
+      </p>
+
+      <hr class="border-slate-800 my-8" />
+
+      <p class="mb-6">
+        Our target audience isn't trying to make the Olympics, but they aren't just "jogging" either. They are shift workers, tradies, and busy parents who train hard but have real lives. They didn't need a cheerleader. They needed a utility brand.
+      </p>
+      <p class="mb-8">
+        We set out to build a brand that sat at the intersection of <strong>Strava and Streetwear</strong>. Functional, bold, and unapologetically digital.
+      </p>
+
+      <h2 class="text-2xl font-bold text-white mb-6">1. The Strategy: "Tools, Not Toys"</h2>
+      <p class="mb-6">
+        The core value proposition of the club is <strong>Structure</strong>. We take the guesswork out of training. Therefore, the brand identity couldn't feel loose or chaotic. It had to feel engineered.
+      </p>
+      
+      <div class="my-8 rounded-xl overflow-hidden border border-slate-700 shadow-2xl">
+        <img src="/images/Hero.png" alt="Run With Run Club Website Header" class="w-full h-auto" />
+        <div class="bg-slate-900/80 p-4 text-sm text-slate-400 italic">
+          The aesthetic is "Digital Utility." Clean lines, high contrast, zero fluff.
+        </div>
+      </div>
+
+      <p class="mb-6">
+        <strong>The Vibe:</strong> Technical, Industrial, Data-Driven, Street-Ready.<br>
+        <strong>The Mission:</strong> "Stop training for a race you aren't being paid to run. Start training for life."
+      </p>
+
+      <h2 class="text-2xl font-bold text-white mb-6">2. Visual Identity: High-Vis Utility</h2>
+      <p class="mb-6">
+        We avoided the standard "blue and white" club colors. Instead, we looked to technical apparel and night-running culture. We used a deep <strong>Midnight Navy</strong> base to ground the brand, making it feel substantial and modern.
+      </p>
+
+      <div class="my-8 rounded-xl overflow-hidden border border-slate-700 shadow-2xl">
+        <img src="/images/Colours.png" alt="Color Palette: Neon Volt and Midnight Navy" class="w-full h-auto" />
+      </div>
+
+      <p class="mb-6">
+        The accent is <strong>Neon Volt (#D4FF00)</strong>. It’s the color of a safety vest or a high-performance super shoe. It signals "Action" and cuts through the noise of a social media feed immediately.
+      </p>
+
+      <h2 class="text-2xl font-bold text-white mb-6">3. Typography: Industrial Function</h2>
+      <p class="mb-6">
+        We paired <strong>Space Grotesk</strong> (Headers) with <strong>Inter</strong> (Body).
+      </p>
+      <p class="mb-6">
+        Space Grotesk brings the "streetwear" feel—it’s bold, quirky, and feels almost brutalist. It implies that the training plans are built with precision. Inter keeps the communication clear and readable, ensuring that whether you're reading a plan on a phone or a watch, the message lands.
+      </p>
+
+      <div class="my-8 rounded-xl overflow-hidden border border-slate-700 shadow-2xl">
+        <img src="/images/Typography.png" alt="Typography: Space Grotesk and Inter" class="w-full h-auto" />
+      </div>
+
+      <h2 class="text-2xl font-bold text-white mb-6">4. Service Design: Real Life Rules</h2>
+      <p class="mb-6">
+        A brand is more than a logo; it's how you communicate. Our documents don't look like medical forms; they look like technical manuals.
+      </p>
+      
+      <div class="grid md:grid-cols-2 gap-6 my-8">
+        <div class="rounded-xl overflow-hidden border border-slate-700 shadow-xl">
+           <img src="/images/Onboard.png" alt="Onboarding Guide Header" class="w-full h-auto" />
+        </div>
+        <div class="flex flex-col justify-center bg-slate-800/30 p-6 rounded-xl border border-slate-700">
+           <p class="text-slate-300 italic mb-4">"We explicitly include the 'Niggle Rule': If you feel sharp pain... stop. It's better to miss one run than to miss three months."</p>
+           <p class="text-sm text-slate-400">This sets the tone immediately: We are partners in longevity. We respect the fact that you have a job to go to tomorrow.</p>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold text-white mb-6">Conclusion</h2>
+      <p class="text-lg text-slate-300 mb-8">
+        By treating the coaching service as a brand rather than a hobby, we attracted exactly the right kind of client: people who want results without the rah-rah nonsense. The design system acts as a filter: if you want fluff, go elsewhere. If you want a plan that works, you're in the club.
+      </p>
+      
+      <div class="bg-slate-800 p-6 rounded-xl border-l-4 border-[#D4FF00]">
+        <h4 class="text-white font-bold mb-2">See the system in action</h4>
+        <p class="text-slate-400 mb-4">Check out the live site to see how the visual language works in practice.</p>
+        <a href="https://runwith.club" target="_blank" class="text-[#D4FF00] hover:text-white font-medium transition-colors">Visit RunWith.Club &rarr;</a>
+      </div>
+    `
+};
+
+
+
