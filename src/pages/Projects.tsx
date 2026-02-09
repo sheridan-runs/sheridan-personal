@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowLeft, ExternalLink, Zap } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 
 const Projects = () => {
@@ -8,15 +8,13 @@ const Projects = () => {
       <Helmet>
         <title>Projects & Tools | Sheridan Jamieson</title>
         <meta name="description" content="Utilities I've built to solve specific problems." />
-        {/* ADD THIS LINE BELOW: */}
         <link rel="canonical" href="https://www.sheridanjamieson.com/projects" />
       </Helmet>
 
-      {/* --- MATCHING YOUR EXACT WRAPPER --- */}
       <div className="min-h-screen bg-[#0f172a] text-slate-300 p-6 md:p-12 selection:bg-rose-500 selection:text-white">
         <div className="max-w-3xl mx-auto">
           
-          {/* Back Button (Matched) */}
+          {/* Back Button */}
           <Link to="/" className="inline-flex items-center gap-2 text-slate-500 hover:text-white mb-8 transition-colors">
             <ArrowLeft size={20} /> Back home
           </Link>
@@ -30,6 +28,22 @@ const Projects = () => {
           {/* Projects Grid */}
           <div className="space-y-6">
             
+            {/* Learn Xero (New) */}
+            <a href="https://learnxero.co.nz" target="_blank" rel="noreferrer" className="block group">
+              <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-pink-500/50 transition-all hover:shadow-lg hover:shadow-pink-500/10 relative">
+                <div className="absolute top-8 right-8 text-slate-600 group-hover:text-pink-500 transition-colors">
+                  <ExternalLink size={20} />
+                </div>
+                <div className="w-12 h-12 bg-pink-500 rounded-lg flex items-center justify-center text-white font-bold text-xl mb-6 shadow-lg shadow-pink-900/20">
+                  <Zap size={24} fill="currentColor" />
+                </div>
+                <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Learn Xero</h2>
+                <p className="text-slate-400 leading-relaxed">
+                  The unofficial efficiency audit for NZ businesses. Check your Xero health score and automate manual data entry in 2 minutes.
+                </p>
+              </div>
+            </a>
+
             {/* Sprix */}
             <a href="https://sprix.run" target="_blank" rel="noreferrer" className="block group">
               <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-rose-500/50 transition-all hover:shadow-lg hover:shadow-rose-500/10 relative">
@@ -42,7 +56,7 @@ const Projects = () => {
               </div>
             </a>
 
-            {/* Runway - (Fixed duplicated div nesting here) */}
+            {/* Runway */}
              <a href="https://yourbudget.xyz" target="_blank" rel="noreferrer" className="block group">
               <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-blue-500/50 transition-all hover:shadow-lg hover:shadow-blue-500/10 relative">
                 <div className="absolute top-8 right-8 text-slate-600 group-hover:text-blue-500 transition-colors">
