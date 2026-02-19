@@ -21,7 +21,7 @@
           <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0 0 8px 0;">StudySpy</h3>
           <p style="font-size: 14px; color: #cbd5e1; font-weight: 600; margin: 0 0 12px 0;">Finance Director</p>
           <p style="color: #94a3b8; font-size: 15px; margin: 0 0 16px 0; line-height: 1.5;">
-            Overseeing financial strategy, forecasting, and sustainable growth metrics for New Zealand's largest tertiary course comparison platform.
+            Overseeing financial strategy & forecasting for New Zealand's largest tertiary course comparison platform.
           </p>
           <a href="https://studyspy.ac.nz/" target="_blank" style="color: #38bdf8; text-decoration: none; font-size: 14px; font-weight: 600;">Visit StudySpy ↗</a>
         </div>
@@ -36,7 +36,7 @@
           <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0 0 8px 0;">Greenpeace Aotearoa</h3>
           <p style="font-size: 14px; color: #cbd5e1; font-weight: 600; margin: 0 0 12px 0;">Board Observer</p>
           <p style="color: #94a3b8; font-size: 15px; margin: 0 0 16px 0;">
-            Providing forward-looking financial perspective and strategic oversight. Bringing a commercial, Virtual CFO lens to NGO resource management to ensure sustainable impact.
+            Providing forward-looking financial perspective and strategic oversight.
           </p>
           <a href="https://www.greenpeace.org/aotearoa/" target="_blank" style="color: #38bdf8; text-decoration: none; font-size: 14px; font-weight: 600;">Visit Greenpeace ↗</a>
         </div>
@@ -45,7 +45,7 @@
           <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0 0 8px 0;">FARA NZ</h3>
           <p style="font-size: 14px; color: #cbd5e1; font-weight: 600; margin: 0 0 12px 0;">Board Trustee</p>
           <p style="color: #94a3b8; font-size: 15px; margin: 0 0 16px 0;">
-            Leading digital and operational governance. Ensuring the foundation has the robust technical infrastructure needed to scale its advocacy and research funding efficiently.
+            Leading digital and operational governance. Ensuring the foundation has the technical infrastructure needed for advocacy and fundraising.
           </p>
           <a href="https://www.fara.org.nz/" target="_blank" style="color: #38bdf8; text-decoration: none; font-size: 14px; font-weight: 600;">Visit FARA NZ ↗</a>
         </div>
@@ -63,7 +63,7 @@
       <section style="background: linear-gradient(145deg, #1e293b, #0f172a); border: 1px solid #334155; padding: 40px; border-radius: 16px; text-align: center;">
         <h2 style="font-size: 24px; font-weight: 800; color: #ffffff; margin: 0 0 16px 0;">Looking for Board Expertise?</h2>
         <p style="color: #94a3b8; font-size: 16px; margin: 0 0 24px 0; max-width: 400px; margin-left: auto; margin-right: auto; line-height: 1.5;">
-          I am currently open to discussing new governance opportunities with organizations seeking modern strategic thinking and commercial oversight.
+          I am currently open to discussing new governance opportunities with organisations seeking modern strategic thinking and commercial oversight.
         </p>
         <a href="https://www.linkedin.com/in/sheridanjamieson" target="_blank" style="display: inline-block; background-color: #38bdf8; color: #0f172a; font-weight: 700; font-size: 16px; padding: 12px 24px; border-radius: 8px; text-decoration: none; transition: opacity 0.2s;">
           Discuss Board Opportunities
