@@ -7,7 +7,7 @@
         Governance & Board Roles
       </h1>
       <p style="font-size: 20px; color: #94a3b8; margin: 0; line-height: 1.6;">
-        Combining financial rigor with strategic vision. I serve on boards that align with my expertise in finance, operational scaling, and social impact.
+        Combining commercial rigor with strategic vision. I serve on boards that align with my expertise in finance, operational scaling, and social impact.
       </p>
     </header>
 
@@ -21,7 +21,7 @@
           <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0 0 8px 0;">StudySpy</h3>
           <p style="font-size: 14px; color: #cbd5e1; font-weight: 600; margin: 0 0 12px 0;">Finance Director</p>
           <p style="color: #94a3b8; font-size: 15px; margin: 0 0 16px 0; line-height: 1.5;">
-            New Zealand's largest tertiary course comparison platform. Overseeing financial strategy, forecasting, and sustainable growth metrics.
+            Overseeing financial strategy, forecasting, and sustainable growth metrics for New Zealand's largest tertiary course comparison platform.
           </p>
           <a href="https://studyspy.ac.nz/" target="_blank" style="color: #38bdf8; text-decoration: none; font-size: 14px; font-weight: 600;">Visit StudySpy ↗</a>
         </div>
@@ -35,16 +35,17 @@
         <div style="background: #1e293b; padding: 24px; border-radius: 12px; margin-bottom: 16px;">
           <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0 0 8px 0;">Greenpeace Aotearoa</h3>
           <p style="font-size: 14px; color: #cbd5e1; font-weight: 600; margin: 0 0 12px 0;">Board Observer</p>
-          <p style="color: #94a3b8; font-size: 15px; margin: 0;">
-            Supporting governance frameworks and strategic oversight for one of New Zealand's leading environmental advocacy organizations.
+          <p style="color: #94a3b8; font-size: 15px; margin: 0 0 16px 0;">
+            Providing forward-looking financial perspective and strategic oversight. Bringing a commercial, Virtual CFO lens to NGO resource management to ensure sustainable impact.
           </p>
+          <a href="https://www.greenpeace.org/aotearoa/" target="_blank" style="color: #38bdf8; text-decoration: none; font-size: 14px; font-weight: 600;">Visit Greenpeace ↗</a>
         </div>
 
         <div style="background: #1e293b; padding: 24px; border-radius: 12px; margin-bottom: 16px;">
           <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0 0 8px 0;">FARA NZ</h3>
           <p style="font-size: 14px; color: #cbd5e1; font-weight: 600; margin: 0 0 12px 0;">Board Trustee</p>
           <p style="color: #94a3b8; font-size: 15px; margin: 0 0 16px 0;">
-            Friedreich Ataxia Research Association. Governing funding distribution and strategic initiatives to support research and patient advocacy.
+            Leading digital and operational governance. Ensuring the foundation has the robust technical infrastructure needed to scale its advocacy and research funding efficiently.
           </p>
           <a href="https://www.fara.org.nz/" target="_blank" style="color: #38bdf8; text-decoration: none; font-size: 14px; font-weight: 600;">Visit FARA NZ ↗</a>
         </div>
@@ -53,7 +54,7 @@
           <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0 0 8px 0;">Fairground Foundation</h3>
           <p style="font-size: 14px; color: #cbd5e1; font-weight: 600; margin: 0 0 12px 0;">Board Trustee</p>
           <p style="color: #94a3b8; font-size: 15px; margin: 0 0 16px 0;">
-            Driving strategic philanthropy and operational transparency to ensure maximum impact for community-focused initiatives.
+            Serving as a strategic sounding board and advisory voice to help guide community-focused philanthropic initiatives.
           </p>
           <a href="https://www.fairground.org/" target="_blank" style="color: #38bdf8; text-decoration: none; font-size: 14px; font-weight: 600;">Visit Fairground ↗</a>
         </div>
@@ -62,10 +63,10 @@
       <section style="background: linear-gradient(145deg, #1e293b, #0f172a); border: 1px solid #334155; padding: 40px; border-radius: 16px; text-align: center;">
         <h2 style="font-size: 24px; font-weight: 800; color: #ffffff; margin: 0 0 16px 0;">Looking for Board Expertise?</h2>
         <p style="color: #94a3b8; font-size: 16px; margin: 0 0 24px 0; max-width: 400px; margin-left: auto; margin-right: auto; line-height: 1.5;">
-          I am currently open to discussing new governance opportunities, particularly with organizations seeking strong financial oversight and modern strategic thinking.
+          I am currently open to discussing new governance opportunities with organizations seeking modern strategic thinking and commercial oversight.
         </p>
-        <a href="mailto:your-email@example.com" style="display: inline-block; background-color: #38bdf8; color: #0f172a; font-weight: 700; font-size: 16px; padding: 12px 24px; border-radius: 8px; text-decoration: none; transition: opacity 0.2s;">
-          Get in Touch
+        <a href="https://www.linkedin.com/in/sheridanjamieson" target="_blank" style="display: inline-block; background-color: #38bdf8; color: #0f172a; font-weight: 700; font-size: 16px; padding: 12px 24px; border-radius: 8px; text-decoration: none; transition: opacity 0.2s;">
+          Discuss Board Opportunities
         </a>
       </section>
 
