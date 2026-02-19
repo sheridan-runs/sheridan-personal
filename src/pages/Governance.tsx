@@ -1,75 +1,146 @@
-<div style="font-family: system-ui, -apple-system, sans-serif; color: #f1f5f9; background-color: #0f172a; min-height: 100vh; padding: 60px 20px;">
-  <div style="max-width: 650px; margin: 0 auto;">
-    
-    <header style="margin-bottom: 60px; border-bottom: 1px solid #1e293b; padding-bottom: 40px;">
-      <a href="/" style="color: #38bdf8; text-decoration: none; font-size: 14px; font-weight: 600;">← Back to Home</a>
-      <h1 style="font-size: 42px; font-weight: 800; letter-spacing: -1px; margin: 24px 0 16px 0; color: #ffffff;">
-        Governance & Board Roles
-      </h1>
-      <p style="font-size: 20px; color: #94a3b8; margin: 0; line-height: 1.6;">
-        Combining commercial rigor with strategic vision. I serve on boards that align with my expertise in finance, operational scaling, and social impact.
-      </p>
-    </header>
+import { Link } from "react-router-dom";
+import { ArrowLeft, ExternalLink, Briefcase, Globe, Heart, Shield, Linkedin } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
-    <main>
-      <section style="margin-bottom: 50px;">
-        <h2 style="font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #38bdf8; margin-bottom: 24px;">
-          Commercial Boards
-        </h2>
-        
-        <div style="background: #1e293b; padding: 24px; border-radius: 12px; margin-bottom: 16px;">
-          <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0 0 8px 0;">StudySpy</h3>
-          <p style="font-size: 14px; color: #cbd5e1; font-weight: 600; margin: 0 0 12px 0;">Finance Director</p>
-          <p style="color: #94a3b8; font-size: 15px; margin: 0 0 16px 0; line-height: 1.5;">
-            Overseeing financial strategy & forecasting for New Zealand's largest tertiary course comparison platform.
-          </p>
-          <a href="https://studyspy.ac.nz/" target="_blank" style="color: #38bdf8; text-decoration: none; font-size: 14px; font-weight: 600;">Visit StudySpy ↗</a>
+const Governance = () => {
+  return (
+    <>
+      <Helmet>
+        <title>Governance & Board Roles | Sheridan Jamieson</title>
+        <meta name="description" content="Combining commercial rigor with strategic vision. Board roles across commercial and not-for-profit sectors." />
+        <link rel="canonical" href="https://www.sheridanjamieson.com/governance" />
+      </Helmet>
+
+      <div className="min-h-screen bg-[#0f172a] text-slate-300 p-6 md:p-12 selection:bg-sky-500 selection:text-white">
+        <div className="max-w-3xl mx-auto">
+          
+          {/* Back Button */}
+          <Link to="/" className="inline-flex items-center gap-2 text-slate-500 hover:text-white mb-8 transition-colors">
+            <ArrowLeft size={20} /> Back home
+          </Link>
+
+          {/* Header */}
+          <div className="mb-16">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">Governance & Board Roles</h1>
+            <p className="text-xl text-slate-400 leading-relaxed max-w-2xl">
+              Combining commercial rigor with strategic vision. I serve on boards that align with my expertise in finance, operational scaling, and social impact.
+            </p>
+          </div>
+
+          {/* Content Sections */}
+          <div className="space-y-12">
+            
+            {/* Commercial Boards */}
+            <section>
+              <h2 className="text-sm font-bold uppercase tracking-widest text-slate-500 mb-6 border-b border-slate-800 pb-4">
+                Commercial Boards
+              </h2>
+              
+              <a href="https://studyspy.ac.nz/" target="_blank" rel="noreferrer" className="block group">
+                <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-sky-500/50 transition-all hover:shadow-lg hover:shadow-sky-500/10 relative">
+                  <div className="absolute top-8 right-8 text-slate-600 group-hover:text-sky-500 transition-colors">
+                    <ExternalLink size={20} />
+                  </div>
+                  <div className="w-12 h-12 bg-sky-500/10 border border-sky-500/20 rounded-lg flex items-center justify-center text-sky-400 mb-6 group-hover:bg-sky-500 group-hover:text-white transition-colors">
+                    <Briefcase size={24} />
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-1 group-hover:text-sky-400 transition-colors">StudySpy</h3>
+                  <p className="text-sm font-bold text-sky-500 mb-4 tracking-wide">FINANCE DIRECTOR</p>
+                  <p className="text-slate-400 leading-relaxed">
+                    Overseeing financial strategy & forecasting for New Zealand's largest tertiary course comparison platform.
+                  </p>
+                </div>
+              </a>
+            </section>
+
+            {/* Not-for-Profit & NGO */}
+            <section>
+              <h2 className="text-sm font-bold uppercase tracking-widest text-slate-500 mb-6 border-b border-slate-800 pb-4">
+                Not-for-Profit & NGO
+              </h2>
+              
+              <div className="space-y-6">
+                {/* Greenpeace */}
+                <a href="https://www.greenpeace.org/aotearoa/" target="_blank" rel="noreferrer" className="block group">
+                  <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-emerald-500/50 transition-all hover:shadow-lg hover:shadow-emerald-500/10 relative">
+                    <div className="absolute top-8 right-8 text-slate-600 group-hover:text-emerald-500 transition-colors">
+                      <ExternalLink size={20} />
+                    </div>
+                    <div className="w-12 h-12 bg-emerald-500/10 border border-emerald-500/20 rounded-lg flex items-center justify-center text-emerald-400 mb-6 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                      <Globe size={24} />
+                    </div>
+                    <h3 className="text-2xl font-bold text-white mb-1 group-hover:text-emerald-400 transition-colors">Greenpeace Aotearoa</h3>
+                    <p className="text-sm font-bold text-emerald-500 mb-4 tracking-wide">BOARD OBSERVER</p>
+                    <p className="text-slate-400 leading-relaxed">
+                      Providing forward-looking financial perspective and strategic oversight.
+                    </p>
+                  </div>
+                </a>
+
+                {/* FARA NZ */}
+                <a href="https://www.fara.org.nz/" target="_blank" rel="noreferrer" className="block group">
+                  <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-purple-500/50 transition-all hover:shadow-lg hover:shadow-purple-500/10 relative">
+                    <div className="absolute top-8 right-8 text-slate-600 group-hover:text-purple-500 transition-colors">
+                      <ExternalLink size={20} />
+                    </div>
+                    <div className="w-12 h-12 bg-purple-500/10 border border-purple-500/20 rounded-lg flex items-center justify-center text-purple-400 mb-6 group-hover:bg-purple-500 group-hover:text-white transition-colors">
+                      <Shield size={24} />
+                    </div>
+                    <h3 className="text-2xl font-bold text-white mb-1 group-hover:text-purple-400 transition-colors">FARA NZ</h3>
+                    <p className="text-sm font-bold text-purple-500 mb-4 tracking-wide">BOARD TRUSTEE</p>
+                    <p className="text-slate-400 leading-relaxed">
+                      Leading digital and operational governance. Ensuring the foundation has the technical infrastructure needed for advocacy and fundraising.
+                    </p>
+                  </div>
+                </a>
+
+                {/* Fairground Foundation */}
+                <a href="https://www.fairground.org/" target="_blank" rel="noreferrer" className="block group">
+                  <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-orange-500/50 transition-all hover:shadow-lg hover:shadow-orange-500/10 relative">
+                    <div className="absolute top-8 right-8 text-slate-600 group-hover:text-orange-500 transition-colors">
+                      <ExternalLink size={20} />
+                    </div>
+                    <div className="w-12 h-12 bg-orange-500/10 border border-orange-500/20 rounded-lg flex items-center justify-center text-orange-400 mb-6 group-hover:bg-orange-500 group-hover:text-white transition-colors">
+                      <Heart size={24} />
+                    </div>
+                    <h3 className="text-2xl font-bold text-white mb-1 group-hover:text-orange-400 transition-colors">Fairground Foundation</h3>
+                    <p className="text-sm font-bold text-orange-500 mb-4 tracking-wide">BOARD TRUSTEE</p>
+                    <p className="text-slate-400 leading-relaxed">
+                      Serving as a strategic sounding board and advisory voice to help guide community-focused philanthropic initiatives.
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </section>
+
+            {/* CTA Section */}
+            <section className="mt-16 bg-gradient-to-br from-slate-800/80 to-slate-900 border border-slate-700 p-8 md:p-12 rounded-3xl text-center relative overflow-hidden">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-sky-500 to-transparent opacity-50"></div>
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Looking for Board Expertise?</h2>
+              <p className="text-slate-300 mb-8 max-w-lg mx-auto leading-relaxed">
+                I am currently open to discussing new governance opportunities with organisations seeking modern strategic thinking and commercial oversight.
+              </p>
+              <a 
+                href="https://www.linkedin.com/in/sheridanjamieson" 
+                target="_blank" 
+                rel="noreferrer" 
+                className="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition-all hover:scale-105 active:scale-95 shadow-lg shadow-sky-500/20"
+              >
+                <Linkedin size={20} />
+                Discuss Board Opportunities
+              </a>
+            </section>
+
+          </div>
+          
+          <div className="text-center mt-16 text-slate-600 text-sm font-mono">
+            &copy; {new Date().getFullYear()} Sheridan Jamieson
+          </div>
+
         </div>
-      </section>
+      </div>
+    </>
+  );
+};
 
-      <section style="margin-bottom: 60px;">
-        <h2 style="font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #38bdf8; margin-bottom: 24px;">
-          Not-for-Profit & NGO
-        </h2>
-        
-        <div style="background: #1e293b; padding: 24px; border-radius: 12px; margin-bottom: 16px;">
-          <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0 0 8px 0;">Greenpeace Aotearoa</h3>
-          <p style="font-size: 14px; color: #cbd5e1; font-weight: 600; margin: 0 0 12px 0;">Board Observer</p>
-          <p style="color: #94a3b8; font-size: 15px; margin: 0 0 16px 0;">
-            Providing forward-looking financial perspective and strategic oversight.
-          </p>
-          <a href="https://www.greenpeace.org/aotearoa/" target="_blank" style="color: #38bdf8; text-decoration: none; font-size: 14px; font-weight: 600;">Visit Greenpeace ↗</a>
-        </div>
-
-        <div style="background: #1e293b; padding: 24px; border-radius: 12px; margin-bottom: 16px;">
-          <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0 0 8px 0;">FARA NZ</h3>
-          <p style="font-size: 14px; color: #cbd5e1; font-weight: 600; margin: 0 0 12px 0;">Board Trustee</p>
-          <p style="color: #94a3b8; font-size: 15px; margin: 0 0 16px 0;">
-            Leading digital and operational governance. Ensuring the foundation has the technical infrastructure needed for advocacy and fundraising.
-          </p>
-          <a href="https://www.fara.org.nz/" target="_blank" style="color: #38bdf8; text-decoration: none; font-size: 14px; font-weight: 600;">Visit FARA NZ ↗</a>
-        </div>
-
-        <div style="background: #1e293b; padding: 24px; border-radius: 12px; margin-bottom: 16px;">
-          <h3 style="font-size: 20px; font-weight: 700; color: #ffffff; margin: 0 0 8px 0;">Fairground Foundation</h3>
-          <p style="font-size: 14px; color: #cbd5e1; font-weight: 600; margin: 0 0 12px 0;">Board Trustee</p>
-          <p style="color: #94a3b8; font-size: 15px; margin: 0 0 16px 0;">
-            Serving as a strategic sounding board and advisory voice to help guide community-focused philanthropic initiatives.
-          </p>
-          <a href="https://www.fairground.org/" target="_blank" style="color: #38bdf8; text-decoration: none; font-size: 14px; font-weight: 600;">Visit Fairground ↗</a>
-        </div>
-      </section>
-
-      <section style="background: linear-gradient(145deg, #1e293b, #0f172a); border: 1px solid #334155; padding: 40px; border-radius: 16px; text-align: center;">
-        <h2 style="font-size: 24px; font-weight: 800; color: #ffffff; margin: 0 0 16px 0;">Looking for Board Expertise?</h2>
-        <p style="color: #94a3b8; font-size: 16px; margin: 0 0 24px 0; max-width: 400px; margin-left: auto; margin-right: auto; line-height: 1.5;">
-          I am currently open to discussing new governance opportunities with organisations seeking modern strategic thinking and commercial oversight.
-        </p>
-        <a href="https://www.linkedin.com/in/sheridanjamieson" target="_blank" style="display: inline-block; background-color: #38bdf8; color: #0f172a; font-weight: 700; font-size: 16px; padding: 12px 24px; border-radius: 8px; text-decoration: none; transition: opacity 0.2s;">
-          Discuss Board Opportunities
-        </a>
-      </section>
-
-    </main>
-  </div>
-</div>
+export default Governance;
