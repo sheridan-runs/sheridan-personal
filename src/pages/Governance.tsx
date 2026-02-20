@@ -7,7 +7,7 @@ const Governance = () => {
     <>
       <Helmet>
         <title>Governance & Board Roles | Sheridan Jamieson</title>
-        <meta name="description" content="Combining commercial rigor with strategic vision. Board roles across commercial and not-for-profit sectors." />
+        <meta name="description" content="Combining commercial acumen with strategic vision. Board roles across commercial and not-for-profit sectors." />
         <link rel="canonical" href="https://www.sheridanjamieson.com/governance" />
       </Helmet>
 
