@@ -118,7 +118,7 @@ const Governance = () => {
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-sky-500 to-transparent opacity-50"></div>
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Looking for Board Expertise?</h2>
               <p className="text-slate-300 mb-8 max-w-lg mx-auto leading-relaxed">
-                I am currently open to discussing new governance opportunities with organisations seeking modern strategic thinking and commercial oversight.
+                I am open to discussing new governance opportunities with organisations seeking modern strategic thinking and commercial oversight.
               </p>
               <a 
                 href="https://www.linkedin.com/in/sheridanjamieson" 
