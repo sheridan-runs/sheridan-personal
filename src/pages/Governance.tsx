@@ -23,7 +23,7 @@ const Governance = () => {
           <div className="mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">Governance & Board Roles</h1>
             <p className="text-lg md:text-xl text-slate-400 leading-relaxed max-w-2xl">
-              Combining commercial rigor with strategic vision. I serve on boards that align with my expertise in finance, operational scaling, and social impact.
+              Combining commercial acumen with strategic vision. I serve on boards that align with my expertise in finance, operational scaling, and social impact.
             </p>
           </div>
 
