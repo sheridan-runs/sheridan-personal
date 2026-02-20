@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Articles from "./pages/Articles";
 import ArticlePost from "./pages/ArticlePost";
 import Projects from "./pages/Projects"; // <--- IMPORT THE NEW PAGE
+import Governance from "./pages/Governance";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} /> {/* <--- ADDED NEW ROUTE */}
+          <Route path="/governance" element={<Governance />} /> 
           <Route path="/articles" element={<Articles />} />
           <Route path="/articles/:slug" element={<ArticlePost />} />
           
