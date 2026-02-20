@@ -156,7 +156,7 @@ function Home() {
                 to="/projects" 
                 className="inline-flex items-center justify-center gap-3 px-6 py-3 rounded-full bg-slate-800/50 border border-slate-700 text-slate-400 hover:text-white hover:bg-slate-800 hover:border-slate-500 transition-all group w-full md:w-auto"
               >
-                <Wrench className="w-4 h-4 group-hover:rotate-12 transition-transform" />
+                <Wrench className="w-4 h-4 group-hover:-translate-y-1 transition-transform" />
                 <span className="font-medium">View Tools & Projects</span>
               </Link>
 
@@ -164,7 +164,7 @@ function Home() {
                 to="/articles" 
                 className="inline-flex items-center justify-center gap-3 px-6 py-3 rounded-full bg-slate-800/50 border border-slate-700 text-slate-400 hover:text-white hover:bg-slate-800 hover:border-emerald-500 transition-all group w-full md:w-auto"
               >
-                 <BookOpen className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                 <BookOpen className="w-4 h-4 group-hover:-translate-y-1 transition-transform" />
                  <span className="font-medium">Read Articles</span>
               </Link>
 
