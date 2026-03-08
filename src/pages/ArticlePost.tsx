@@ -4,6 +4,8 @@ import { articles } from "../data/articles";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 
+const FALLBACK_OG_IMAGE = "https://www.sheridanjamieson.com/social-preview.jpg";
+
 const ArticlePost = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
@@ -21,13 +23,21 @@ const ArticlePost = () => {
 
   if (!article) return null;
 
+  const ogImage = article.ogImage || FALLBACK_OG_IMAGE;
+
   return (
     <>
       <Helmet>
         <title>{article.seoTitle}</title>
         <meta name="description" content={article.description} />
+        <meta property="og:type" content="article" />
         <meta property="og:title" content={article.seoTitle} />
         <meta property="og:description" content={article.description} />
+        <meta property="og:image" content={ogImage} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={article.seoTitle} />
+        <meta name="twitter:description" content={article.description} />
+        <meta name="twitter:image" content={ogImage} />
         <link rel="canonical" href={`https://www.sheridanjamieson.com/articles/${article.slug}`} />
       </Helmet>
 
