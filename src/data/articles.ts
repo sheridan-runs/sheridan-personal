@@ -4,6 +4,7 @@ export interface Article {
   seoTitle: string;
   description: string;
   publishDate: string;
+  ogImage?: string; // Optional. Falls back to /social-preview.jpg if not set.
   category: "Software" | "Design" | "Finance" | "Running & Training" | "Strategy";
   content: string; // HTML string
 }
@@ -315,6 +316,7 @@ export const articles: Article[] = [
     seoTitle: "18:38 — Turning Race Data into an Interactive Story | Sheridan Jamieson",
     description: "What does a personal best actually feel like from the inside? I built an immersive scroll experience from real GPS and heart rate data to find out.",
     publishDate: "2026-03-07",
+    ogImage: "https://5k.runwith.club/og-image.png",
     category: "Running & Training",
     content: `
       <p class="text-xl text-slate-300 leading-relaxed mb-8">
