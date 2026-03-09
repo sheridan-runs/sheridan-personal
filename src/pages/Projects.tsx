@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import { ArrowLeft, ExternalLink, Zap } from "lucide-react";
+import { ExternalLink, Zap } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import Nav from "../components/Nav";
 
 const Projects = () => {
   return (
@@ -11,13 +11,10 @@ const Projects = () => {
         <link rel="canonical" href="https://www.sheridanjamieson.com/projects" />
       </Helmet>
 
-      <div className="min-h-screen bg-[#0f172a] text-slate-300 p-6 md:p-12 selection:bg-rose-500 selection:text-white">
-        <div className="max-w-3xl mx-auto">
-          
-          {/* Back Button */}
-          <Link to="/" className="inline-flex items-center gap-2 text-slate-500 hover:text-white mb-8 transition-colors">
-            <ArrowLeft size={20} /> Back home
-          </Link>
+      <Nav />
+
+      <div className="min-h-screen bg-[#0f172a] text-slate-300 pt-14 p-6 md:p-12 selection:bg-rose-500 selection:text-white">
+        <div className="max-w-3xl mx-auto mt-8">
 
           {/* Header */}
           <div className="mb-12">
@@ -27,8 +24,8 @@ const Projects = () => {
 
           {/* Projects Grid */}
           <div className="space-y-6">
-            
-            {/* Learn Xero (New) */}
+
+            {/* Learn Xero */}
             <a href="https://learnxero.co.nz" target="_blank" rel="noreferrer" className="block group">
               <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-pink-500/50 transition-all hover:shadow-lg hover:shadow-pink-500/10 relative">
                 <div className="absolute top-8 right-8 text-slate-600 group-hover:text-pink-500 transition-colors">
@@ -57,7 +54,7 @@ const Projects = () => {
             </a>
 
             {/* Runway */}
-             <a href="https://yourbudget.xyz" target="_blank" rel="noreferrer" className="block group">
+            <a href="https://yourbudget.xyz" target="_blank" rel="noreferrer" className="block group">
               <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-blue-500/50 transition-all hover:shadow-lg hover:shadow-blue-500/10 relative">
                 <div className="absolute top-8 right-8 text-slate-600 group-hover:text-blue-500 transition-colors">
                   <ExternalLink size={20} />
@@ -80,12 +77,23 @@ const Projects = () => {
               </div>
             </a>
 
+            {/* 5k.runwith.club */}
+            <a href="https://5k.runwith.club" target="_blank" rel="noreferrer" className="block group">
+              <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-[#D4FF00]/50 transition-all hover:shadow-lg hover:shadow-[#D4FF00]/10 relative">
+                <div className="absolute top-8 right-8 text-slate-600 group-hover:text-[#D4FF00] transition-colors">
+                  <ExternalLink size={20} />
+                </div>
+                <div className="w-12 h-12 bg-black rounded-lg flex items-center justify-center text-[#D4FF00] font-bold text-xl mb-6 shadow-lg border border-zinc-800">5k</div>
+                <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-[#D4FF00] transition-colors">18:38 — Parkrun PB</h2>
+                <p className="text-slate-400 leading-relaxed">An interactive scrolling experience documenting a Parkrun PB. Built with GPS data, heart rate, and Web Audio API for an immersive race replay.</p>
+              </div>
+            </a>
+
           </div>
-          
+
           <div className="text-center mt-16 text-slate-600 text-sm font-mono">
             &copy; {new Date().getFullYear()} Sheridan Jamieson
           </div>
-
         </div>
       </div>
     </>
