@@ -59,21 +59,23 @@ const Governance = () => {
               <div className="space-y-4">
 
                 {/* Greenpeace */}
-                 <a href="https://www.greenpeace.org/aotearoa/" target="_blank" rel="noreferrer" className="block group">
-                <div className="block">
-                  <div className="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-5 md:p-6 flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
-                    <div className="shrink-0 w-12 h-12 bg-emerald-500/10 border border-emerald-500/20 rounded-xl flex items-center justify-center text-emerald-400">
-                      <Globe size={24} />
-                    </div>
-                    <div className="flex-1 pr-6">
-                      <h3 className="text-xl font-bold text-white mb-1">Greenpeace Aotearoa</h3>
-                      <p className="text-xs font-bold text-emerald-500 mb-2 tracking-wider">BOARD OBSERVER</p>
-                      <p className="text-slate-300 text-sm leading-relaxed m-0">
-                        Providing forward-looking financial perspective and strategic oversight.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+<a href="https://www.greenpeace.org/aotearoa/" target="_blank" rel="noreferrer" className="block group">
+  <div className="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-5 md:p-6 hover:border-emerald-500/50 transition-all hover:bg-slate-800/60 hover:shadow-lg hover:shadow-emerald-500/10 relative flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
+    <div className="absolute top-5 right-5 text-slate-500 group-hover:text-emerald-400 transition-colors">
+      <ExternalLink size={18} />
+    </div>
+    <div className="shrink-0 w-12 h-12 bg-emerald-500/10 border border-emerald-500/20 rounded-xl flex items-center justify-center text-emerald-400 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+      <Globe size={24} />
+    </div>
+    <div className="flex-1 pr-6">
+      <h3 className="text-xl font-bold text-white mb-1 group-hover:text-emerald-400 transition-colors">Greenpeace Aotearoa</h3>
+      <p className="text-xs font-bold text-emerald-500 mb-2 tracking-wider">BOARD OBSERVER</p>
+      <p className="text-slate-300 text-sm leading-relaxed m-0">
+        Providing forward-looking financial perspective and strategic oversight.
+      </p>
+    </div>
+  </div>
+</a>
 
                 {/* FARA NZ */}
                 <a href="https://www.fara.org.nz/" target="_blank" rel="noreferrer" className="block group">
