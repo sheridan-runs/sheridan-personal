@@ -33,12 +33,35 @@ function Home() {
       {/* ── STICKY NAV ── */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0f172a]/80 backdrop-blur-md border-b border-slate-800/60">
         <div className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
-          {/* Logo / name */}
-          <Link to="/" className="text-white font-semibold text-sm tracking-tight hover:text-slate-300 transition-colors">
-            Sheridan Jamieson
+          {/* Logo mark */}
+          <Link to="/" className="flex items-center gap-2.5 group">
+            <img src="/favicon.png" alt="SJ" className="w-7 h-7 rounded-full opacity-90 group-hover:opacity-100 transition-opacity" />
+            <span className="text-white font-semibold text-sm tracking-tight group-hover:text-slate-300 transition-colors hidden sm:inline">
+              Sheridan Jamieson
+            </span>
           </Link>
           {/* Nav links */}
           <div className="flex items-center gap-1">
+            <a
+              href="https://www.linkedin.com/in/sheridanjamieson"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-3 py-1.5 rounded-lg text-slate-400 hover:text-[#0077b5] hover:bg-slate-800/60 transition-all text-sm font-medium"
+              title="LinkedIn"
+            >
+              <Linkedin className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">LinkedIn</span>
+            </a>
+            <a
+              href="https://www.strava.com/athletes/106248796"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-3 py-1.5 rounded-lg text-slate-400 hover:text-[#fc4c02] hover:bg-slate-800/60 transition-all text-sm font-medium"
+              title="Strava"
+            >
+              <Strava className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Strava</span>
+            </a>
             <Link
               to="/projects"
               className="flex items-center gap-2 px-3 py-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/60 transition-all text-sm font-medium"
@@ -122,20 +145,7 @@ function Home() {
               .
             </p>
 
-            <div className="flex justify-center gap-6 pt-2 items-center">
-              <a href="https://www.linkedin.com/in/sheridanjamieson" target="_blank" rel="noopener noreferrer"
-                className="text-slate-400 hover:text-[#0077b5] transition-colors hover:scale-110 transform duration-200">
-                <Linkedin className="w-6 h-6" />
-              </a>
-              <a href="https://www.strava.com/athletes/106248796" target="_blank" rel="noopener noreferrer"
-                className="text-slate-400 hover:text-[#fc4c02] transition-colors hover:scale-110 transform duration-200">
-                <Strava className="w-6 h-6" />
-              </a>
-              <a href="mailto:sheridan@nurture.kiwi"
-                className="text-slate-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
-                <Mail className="w-6 h-6" />
-              </a>
-            </div>
+
           </section>
 
           {/* ── 2×2 ROLE CARDS GRID ── */}
@@ -198,6 +208,7 @@ function Home() {
                 <span className="text-xs px-2 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-400">FARA NZ</span>
                 <span className="text-xs px-2 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-400">StudySpy</span>
                 <span className="text-xs px-2 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-400">Fairground Foundation</span>
+                <span className="text-xs px-2 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-400">Greenpeace Aotearoa</span>
               </div>
             </Link>
 
@@ -293,8 +304,6 @@ function Home() {
               <a href="https://nurture.kiwi" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">nurture.kiwi</a>
               <a href="https://runwith.club" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">runwith.club</a>
               <a href="https://onepercentcollective.org" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">onepercentcollective.org</a>
-              <a href="https://yourbudget.xyz" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">yourbudget.xyz</a>
-              <a href="https://sprix.run" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">sprix.run</a>
             </div>
             <p className="text-slate-600 text-xs uppercase tracking-widest font-medium">
               &copy; {new Date().getFullYear()} Sheridan Jamieson. All Rights Reserved.
