@@ -1,15 +1,8 @@
-import { Linkedin, Mail, ExternalLink, MapPin, Heart, Wrench, BookOpen, Briefcase, ArrowRight } from 'lucide-react';
+import { ExternalLink, MapPin, Heart, Briefcase, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { articles } from '../data/articles';
-
-// Custom Strava Icon Component
-const Strava = ({ className }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="currentColor" className={className} xmlns="http://www.w3.org/2000/svg">
-    <path d="M10.2325 9.87618L12.3215 5.75918L14.4095 9.87618H17.4745L12.3215 -0.294824L7.16748 9.87618H10.2325Z" transform="translate(0 2)" />
-    <path d="M15.3875 17.944L13.2985 13.828H10.2335L15.3875 24.0001L20.5425 13.828H17.4765L15.3875 17.944Z" transform="translate(0 -2)" />
-  </svg>
-);
+import Nav from '../components/Nav';
 
 // Get the 2 most recent articles dynamically
 const recentArticles = [...articles]
@@ -30,69 +23,7 @@ function Home() {
         <meta property="og:image" content="https://sheridanjamieson.com/social-preview.jpg" />
       </Helmet>
 
-      {/* ── STICKY NAV ── */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0f172a]/80 backdrop-blur-md border-b border-slate-800/60">
-        <div className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
-          {/* Logo mark */}
-          <Link to="/" className="flex items-center gap-2.5 group">
-            <img src="/favicon.png" alt="SJ" className="w-7 h-7 rounded-full opacity-90 group-hover:opacity-100 transition-opacity" />
-            <span className="text-white font-semibold text-sm tracking-tight group-hover:text-slate-300 transition-colors hidden sm:inline">
-              Sheridan Jamieson
-            </span>
-          </Link>
-          {/* Nav links */}
-          <div className="flex items-center gap-1">
-            <a
-              href="https://www.linkedin.com/in/sheridanjamieson"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-3 py-1.5 rounded-lg text-slate-400 hover:text-[#0077b5] hover:bg-slate-800/60 transition-all text-sm font-medium"
-              title="LinkedIn"
-            >
-              <Linkedin className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">LinkedIn</span>
-            </a>
-            <a
-              href="https://www.strava.com/athletes/106248796"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-3 py-1.5 rounded-lg text-slate-400 hover:text-[#fc4c02] hover:bg-slate-800/60 transition-all text-sm font-medium"
-              title="Strava"
-            >
-              <Strava className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">Strava</span>
-            </a>
-            <Link
-              to="/projects"
-              className="flex items-center gap-2 px-3 py-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/60 transition-all text-sm font-medium"
-            >
-              <Wrench className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">Tools</span>
-            </Link>
-            <Link
-              to="/articles"
-              className="flex items-center gap-2 px-3 py-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/60 transition-all text-sm font-medium"
-            >
-              <BookOpen className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">Articles</span>
-            </Link>
-            <Link
-              to="/governance"
-              className="flex items-center gap-2 px-3 py-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/60 transition-all text-sm font-medium"
-            >
-              <Briefcase className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">Governance</span>
-            </Link>
-            <a
-              href="mailto:sheridan@nurture.kiwi"
-              className="ml-2 flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 hover:text-white hover:border-slate-500 transition-all text-sm font-medium"
-            >
-              <Mail className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">Contact</span>
-            </a>
-          </div>
-        </div>
-      </nav>
+      <Nav />
 
       {/* ── MAIN PAGE ── */}
       <div className="min-h-screen bg-[#0f172a] relative overflow-hidden flex flex-col items-center pt-14 p-6 selection:bg-rose-500 selection:text-white">
@@ -144,8 +75,6 @@ function Home() {
               </span>
               .
             </p>
-
-
           </section>
 
           {/* ── 2×2 ROLE CARDS GRID ── */}
@@ -204,12 +133,6 @@ function Home() {
               <p className="text-slate-400 text-sm leading-relaxed flex-grow">
                 Finance Director & Board Member. Serving across the commercial and not-for-profit sectors — bringing financial rigour and strategic clarity to governance.
               </p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                <span className="text-xs px-2 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-400">FARA NZ</span>
-                <span className="text-xs px-2 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-400">StudySpy</span>
-                <span className="text-xs px-2 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-400">Fairground Foundation</span>
-                <span className="text-xs px-2 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-400">Greenpeace Aotearoa</span>
-              </div>
             </Link>
 
             {/* 4. One Percent Collective */}
