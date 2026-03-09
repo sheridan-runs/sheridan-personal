@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { articles } from "../data/articles";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
+import Nav from "../components/Nav";
 
 const FALLBACK_OG_IMAGE = "https://www.sheridanjamieson.com/social-preview.jpg";
 
@@ -41,12 +42,15 @@ const ArticlePost = () => {
         <link rel="canonical" href={`https://www.sheridanjamieson.com/articles/${article.slug}`} />
       </Helmet>
 
-      <div className="min-h-screen bg-[#0f172a] text-slate-300 p-6 md:p-12 selection:bg-rose-500 selection:text-white">
-        <article className="max-w-3xl mx-auto">
+      <Nav />
 
-          {/* Back Button */}
+      <div className="min-h-screen bg-[#0f172a] text-slate-300 pt-14 p-6 md:p-12 selection:bg-rose-500 selection:text-white">
+        <article className="max-w-3xl mx-auto mt-8">
+
+          {/* Back to Articles */}
           <Link to="/articles" className="inline-flex items-center gap-2 text-slate-500 hover:text-white mb-8 transition-colors">
-            <ArrowLeft size={20} /> Back to Articles
+            <ArrowLeft size={20} />
+            Back to Articles
           </Link>
 
           {/* Header */}
@@ -79,7 +83,8 @@ const ArticlePost = () => {
                   className="group flex flex-col gap-1 p-4 rounded-xl border border-slate-800 hover:border-emerald-500/50 transition-all hover:shadow-lg hover:shadow-emerald-500/10"
                 >
                   <span className="text-xs text-slate-500 font-mono uppercase tracking-wider flex items-center gap-1">
-                    <ArrowLeft size={12} /> Previous
+                    <ArrowLeft size={12} />
+                    Previous
                   </span>
                   <span className="text-sm text-slate-300 group-hover:text-emerald-400 transition-colors font-medium leading-snug">
                     {prevArticle.title}
@@ -94,7 +99,8 @@ const ArticlePost = () => {
                   className="group flex flex-col gap-1 p-4 rounded-xl border border-slate-800 hover:border-emerald-500/50 transition-all hover:shadow-lg hover:shadow-emerald-500/10 text-right"
                 >
                   <span className="text-xs text-slate-500 font-mono uppercase tracking-wider flex items-center gap-1 justify-end">
-                    Next <ArrowRight size={12} />
+                    Next
+                    <ArrowRight size={12} />
                   </span>
                   <span className="text-sm text-slate-300 group-hover:text-emerald-400 transition-colors font-medium leading-snug">
                     {nextArticle.title}
