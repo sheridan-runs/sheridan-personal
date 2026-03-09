@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
 import { articles } from "../data/articles";
 import { Helmet } from "react-helmet-async";
+import Nav from "../components/Nav";
 
 const Articles = () => {
   return (
@@ -9,17 +9,16 @@ const Articles = () => {
       <Helmet>
         <title>Articles | Sheridan Jamieson</title>
         <meta name="description" content="Thoughts on building software, business, running methodology, and financial strategy." />
-        {/* ADDED: Canonical Tag for the Articles List Page */}
         <link rel="canonical" href="https://www.sheridanjamieson.com/articles" />
       </Helmet>
 
-      <div className="min-h-screen bg-[#0f172a] text-slate-300 p-6 md:p-12 selection:bg-rose-500 selection:text-white">
-        <div className="max-w-3xl mx-auto">
+      <Nav />
+
+      <div className="min-h-screen bg-[#0f172a] text-slate-300 pt-14 p-6 md:p-12 selection:bg-rose-500 selection:text-white">
+        <div className="max-w-3xl mx-auto mt-8">
+
           {/* Header */}
           <div className="mb-12">
-            <Link to="/" className="inline-flex items-center gap-2 text-slate-500 hover:text-white mb-8 transition-colors">
-              <ArrowLeft size={20} /> Back home
-            </Link>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Articles</h1>
             <p className="text-xl text-slate-400">Notes on business, software, strategy, and running.</p>
           </div>
@@ -43,6 +42,7 @@ const Articles = () => {
               </Link>
             ))}
           </div>
+
         </div>
       </div>
     </>
