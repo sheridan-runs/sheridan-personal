@@ -1,6 +1,6 @@
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { Article, articles } from "../data/articles";
+import { type Article, articles } from "../data/articles";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 
