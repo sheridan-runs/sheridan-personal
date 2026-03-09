@@ -306,10 +306,6 @@ export const articles: Article[] = [
     `
 },
 
-  // ADD THIS ARTICLE TO THE articles ARRAY IN articles.ts
-// Suggested position: after the Run With brand case study (article 3)
-
-  // --- ARTICLE 4: 18:38 RACE EXPERIENCE ---
   {
     slug: "18-38-parkrun-pb-interactive-race-experience",
     title: "I turned my parkrun PB into an interactive experience",

@@ -1,8 +1,27 @@
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { articles } from "../data/articles";
+import { Article, articles } from "../data/articles";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
+
+const NavCard = ({ article, direction }: { article: Article; direction: "prev" | "next" }) => {
+  const isNext = direction === "next";
+  return (
+    <Link
+      to={`/articles/${article.slug}`}
+      className={`group flex flex-col gap-1 p-4 rounded-xl border border-slate-800 hover:border-emerald-500/50 transition-all hover:shadow-lg hover:shadow-emerald-500/10${isNext ? " text-right" : ""}`}
+    >
+      <span className={`text-xs text-slate-500 font-mono uppercase tracking-wider flex items-center gap-1${isNext ? " justify-end" : ""}`}>
+        {!isNext && <ArrowLeft size={12} />}
+        {isNext ? "Next" : "Previous"}
+        {isNext && <ArrowRight size={12} />}
+      </span>
+      <span className="text-sm text-slate-300 group-hover:text-emerald-400 transition-colors font-medium leading-snug">
+        {article.title}
+      </span>
+    </Link>
+  );
+};
 
 const FALLBACK_OG_IMAGE = "https://www.sheridanjamieson.com/social-preview.jpg";
 
@@ -72,36 +91,8 @@ const ArticlePost = () => {
 
           {/* Prev / Next Navigation */}
           <nav className="mt-16 pt-8 border-t border-slate-800 grid grid-cols-2 gap-4">
-            <div>
-              {prevArticle && (
-                <Link
-                  to={`/articles/${prevArticle.slug}`}
-                  className="group flex flex-col gap-1 p-4 rounded-xl border border-slate-800 hover:border-emerald-500/50 transition-all hover:shadow-lg hover:shadow-emerald-500/10"
-                >
-                  <span className="text-xs text-slate-500 font-mono uppercase tracking-wider flex items-center gap-1">
-                    <ArrowLeft size={12} /> Previous
-                  </span>
-                  <span className="text-sm text-slate-300 group-hover:text-emerald-400 transition-colors font-medium leading-snug">
-                    {prevArticle.title}
-                  </span>
-                </Link>
-              )}
-            </div>
-            <div>
-              {nextArticle && (
-                <Link
-                  to={`/articles/${nextArticle.slug}`}
-                  className="group flex flex-col gap-1 p-4 rounded-xl border border-slate-800 hover:border-emerald-500/50 transition-all hover:shadow-lg hover:shadow-emerald-500/10 text-right"
-                >
-                  <span className="text-xs text-slate-500 font-mono uppercase tracking-wider flex items-center gap-1 justify-end">
-                    Next <ArrowRight size={12} />
-                  </span>
-                  <span className="text-sm text-slate-300 group-hover:text-emerald-400 transition-colors font-medium leading-snug">
-                    {nextArticle.title}
-                  </span>
-                </Link>
-              )}
-            </div>
+            <div>{prevArticle && <NavCard article={prevArticle} direction="prev" />}</div>
+            <div>{nextArticle && <NavCard article={nextArticle} direction="next" />}</div>
           </nav>
 
         </article>

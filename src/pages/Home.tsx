@@ -1,6 +1,6 @@
 import { Linkedin, Mail, ExternalLink, MapPin, Heart, Wrench, BookOpen, Briefcase } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async'; // <--- NEW: Import SEO Tool
+import { Helmet } from 'react-helmet-async';
 
 // Custom Strava Icon Component
 const Strava = ({ className }: { className?: string }) => (
@@ -18,21 +18,17 @@ const Strava = ({ className }: { className?: string }) => (
 function Home() {
   return (
     <>
-      {/* --- NEW: SEO METADATA BLOCK --- */}
       <Helmet>
         <title>Sheridan Jamieson | Finance, Strategy & Running</title>
         <meta name="description" content="Helping ambitious people and businesses find their edge. Director at Nurture, Founder of Run With Run Club, and Head of Operations at One Percent Collective." />
-        <link rel="canonical" href="https://sheridanjamieson.com/" />
-        
-        {/* Open Graph / Facebook / LinkedIn */}
+        <link rel="canonical" href="https://www.sheridanjamieson.com/" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://sheridanjamieson.com/" />
+        <meta property="og:url" content="https://www.sheridanjamieson.com/" />
         <meta property="og:title" content="Sheridan Jamieson" />
         <meta property="og:description" content="Finance, Strategy & Running." />
-        <meta property="og:image" content="https://sheridanjamieson.com/social-preview.jpg" />
+        <meta property="og:image" content="https://www.sheridanjamieson.com/social-preview.jpg" />
       </Helmet>
 
-      {/* --- EXISTING PAGE CONTENT --- */}
       <div className="min-h-screen bg-[#0f172a] relative overflow-hidden flex flex-col items-center justify-center p-6 selection:bg-rose-500 selection:text-white">
         
         {/* --- Background Studio Light --- */}
@@ -168,8 +164,7 @@ function Home() {
                  <span className="font-medium">Read Articles</span>
               </Link>
 
-              {/* NEW: Governance Button */}
-              <Link 
+              <Link
                 to="/governance" 
                 className="inline-flex items-center justify-center gap-3 px-6 py-3 rounded-full bg-slate-800/50 border border-slate-700 text-slate-400 hover:text-white hover:bg-slate-800 hover:border-sky-500 transition-all group w-full md:w-auto"
               >
