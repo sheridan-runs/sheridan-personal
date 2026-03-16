@@ -402,7 +402,7 @@ export const articles: Article[] = [
     slug: "building-a-coaching-platform-airtable-zapier-strava",
     title: "I built a real coaching platform for $0 (almost)",
     seoTitle: "Building a Running Coaching Platform with Airtable, Zapier & Strava | Sheridan Jamieson",
-    description: "How I replaced a Google Sheet and a shared PDF with a real athlete management platform — using Airtable, Zapier, Strava, and a custom dashboard built with Claude.",
+    description: "How I replaced a Google Sheet and a shared PDF with a real athlete management platform using Airtable, Zapier, Strava, and a custom dashboard built with Claude.",
     publishDate: "2026-03-18",
     category: "Software",
     content: `
