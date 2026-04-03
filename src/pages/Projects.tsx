@@ -25,6 +25,21 @@ const Projects = () => {
           {/* Projects Grid */}
           <div className="space-y-6">
 
+            {/* Owly */}
+<a href="https://owly.co.nz" target="_blank" rel="noreferrer" className="block group">
+  <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-teal-500/50 transition-all hover:shadow-lg hover:shadow-teal-500/10 relative">
+    <div className="absolute top-8 right-8 text-slate-600 group-hover:text-teal-500 transition-colors">
+      <ExternalLink size={20} />
+    </div>
+    <div className="w-12 h-12 bg-teal-500 rounded-lg flex items-center justify-center text-white font-bold text-xl mb-6 shadow-lg shadow-teal-900/20">O</div>
+    <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">Owly</h2>
+    <p className="text-slate-400 leading-relaxed">
+      The debt dashboard built for New Zealanders. See all your loans in one place and build a smarter repayment strategy.
+    </p>
+  </div>
+</a>
+
+            
             {/* Learn Xero */}
             <a href="https://learnxero.co.nz" target="_blank" rel="noreferrer" className="block group">
               <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-pink-500/50 transition-all hover:shadow-lg hover:shadow-pink-500/10 relative">
