@@ -9,6 +9,20 @@ const recentArticles = [...articles]
   .sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime())
   .slice(0, 2);
 
+// Helper function to extract category styling logic and prevent TypeScript parser errors
+const getCategoryStyles = (category: string) => {
+  switch (category) {
+    case 'Running & Training':
+      return 'bg-[#D4FF00]/10 text-[#D4FF00]';
+    case 'Finance':
+      return 'bg-emerald-500/10 text-emerald-400';
+    case 'Software':
+      return 'bg-sky-500/10 text-sky-400';
+    default:
+      return 'bg-slate-700 text-slate-400';
+  }
+};
+
 function Home() {
   return (
     <>
@@ -188,15 +202,7 @@ function Home() {
                   className="group flex flex-col gap-2 bg-[#1e293b]/60 border border-slate-800 rounded-xl p-5 hover:border-slate-600 hover:bg-[#1e293b]/80 transition-all duration-200"
                 >
                   <div className="flex items-center justify-between gap-2">
-                    <span className={`text-xs font-semibold px-2 py-0.5 rounded-md ${
-                      article.category === 'Running & Training'
-                        ? 'bg-[#D4FF00]/10 text-[#D4FF00]'
-                        : article.category === 'Finance'
-                        ? 'bg-emerald-500/10 text-emerald-400'
-                        : article.category === 'Software'
-                        ? 'bg-sky-500/10 text-sky-400'
-                        : 'bg-slate-700 text-slate-400'
-                    }`}>
+                    <span className={`text-xs font-semibold px-2 py-0.5 rounded-md ${getCategoryStyles(article.category)}`}>
                       {article.category}
                     </span>
                     <span className="text-xs text-slate-600">
