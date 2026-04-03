@@ -392,6 +392,133 @@ export const articles: Article[] = [
         <a href="https://5k.runwith.club" target="_blank" class="text-[#e8341a] hover:text-white font-medium transition-colors">Open 5k.runwith.club →</a>
       </div>
     `
+  },
+  // --- ARTICLE 5: RWRC COACHING PLATFORM ---
+  {
+    slug: "building-a-coaching-platform-airtable-zapier-strava",
+    title: "I built a real coaching platform for $0 (almost)",
+    seoTitle: "Building a Running Coaching Platform with Airtable, Zapier & Strava | Sheridan Jamieson",
+    description: "How I replaced a Google Sheet and a shared PDF with a real athlete management platform using Airtable, Zapier, Strava, and a custom dashboard built with Claude.",
+    publishDate: "2026-03-18",
+    category: "Software",
+    content: `
+      <p class="text-xl text-slate-300 leading-relaxed mb-8">
+        Run With Run Club now has five athletes. It's not a huge number but it's enough that I can now see where processes and systems will start to break down as the number grows. I realised it was time to stop patching the system and build something proper.
+      </p>
+
+      <hr class="border-slate-800 my-8" />
+
+      <p class="mb-6">
+        In the early days of coaching, the workflow was simple enough. Each athlete got a weekly training plan sent as a WhatsApp screenshot. They'd message back with how it went. I'd log their feedback in a Google Sheet and use that to plan the following week. It worked fine at one or two athletes.
+      </p>
+      <p class="mb-6">
+        At five, I was starting to feel the friction. Five tabs in a spreadsheet. Five separate WhatsApp conversations to cross-reference. No way to see at a glance how the week was tracking across the group. Manually typing in activity data from messages rather than having it flow in automatically.
+      </p>
+      <p class="mb-8">
+        The system was <em>working</em> but I could see phase two coming. More athletes means the admin compounds fast, and more importantly, the athlete experience suffers when you're spending energy on process rather than coaching. So I spent an afternoon with Claude and built something that actually scales.
+      </p>
+
+      <h2 class="text-2xl font-bold text-white mb-6">What I built</h2>
+      <p class="mb-6">The system has three parts that work together.</p>
+
+      <div class="grid gap-4 mb-10 not-prose">
+        <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
+          <strong class="text-emerald-400 block text-lg mb-2">Airtable - where the data lives</strong>
+          <p class="text-slate-400 text-sm">Three linked tables: Athletes, Sessions (the plan I write each week), and Activities (what athletes actually do). Instead of five spreadsheet tabs, it's one database I can filter any way I want.</p>
+        </div>
+        <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
+          <strong class="text-emerald-400 block text-lg mb-2">Zapier - the connection</strong>
+          <p class="text-slate-400 text-sm">An automation watches my Strava club and does two things when an athlete logs a run: sends me a notification and writes the activity data to Airtable. Every run lands in the database within minutes, without me doing anything.</p>
+        </div>
+        <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
+          <strong class="text-emerald-400 block text-lg mb-2">A custom coach dashboard - the view</strong>
+          <p class="text-slate-400 text-sm">A password-protected page on my website, built with Claude, that pulls live data from Airtable and shows me every athlete's week in one place.</p>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold text-white mb-6">The athlete experience</h2>
+      <p class="mb-6">
+        The thing I'm most pleased about is that from an athlete's perspective, almost nothing has changed. They still get their plan via WhatsApp. They still message me with feedback. They still log their runs on Strava. The system change is entirely on my side.
+      </p>
+      <p class="mb-6">
+        There are two visible improvements for athletes. The first is the welcome experience. New athletes used to get a PDF. Now they get a personalised link that opens a proper branded page covering how we work together, the coaching philosophy, and what to expect. Small thing, but it sets a more intentional tone from day dot.
+      </p>
+      <p class="mb-8">
+        The second is the weekly plan itself. They still receive it as a WhatsApp screenshot, but instead of a green-tinted spreadsheet, it's now a clean, dark-themed table in the Run With brand. Same information, much better presentation.
+      </p>
+
+      <h2 class="text-2xl font-bold text-white mb-6">What the dashboard actually shows me</h2>
+      <p class="mb-6">
+        For each athlete, each week, I can see the session I prescribed alongside what they actually did. Distance, time, pace. If they moved their Sunday long run to Saturday (which happens constantly, and is the whole point of flexible coaching), the system figures that out and displays it against the right session.
+      </p>
+      <p class="mb-6">
+        Beneath the objective numbers is their feedback, pulled in manually and displayed in italics. So a session row might show: planned 18km long run, actual 18.09km in 101 minutes at 5:33/km, followed by their note: <em>"Felt good. Pick-up at the end was difficult but manageable. Fuelling worked well."</em>
+      </p>
+      <p class="mb-8">
+        At the top of each athlete's section is a four-week compliance percentage — what portion of their prescribed sessions they've completed over the last month. And if it's mid-week and an athlete hasn't logged anything yet, a small flag appears on their header. It's a nudge to check in. Silence sometimes means something's going on.
+      </p>
+
+      <h2 class="text-2xl font-bold text-white mb-6">The honest bits</h2>
+      <p class="mb-6">Not everything went smoothly.</p>
+
+      <div class="space-y-6 mb-10">
+        <div class="bg-slate-800/30 p-5 rounded-xl border border-slate-700">
+          <strong class="text-white block mb-2">New Zealand timezone.</strong>
+          <p class="text-slate-400 text-sm">Runs were showing up in the wrong week. A run logged on Monday morning in NZ was appearing as the previous Sunday. Turned out to be a single line of code that was converting local time to UTC, which in NZ shifts the date back by a day. Claude eventually tracked it down after a few debugging sessions.</p>
+        </div>
+        <div class="bg-slate-800/30 p-5 rounded-xl border border-slate-700">
+          <strong class="text-white block mb-2">Flexible day matching.</strong>
+          <p class="text-slate-400 text-sm">My coaching philosophy is that training should fit around real life, athletes swap days all the time, and that's fine. The original logic assumed a run on Tuesday matched the Tuesday session. It doesn't, if the athlete moved their Wednesday session to Tuesday. We rebuilt the matching to look at the whole week and prioritise the explicitly linked session, with day matching as a fallback.</p>
+        </div>
+        <div class="bg-slate-800/30 p-5 rounded-xl border border-slate-700">
+          <strong class="text-white block mb-2">Auto-linking athletes.</strong>
+          <p class="text-slate-400 text-sm">Strava only gives Zapier a first name and last initial, no unique ID. So when a run lands in Airtable, I still need to manually link it to the correct athlete record. Takes a few seconds. At five athletes it's fine. At twenty-five, I may need to solve it differently.</p>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold text-white mb-6">What it cost</h2>
+
+      <div class="grid gap-4 mb-10 not-prose">
+        <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700 flex items-center justify-between">
+          <strong class="text-white">Airtable:</strong>
+          <span class="text-emerald-400 font-mono">Free (for now)</span>
+        </div>
+        <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700 flex items-center justify-between">
+          <strong class="text-white">Zapier Starter:</strong>
+          <span class="text-emerald-400 font-mono">~NZ$50/month</span>
+        </div>
+        <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700 flex items-center justify-between">
+          <strong class="text-white">Vercel (dashboard hosting):</strong>
+          <span class="text-emerald-400 font-mono">Free</span>
+        </div>
+        <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700 flex items-center justify-between">
+          <strong class="text-white">Claude (the builder):</strong>
+          <span class="text-emerald-400 font-mono">Existing subscription</span>
+        </div>
+      </div>
+
+      <p class="mb-8">
+        The Zapier upgrade is the only new cost. Everything else runs on free tiers or tools I was already using. The dashboard itself was built entirely through conversation with Claude. No developer, no agency, no line items for build time.
+      </p>
+
+      <h2 class="text-2xl font-bold text-white mb-6">Why now, at five athletes</h2>
+      <p class="mb-6">
+        The honest answer is that five athletes probably didn't require this. I could have kept going with the spreadsheet for a while longer. But there's a version of Run With Run Club that serves twenty-five athletes well, and that version needs better systems and smoother processes. Building it now, while the stakes are low and the complexity is manageable, means the system is proven before it needs to carry real weight.
+      </p>
+      <p class="mb-8">
+        It also just makes the coaching better right now. When I open the dashboard on a Thursday morning and can see at a glance that three athletes have had great weeks, one has gone quiet, and one moved their long run to Saturday, I can respond to what's actually happening rather than trying to reconstruct it from five separate WhatsApp threads.
+      </p>
+
+      <div class="bg-[#D4FF00] p-8 rounded-2xl text-center my-12 transform hover:scale-[1.01] transition-transform duration-300 shadow-xl shadow-emerald-900/20">
+        <h3 class="text-black font-bold text-2xl mb-4">Interested in structured coaching?</h3>
+        <p class="text-black/80 text-lg mb-6 max-w-lg mx-auto">
+          Run With Run Club provides adaptive training plans managed through WhatsApp, now backed by a system that actually keeps track of everything.
+        </p>
+        <a href="https://runwith.club" target="_blank" class="inline-block bg-black text-white font-bold px-8 py-4 rounded-full hover:bg-slate-800 transition-colors">
+          Start your journey at Run With Run Club ↗
+        </a>
+      </div>
+    `
   }
   ];
 

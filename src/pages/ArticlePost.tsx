@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { type Article, articles } from "../data/articles";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
+import Nav from "../components/Nav";
 
 const NavCard = ({ article, direction }: { article: Article; direction: "prev" | "next" }) => {
   const isNext = direction === "next";
@@ -60,12 +61,15 @@ const ArticlePost = () => {
         <link rel="canonical" href={`https://www.sheridanjamieson.com/articles/${article.slug}`} />
       </Helmet>
 
-      <div className="min-h-screen bg-[#0f172a] text-slate-300 p-6 md:p-12 selection:bg-rose-500 selection:text-white">
-        <article className="max-w-3xl mx-auto">
+      <Nav />
 
-          {/* Back Button */}
+      <div className="min-h-screen bg-[#0f172a] text-slate-300 pt-14 p-6 md:p-12 selection:bg-rose-500 selection:text-white">
+        <article className="max-w-3xl mx-auto mt-8">
+
+          {/* Back to Articles */}
           <Link to="/articles" className="inline-flex items-center gap-2 text-slate-500 hover:text-white mb-8 transition-colors">
-            <ArrowLeft size={20} /> Back to Articles
+            <ArrowLeft size={20} />
+            Back to Articles
           </Link>
 
           {/* Header */}
