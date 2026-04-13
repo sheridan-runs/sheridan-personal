@@ -634,6 +634,94 @@ export const articles: Article[] = [
       I'm transparent about my use of AI in my work. This post was drafted with Claude based on notes from the actual build process.
     </p>
   `
+},
+  // --- ARTICLE 7: WHY A VCFO BUILT OWLY ---
+{
+  slug: "why-a-vcfo-built-a-debt-dashboard",
+  title: "Why a vCFO built a debt dashboard in his evenings",
+  seoTitle: "Why a vCFO Built Owly: A NZ Debt Dashboard | Sheridan Jamieson",
+  description: "I spend my days looking at business finances. Here's why I couldn't find a single tool to help New Zealanders manage their personal debt — so I built one.",
+  publishDate: "2026-04-13",
+  category: "Finance",
+  content: `
+    <p class="text-xl text-slate-300 leading-relaxed mb-8">
+      I spend my days looking at numbers. Cash flow models, loan covenants, interest coverage ratios. As a virtual CFO working with New Zealand businesses, debt is something I understand at a structural level that most people never need to.
+    </p>
+
+    <p class="mb-8">
+      Which made it all the more frustrating when I went looking for a simple tool to help people in my network get on top of their personal borrowing — and couldn't find one that handled how New Zealanders actually borrow.
+    </p>
+
+    <hr class="border-slate-800 my-8" />
+
+    <h2 class="text-2xl font-bold text-white mb-6">The problem with what exists</h2>
+    <p class="mb-6">
+      The banks have calculators. They show you your repayments. They don't help you pay off faster — because helping you pay off faster isn't particularly good for the bank's revenue.
+    </p>
+    <p class="mb-6">
+      Sorted.org.nz has excellent educational content, but no portfolio view. You can't plug in all your loans and see the full picture in one place.
+    </p>
+    <p class="mb-6">
+      The closest international equivalents — Unbury.me, Undebt.it, and Debt Payoff Planner — are solid tools built for US borrowers. They handle snowball and avalanche strategies well. None of them know what a refix date is. None of them understand that New Zealand student loans are interest-free for NZ-based borrowers. None of them have hire purchase promo periods or revolving credit as a loan type. They're built for a different market, with different products, different defaults, and different norms.
+    </p>
+    <p class="mb-8">
+      None of the tools I found had a simple toggle between Debt Avalanche and Debt Snowball strategies. None surfaced refix date alerts. None handled hire purchase promo rates or interest-only periods in a way that made sense for how Kiwis actually borrow.
+    </p>
+
+    <p class="mb-8">So I built one.</p>
+
+    <h2 class="text-2xl font-bold text-white mb-6">The catalyst</h2>
+    <p class="mb-6">
+      New Zealand's cost of living has been difficult. Interest rates have bitten hard. I kept seeing people — smart, financially engaged people — carrying debt they didn't fully understand, at rates they hadn't reviewed, with no clear strategy for paying it off faster.
+    </p>
+    <p class="mb-6">
+      As a vCFO, I've always believed visibility is the first step to control. You can't manage what you can't see. Most New Zealanders have never seen all their debt in one place, let alone a clear figure for what it costs them every single day.
+    </p>
+    <p class="mb-8">
+      That daily interest cost figure tends to land differently than an annual number buried in a statement. Seeing "$58 a day in interest" on your screen changes how you think about the problem.
+    </p>
+
+    <h2 class="text-2xl font-bold text-white mb-6">What Owly actually does</h2>
+    <p class="mb-6">
+      Owly is a free debt dashboard for New Zealanders. You add your loans manually — no bank login, no open banking, no sharing credentials with anyone. Your data stays between you and the bird.
+    </p>
+    <p class="mb-6">
+      Once your loans are in, Owly shows you your full debt picture in one place — mortgage, credit cards, car loans, hire purchase, student loans, revolving credit, business loans. Total debt, daily interest cost, weighted average rate, monthly repayments.
+    </p>
+    <p class="mb-6">
+      Three repayment strategies — Avalanche (highest rate first, saves the most money), Snowball (smallest balance first, builds momentum), Cashflow (highest repayment burden first, frees up cash). An overpayment simulator shows you exactly how much time and interest you save by paying a little extra each fortnight.
+    </p>
+    <p class="mb-6">
+      A debt-free date that updates when you commit to a plan. Automated alerts when your fixed rate is coming up for refix. Warnings when a credit card's minimum payment isn't covering the monthly interest. A shared read-only dashboard so your partner or financial adviser can see the full picture without needing an account.
+    </p>
+    <p class="mb-8">
+      And Owen. A hand-drawn owl I sketched myself who lives on every page of the app and keeps a close eye on your debt so you don't have to.
+    </p>
+
+    <h2 class="text-2xl font-bold text-white mb-6">The vCFO angle</h2>
+    <p class="mb-6">
+      People sometimes ask why a business finance person built a personal debt tool.
+    </p>
+    <p class="mb-6">
+      The principles are identical. In business, the first thing I do with any new client is get a complete picture of their debt structure — what they owe, to whom, at what rate, and when it matures. Most businesses don't have this clearly documented. Neither do most households.
+    </p>
+    <p class="mb-6">
+      The strategy follows from the visibility. Once you can see everything, the right moves become clearer. Pay the expensive debt first. Get ahead of refix dates before the bank puts you on a default rate. Don't let minimum payments quietly extend your timeline by a decade.
+    </p>
+    <p class="mb-8">
+      These aren't complex insights. They're just not visible in the tools most people have access to. Owly is an attempt to fix that.
+    </p>
+
+    <div class="bg-slate-800 p-6 rounded-xl border-l-4 border-emerald-500 my-8">
+      <h4 class="text-white font-bold mb-2">Try Owly</h4>
+      <p class="text-slate-400 mb-4">Free. No bank login required. Takes about five minutes to set up.</p>
+      <a href="https://owly.co.nz" target="_blank" class="text-emerald-400 hover:text-white font-medium transition-colors">Visit owly.co.nz →</a>
+    </div>
+
+    <p class="text-sm text-slate-500 italic">
+      Sheridan Jamieson is a vCFO at Nurture and the founder of Owly. He is transparent about his use of AI in his work and writing.
+    </p>
+  `
 }
   ];
 
