@@ -523,7 +523,118 @@ export const articles: Article[] = [
         </a>
       </div>
     `
-  }
+  },
+  // --- ARTICLE 6: BUILDING AND LAUNCHING OWLY ---
+{
+  slug: "building-launching-owly-nz-debt-dashboard",
+  title: "I built and launched a SaaS product in two weeks using AI",
+  seoTitle: "Building Owly: A SaaS Launch Story Using AI | Sheridan Jamieson",
+  description: "The honest story of how I built and launched Owly — a debt dashboard for New Zealanders — in two weeks using Claude, Lovable, and Claude Code.",
+  publishDate: "2026-04-13",
+  category: "Software",
+  content: `
+    <p class="text-xl text-slate-300 leading-relaxed mb-8">
+      Most "I built X with AI" posts skip the messy bits. This one won't.
+    </p>
+
+    <p class="mb-6">
+      <a href="https://owly.co.nz" target="_blank" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">Owly</a> is a debt management dashboard for New Zealanders. It helps people see all their borrowing in one place — mortgages, credit cards, car loans, hire purchase, student loans — and build a strategy to pay it off faster. It launched twelve days after I first had the idea.
+    </p>
+
+    <hr class="border-slate-800 my-8" />
+
+    <h2 class="text-2xl font-bold text-white mb-6">The idea</h2>
+    <p class="mb-6">
+      It started with a simple observation. Most Kiwis have no single place to see what they collectively owe. A mortgage with one bank, a car loan with another, a credit card they've half-forgotten about, a hire purchase on something they bought three years ago. The banks only show you their own debt. There's no portfolio view.
+    </p>
+    <p class="mb-6">
+      Quashed solved this problem for insurance — you upload your documents, it reads the key details, and suddenly you can see everything in one place. I thought the same approach could work for loans.
+    </p>
+    <p class="mb-8">
+      The name came quickly. Owly. A wise owl who knows what you owe. The tagline wrote itself: "Know what you owe." I bought owly.co.nz within an hour of having the idea. Owen — the hand-drawn owl mascot I sketched myself — came a few days later.
+    </p>
+
+    <h2 class="text-2xl font-bold text-white mb-6">The tools</h2>
+    <p class="mb-6">
+      I want to be transparent about how this was built because the honest version is more useful than the polished version.
+    </p>
+
+    <div class="grid gap-4 mb-10 not-prose">
+      <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
+        <strong class="text-emerald-400 block text-lg mb-2">Claude — the thinking partner</strong>
+        <p class="text-slate-400 text-sm">My primary collaborator throughout. Not just for code — for product decisions, naming, copywriting, business model, SEO strategy, and working through edge cases I hadn't considered. The brief for Lovable, the Supabase schema, the repayment strategy logic, the email templates — all of it started as a conversation.</p>
+      </div>
+      <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
+        <strong class="text-emerald-400 block text-lg mb-2">Lovable — the initial UI</strong>
+        <p class="text-slate-400 text-sm">Genuinely impressive for getting from zero to something that looks real, fast. But it has a significant lock-in problem — once you enable Lovable Cloud, you can't disconnect it. I hit this wall early and had to eject entirely, connecting the codebase directly to my own Supabase project and deploying via Vercel. Worth knowing before you start.</p>
+      </div>
+      <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
+        <strong class="text-emerald-400 block text-lg mb-2">Claude Code — the builder</strong>
+        <p class="text-slate-400 text-sm">Handled everything after the Lovable ejection. All the complex logic — the repayment simulation engine, the interest-only loan calculations, the email alert system, the shared dashboard feature, the PWA setup. Extraordinarily capable when given precise, surgical prompts. The key lesson: tell it exactly what to change and explicitly tell it what not to touch.</p>
+      </div>
+      <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
+        <strong class="text-emerald-400 block text-lg mb-2">Gemini — the cameo</strong>
+        <p class="text-slate-400 text-sm">Made an appearance when Claude Code kept breaking mobile formatting. Sometimes a second opinion from a different model is the fastest path forward. Gemini's approach of making extremely targeted, surgical CSS changes without touching any logic was the pattern that finally worked consistently.</p>
+      </div>
+    </div>
+
+    <h2 class="text-2xl font-bold text-white mb-6">What got built</h2>
+    <p class="mb-6">In roughly two weeks, starting from nothing:</p>
+
+    <p class="mb-4">A full debt dashboard supporting eight loan types including interest-only loans, revolving credit, and hire purchase with promo periods. Three repayment strategies — avalanche, snowball, cashflow — with an overpayment simulator that shows how much time and money you save by paying a little extra each fortnight. A debt-free date that updates when you activate a plan.</p>
+
+    <p class="mb-4">An email alert system with four automated functions: refix date alerts at 90 and 30 days out, minimum payment warnings for credit cards going backwards, a quarterly portfolio digest, and a 30-day plan follow-up. All running on pg_cron, all deduplicated so users never get the same email twice.</p>
+
+    <p class="mb-4">A shared read-only dashboard so you can send a link to your partner or financial adviser without them needing an account.</p>
+
+    <p class="mb-4">A PWA so it installs on your homescreen like a native app. Owen on your homescreen.</p>
+
+    <p class="mb-8">An SEO content hub with a credit card payoff calculator, a guide to debt repayment strategies for New Zealanders, and a full FAQ with structured data markup. A Supabase security audit confirming Row Level Security on every table. A GitHub Actions workflow that deploys Edge Functions automatically on every push to main.</p>
+
+    <h2 class="text-2xl font-bold text-white mb-6">What I learned</h2>
+
+    <div class="space-y-6 mb-10">
+      <div class="bg-slate-800/30 p-5 rounded-xl border border-slate-700">
+        <strong class="text-white block mb-2">Prompting is a skill.</strong>
+        <p class="text-slate-400 text-sm">The quality of what AI produces is directly proportional to the quality of what you ask for. Vague briefs produce generic output. Specific, contextual, well-structured prompts produce things that actually work. I got significantly better at this over the two weeks.</p>
+      </div>
+      <div class="bg-slate-800/30 p-5 rounded-xl border border-slate-700">
+        <strong class="text-white block mb-2">AI doesn't replace judgment — it amplifies it.</strong>
+        <p class="text-slate-400 text-sm">Every significant product decision was still mine. Should revolving credit be treated like a credit card in the simulation? Is this the right data model for milestones? AI gave me options and analysis. I made the calls.</p>
+      </div>
+      <div class="bg-slate-800/30 p-5 rounded-xl border border-slate-700">
+        <strong class="text-white block mb-2">Eject from lock-in early.</strong>
+        <p class="text-slate-400 text-sm">Lovable is great for prototyping. It is not great for owning your own infrastructure. The moment I hit the Lovable Cloud wall I should have ejected immediately. Instead I spent two hours trying to work around it. Lesson learned.</p>
+      </div>
+      <div class="bg-slate-800/30 p-5 rounded-xl border border-slate-700">
+        <strong class="text-white block mb-2">Mobile is harder than it looks.</strong>
+        <p class="text-slate-400 text-sm">I had to explicitly fight for every mobile optimisation. AI tools default to building for desktop. The pattern that finally worked: extremely targeted, surgical CSS changes with explicit instructions not to touch any logic.</p>
+      </div>
+      <div class="bg-slate-800/30 p-5 rounded-xl border border-slate-700">
+        <strong class="text-white block mb-2">The owl matters.</strong>
+        <p class="text-slate-400 text-sm">Owen is a hand-drawn sketch I did in about ten minutes. He's not perfect — one eye is slightly bigger than the other. But he's mine, and he gives Owly a warmth and character that no AI-generated mascot could replicate. The thing that makes a product feel human is usually something a human actually made.</p>
+      </div>
+    </div>
+
+    <h2 class="text-2xl font-bold text-white mb-6">What's next</h2>
+    <p class="mb-6">
+      Owly is in friends-and-family launch now. The next sprint will add a lump sum payment simulator, interest-only support for business loans, payment-free periods for hire purchase, and a break fee calculator for people considering breaking a fixed mortgage early.
+    </p>
+    <p class="mb-8">
+      The longer-term vision is a lead generation platform for mortgage brokers and financial advisers — the free consumer tool funds itself through referrals when users are ready to take action.
+    </p>
+
+    <div class="bg-slate-800 p-6 rounded-xl border-l-4 border-emerald-500 my-8">
+      <h4 class="text-white font-bold mb-2">Try Owly</h4>
+      <p class="text-slate-400 mb-4">Free. No bank login required. Owen will be waiting.</p>
+      <a href="https://owly.co.nz" target="_blank" class="text-emerald-400 hover:text-white font-medium transition-colors">Visit owly.co.nz →</a>
+    </div>
+
+    <p class="text-sm text-slate-500 italic">
+      I'm transparent about my use of AI in my work. This post was drafted with Claude based on notes from the actual build process.
+    </p>
+  `
+}
   ];
 
 
