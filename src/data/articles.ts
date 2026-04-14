@@ -16,11 +16,11 @@ export const articles: Article[] = [
     title: "How I build apps using Gemini, GitHub & Vercel",
     seoTitle: "The AI Stack: Building SaaS with Gemini & Vercel | Sheridan Jamieson",
     description: "Stop coding from scratch. A guide to the 'AI Stack' workflow that helps people ship production-ready apps in 24 hours using Gemini Pro.",
-    publishDate: "2026-01-12", // Changed from Jan 25 to create a 2-week gap
+    publishDate: "2026-01-12",
     category: "Software",
     content: `
       <p class="text-xl text-slate-300 leading-relaxed mb-8">
-        I’m not a developer and I’ve got next-to-no prior experience in coding, design, or building websites. I’ve also just launched four websites, three of which are functional apps, in the space of a week. Here’s how I ship production-ready apps in 24 hours using the AI Stack.
+        I'm not a developer and I've got next-to-no prior experience in coding, design, or building websites. I've also just launched four websites, three of which are functional apps, in the space of a week. Here's how I ship production-ready apps in 24 hours using the AI Stack.
       </p>
 
       <hr class="border-slate-800 my-8" />
@@ -29,7 +29,7 @@ export const articles: Article[] = [
         Up until now, if you wanted to build digital products, you had two options. Pay someone to do it for you or take the time to learn it yourself. Now there is a new option - if you have a clear vision of what you want, you can use AI to build it for you.
       </p>
       <p class="mb-8">
-        Here’s my workflow detailing how I use Gemini Pro, Github, and Vercel to launch beautiful websites and web apps for virtually no cost.
+        Here's my workflow detailing how I use Gemini Pro, Github, and Vercel to launch beautiful websites and web apps for virtually no cost.
       </p>
 
       <h2 class="text-2xl font-bold text-white mb-6">The Tools</h2>
@@ -56,7 +56,7 @@ export const articles: Article[] = [
       
       <div class="my-6 bg-slate-900/50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
         <span class="text-xs font-bold text-emerald-500 tracking-widest uppercase mb-2 block">The Prompt</span>
-        <p class="italic text-slate-300">"I want to build a web app that calculates marathon splits. The website styling should be minimalist, simple and include racing themes. Please give me the code to get started. I’m not a developer so will need specific instructions. Ask questions to clarify any missing details.”</p>
+        <p class="italic text-slate-300">"I want to build a web app that calculates marathon splits. The website styling should be minimalist, simple and include racing themes. Please give me the code to get started. I'm not a developer so will need specific instructions. Ask questions to clarify any missing details."</p>
       </div>
 
       <p class="mb-6">I take that code and create the files directly in a new GitHub repository. Gemini can guide you through how to do this step by step.</p>
@@ -74,7 +74,7 @@ export const articles: Article[] = [
 
       <div class="my-6 bg-slate-900/50 border-l-4 border-emerald-500 p-6 rounded-r-xl">
         <span class="text-xs font-bold text-emerald-500 tracking-widest uppercase mb-2 block">The Prompt</span>
-        <p class="italic text-slate-300">"This toggle looks messy. Make it look like the button in this design reference image. Give me the updated code.”</p>
+        <p class="italic text-slate-300">"This toggle looks messy. Make it look like the button in this design reference image. Give me the updated code."</p>
       </div>
 
       <h3 class="text-xl font-semibold text-white mt-8 mb-4">Step 4: The Deploy (No Terminal Required)</h3>
@@ -91,7 +91,7 @@ export const articles: Article[] = [
 
       <h2 class="text-2xl font-bold text-white mb-6">Real World Results</h2>
       <p class="mb-4">Using this exact workflow, I built two tools that would have previously cost me thousands of dollars to outsource:</p>
-      <ul class="space-y-4 mb-8">
+      <ul class="space-y-4 mb-6">
         <li class="flex items-start gap-3">
           <span class="text-emerald-400 mt-1">➜</span>
           <span>
@@ -107,6 +107,9 @@ export const articles: Article[] = [
           </span>
         </li>
       </ul>
+      <p class="mb-8">
+        I later applied this same workflow to build a full <a href="/articles/building-a-coaching-platform-airtable-zapier-strava" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">coaching platform</a> and a <a href="/articles/building-launching-owly-nz-debt-dashboard" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">debt management app</a> — if you want to see the method applied to more complex problems, both builds are worth a read.
+      </p>
 
       <h2 class="text-2xl font-bold text-white mb-6">Conclusion</h2>
       <p class="text-lg text-slate-300">
@@ -135,7 +138,7 @@ export const articles: Article[] = [
         In 2019, while traveling across Europe, I made the impulsive decision to run the Budapest Marathon. At that point, I had never even run a half marathon.
       </p>
       <p class="mb-6">
-        My "training" was practically non-existent by modern standards. Every week consisted of five runs, all run at the exact same medium-hard intensity. There was no structure, no variety - just an attempt to run slightly further than the week before. I didn’t use gels. I didn't understand fueling. I bonked pretty much every single run.
+        My "training" was practically non-existent by modern standards. Every week consisted of five runs, all run at the exact same medium-hard intensity. There was no structure, no variety - just an attempt to run slightly further than the week before. I didn't use gels. I didn't understand fueling. I bonked pretty much every single run.
       </p>
       <p class="mb-6">
         On marathon day, I ran to 30km (which was a miracle in itself) and pretty much walked the rest of the way. I crossed the finish line broken. A few months later, I picked up an injury and promptly fell out of love with running.
@@ -143,7 +146,7 @@ export const articles: Article[] = [
 
       <h2 class="text-2xl font-bold text-white mb-6">The Turning Point (2021)</h2>
       <p class="mb-6">
-        Fast forward to 2021. I saw a picture of myself and, frankly, I wasn’t happy with what I was seeing. I had let my exercise habits slip - we had just welcomed our first baby, so I cut myself some slack - but I realized I needed to take action.
+        Fast forward to 2021. I saw a picture of myself and, frankly, I wasn't happy with what I was seeing. I had let my exercise habits slip - we had just welcomed our first baby, so I cut myself some slack - but I realized I needed to take action.
       </p>
       <p class="mb-6">
         Enter <strong>Coach Bennett and the Nike Run Club app</strong>. The guided runs voiced by Coach Bennett introduced me to the concept of <em>running properly</em>. For the first time, I learned the difference between easy runs, tempo runs, intervals, and long runs.
@@ -196,6 +199,9 @@ export const articles: Article[] = [
       <p class="mb-6">
         I realized that <strong>most runners are stuck in that 2019 phase.</strong> They are running hard, guessing their fueling, and wondering why they aren't getting faster. I wanted to bridge that gap. I wanted to take the lessons I learned - structure, fueling, and community - and make them accessible to everyone.
       </p>
+      <p class="mb-6">
+        The most recent proof of what purposeful training produces was a parkrun PB I turned into an <a href="/articles/18-38-parkrun-pb-interactive-race-experience" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">interactive race experience</a> — worth a look if you want to understand what this kind of training actually feels like from the inside.
+      </p>
 
       <div class="bg-[#D4FF00] p-8 rounded-2xl text-center my-12 transform hover:scale-[1.01] transition-transform duration-300 shadow-xl shadow-emerald-900/20">
         <h3 class="text-black font-bold text-2xl mb-4">Ready to stop guessing?</h3>
@@ -209,20 +215,20 @@ export const articles: Article[] = [
 
       <h2 class="text-2xl font-bold text-white mb-6">What's Next?</h2>
       <p class="text-lg text-slate-300 mb-8">
-        The most exciting part is that I know I’m still in the first half of this journey. I’ve just signed up for my next marathon, and the goalposts are moving again. Watch this space.
+        The most exciting part is that I know I'm still in the first half of this journey. I've just signed up for my next marathon, and the goalposts are moving again. Watch this space.
       </p>
     `
   },
   
-   // --- ARTICLE 3: RUN WITH RUN CLUB BRAND CASE STUDY ---
+  // --- ARTICLE 3: RUN WITH RUN CLUB BRAND CASE STUDY ---
   {
-  slug: "case-study-run-with-run-club-brand",
-  title: "Case Study: Designing a 'Digital-First' Running Brand",
-  seoTitle: "Building the Run With Run Club Brand Identity | Sheridan Jamieson",
-  description: "How we built a visual identity that bridges the gap between 'jogging' and 'athletics'—treating fitness coaching like a software product.",
-  publishDate: "2026-02-03", 
-  category: "Design",
-  content: `
+    slug: "case-study-run-with-run-club-brand",
+    title: "Case Study: Designing a 'Digital-First' Running Brand",
+    seoTitle: "Building the Run With Run Club Brand Identity | Sheridan Jamieson",
+    description: "How we built a visual identity that bridges the gap between 'jogging' and 'athletics'—treating fitness coaching like a software product.",
+    publishDate: "2026-02-03", 
+    category: "Design",
+    content: `
       <p class="text-xl text-slate-300 leading-relaxed mb-8">
         The running industry is generally split into two visual camps: the "traditional club" aesthetic (singlets, clip art, dated) or the "elite" aesthetic (Olympians, unobtainable, perfect). When building <strong>Run With Run Club</strong>, we identified a gap for a third option.
       </p>
@@ -263,7 +269,7 @@ export const articles: Article[] = [
       </div>
 
       <p class="mb-6">
-        The accent is <strong>Neon Volt (#D4FF00)</strong>. It’s the color of a safety vest or a high-performance super shoe. It signals "Action" and cuts through the noise of a social media feed immediately.
+        The accent is <strong>Neon Volt (#D4FF00)</strong>. It's the color of a safety vest or a high-performance super shoe. It signals "Action" and cuts through the noise of a social media feed immediately.
       </p>
 
       <h2 class="text-2xl font-bold text-white mb-6">3. Typography: Industrial Function</h2>
@@ -271,7 +277,7 @@ export const articles: Article[] = [
         We paired <strong>Space Grotesk</strong> (Headers) with <strong>Inter</strong> (Body).
       </p>
       <p class="mb-6">
-        Space Grotesk brings the "streetwear" feel—it’s bold, quirky, and feels almost brutalist. It implies that the training plans are built with precision. Inter keeps the communication clear and readable, ensuring that whether you're reading a plan on a phone or a watch, the message lands.
+        Space Grotesk brings the "streetwear" feel—it's bold, quirky, and feels almost brutalist. It implies that the training plans are built with precision. Inter keeps the communication clear and readable, ensuring that whether you're reading a plan on a phone or a watch, the message lands.
       </p>
 
       <div class="my-8 rounded-xl overflow-hidden border border-slate-700 shadow-2xl">
@@ -294,8 +300,11 @@ export const articles: Article[] = [
       </div>
 
       <h2 class="text-2xl font-bold text-white mb-6">Conclusion</h2>
-      <p class="text-lg text-slate-300 mb-8">
+      <p class="text-lg text-slate-300 mb-6">
         By treating the coaching service as a brand rather than a hobby, we attracted exactly the right kind of client: people who want results without the rah-rah nonsense. The design system acts as a filter: if you want fluff, go elsewhere. If you want a plan that works, you're in the club.
+      </p>
+      <p class="text-lg text-slate-300 mb-8">
+        The brand system you're looking at here is applied directly inside the <a href="/articles/building-a-coaching-platform-airtable-zapier-strava" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">coaching platform I built to manage athletes</a> — if you're curious how the visual language translates into a real product, that's the next read.
       </p>
       
       <div class="bg-slate-800 p-6 rounded-xl border-l-4 border-[#D4FF00]">
@@ -304,10 +313,7 @@ export const articles: Article[] = [
         <a href="https://runwith.club" target="_blank" class="text-[#D4FF00] hover:text-white font-medium transition-colors">Visit runwith.club &rarr;</a>
       </div>
     `
-},
-
-  // ADD THIS ARTICLE TO THE articles ARRAY IN articles.ts
-// Suggested position: after the Run With brand case study (article 3)
+  },
 
   // --- ARTICLE 4: 18:38 RACE EXPERIENCE ---
   {
@@ -324,6 +330,10 @@ export const articles: Article[] = [
       </p>
 
       <hr class="border-slate-800 my-8" />
+
+      <p class="mb-6">
+        This race was the product of a few years of deliberate training — if you want the full story, I wrote about the <a href="/articles/from-jogger-to-athlete-training-journey" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">journey from jogger to athlete</a> that led here.
+      </p>
 
       <p class="mb-6">
         Numbers on Strava are a record of what happened. They're not the story. After the race I had a FIT file full of 1,119 heart rate data points and a GPS track of the exact route. I started wondering: what if you could <em>scroll through</em> a race the way you'd scroll through a story?
@@ -384,7 +394,7 @@ export const articles: Article[] = [
 
       <h2 class="text-2xl font-bold text-white mb-6">What's Next</h2>
       <p class="mb-6">
-        I'm wondering whether this kind of experience could be automated for <a href="https://runwith.club" target="_blank" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">Run With</a> athletes — upload your FIT file, get back a personalised race story. It would be a genuinely differentiated coaching deliverable: not just a training plan, but a record of the race that shows you understood it.
+        I'm wondering whether this kind of experience could be automated for <a href="https://runwith.club" target="_blank" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">Run With</a> athletes — upload your FIT file, get back a personalised race story. The <a href="/articles/building-a-coaching-platform-airtable-zapier-strava" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">coaching platform I built</a> already tracks what athletes do each week; a personalised race recap would be a genuinely differentiated deliverable on top of that.
       </p>
       <p class="mb-6">
         For now, go have a scroll through the experience. Turn the sound on. See if it doesn't feel a little bit like being there.
@@ -397,6 +407,7 @@ export const articles: Article[] = [
       </div>
     `
   },
+
   // --- ARTICLE 5: RWRC COACHING PLATFORM ---
   {
     slug: "building-a-coaching-platform-airtable-zapier-strava",
@@ -423,7 +434,7 @@ export const articles: Article[] = [
       </p>
 
       <h2 class="text-2xl font-bold text-white mb-6">What I built</h2>
-      <p class="mb-6">The system has three parts that work together.</p>
+      <p class="mb-6">The system has three parts that work together. I used the same <a href="/articles/building-ai-apps-gemini-vercel" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">AI-first build workflow</a> I've applied across all my projects — if you want the method itself, that article lays it out step by step.</p>
 
       <div class="grid gap-4 mb-10 not-prose">
         <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
@@ -448,7 +459,7 @@ export const articles: Article[] = [
         There are two visible improvements for athletes. The first is the welcome experience. New athletes used to get a PDF. Now they get a personalised link that opens a proper branded page covering how we work together, the coaching philosophy, and what to expect. Small thing, but it sets a more intentional tone from day dot.
       </p>
       <p class="mb-8">
-        The second is the weekly plan itself. They still receive it as a WhatsApp screenshot, but instead of a green-tinted spreadsheet, it's now a clean, dark-themed table in the Run With brand. Same information, much better presentation.
+        The second is the weekly plan itself. They still receive it as a WhatsApp screenshot, but instead of a green-tinted spreadsheet, it's now a clean, dark-themed table in the Run With brand. Same information, much better presentation. The <a href="/articles/case-study-run-with-run-club-brand" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">brand system</a> was designed specifically to work in this kind of context.
       </p>
 
       <h2 class="text-2xl font-bold text-white mb-6">What the dashboard actually shows me</h2>
@@ -524,15 +535,16 @@ export const articles: Article[] = [
       </div>
     `
   },
+
   // --- ARTICLE 6: BUILDING AND LAUNCHING OWLY ---
-{
-  slug: "building-launching-owly-nz-debt-dashboard",
-  title: "I built and launched a SaaS product in two weeks using AI",
-  seoTitle: "Building Owly: A SaaS Launch Story Using AI | Sheridan Jamieson",
-  description: "The honest story of how I built and launched Owly — a debt dashboard for New Zealanders — in two weeks using Claude, Lovable, and Claude Code.",
-  publishDate: "2026-04-13",
-  category: "Software",
-  content: `
+  {
+    slug: "building-launching-owly-nz-debt-dashboard",
+    title: "I built and launched a SaaS product in two weeks using AI",
+    seoTitle: "Building Owly: A SaaS Launch Story Using AI | Sheridan Jamieson",
+    description: "The honest story of how I built and launched Owly — a debt dashboard for New Zealanders — in two weeks using Claude, Lovable, and Claude Code.",
+    publishDate: "2026-04-13",
+    category: "Software",
+    content: `
     <p class="text-xl text-slate-300 leading-relaxed mb-8">
       Most "I built X with AI" posts skip the messy bits. This one won't.
     </p>
@@ -556,7 +568,7 @@ export const articles: Article[] = [
 
     <h2 class="text-2xl font-bold text-white mb-6">The tools</h2>
     <p class="mb-6">
-      I want to be transparent about how this was built because the honest version is more useful than the polished version.
+      I want to be transparent about how this was built because the honest version is more useful than the polished version. If you want the simpler version of this workflow — the zero-to-one method I use for every build — I wrote it up in <a href="/articles/building-ai-apps-gemini-vercel" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">How I build apps using Gemini, GitHub & Vercel</a>. Owly is what happens when you apply that method to something more complex.
     </p>
 
     <div class="grid gap-4 mb-10 not-prose">
@@ -621,7 +633,7 @@ export const articles: Article[] = [
       Owly is in friends-and-family launch now. The next sprint will add a lump sum payment simulator, interest-only support for business loans, payment-free periods for hire purchase, and a break fee calculator for people considering breaking a fixed mortgage early.
     </p>
     <p class="mb-8">
-      The longer-term vision is a lead generation platform for mortgage brokers and financial advisers — the free consumer tool funds itself through referrals when users are ready to take action.
+      The longer-term vision is a lead generation platform for mortgage brokers and financial advisers — the free consumer tool funds itself through referrals when users are ready to take action. I also wrote a companion piece to this one — <a href="/articles/why-a-vcfo-built-a-debt-dashboard" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">the vCFO angle on why this tool needed to exist</a> — if you're more interested in the problem than the build.
     </p>
 
     <div class="bg-slate-800 p-6 rounded-xl border-l-4 border-emerald-500 my-8">
@@ -634,16 +646,17 @@ export const articles: Article[] = [
       I'm transparent about my use of AI in my work. This post was drafted with Claude based on notes from the actual build process.
     </p>
   `
-},
+  },
+
   // --- ARTICLE 7: WHY A VCFO BUILT OWLY ---
-{
-  slug: "why-a-vcfo-built-a-debt-dashboard",
-  title: "Why a vCFO built a debt dashboard in his evenings",
-  seoTitle: "Why a vCFO Built Owly: A NZ Debt Dashboard | Sheridan Jamieson",
-  description: "I spend my days looking at business finances. Here's why I couldn't find a single tool to help New Zealanders manage their personal debt — so I built one.",
-  publishDate: "2026-04-13",
-  category: "Finance",
-  content: `
+  {
+    slug: "why-a-vcfo-built-a-debt-dashboard",
+    title: "Why a vCFO built a debt dashboard in his evenings",
+    seoTitle: "Why a vCFO Built Owly: A NZ Debt Dashboard | Sheridan Jamieson",
+    description: "I spend my days looking at business finances. Here's why I couldn't find a single tool to help New Zealanders manage their personal debt — so I built one.",
+    publishDate: "2026-04-13",
+    category: "Finance",
+    content: `
     <p class="text-xl text-slate-300 leading-relaxed mb-8">
       I spend my days looking at numbers. Cash flow models, loan covenants, interest coverage ratios. As a virtual CFO working with New Zealand businesses, debt is something I understand at a structural level that most people never need to.
     </p>
@@ -677,8 +690,11 @@ export const articles: Article[] = [
     <p class="mb-6">
       As a vCFO, I've always believed visibility is the first step to control. You can't manage what you can't see. Most New Zealanders have never seen all their debt in one place, let alone a clear figure for what it costs them every single day.
     </p>
-    <p class="mb-8">
+    <p class="mb-6">
       That daily interest cost figure tends to land differently than an annual number buried in a statement. Seeing "$58 a day in interest" on your screen changes how you think about the problem.
+    </p>
+    <p class="mb-8">
+      If you're more interested in how Owly was actually built than why, I wrote the <a href="/articles/building-launching-owly-nz-debt-dashboard" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">full technical build story</a> separately — including the messy bits.
     </p>
 
     <h2 class="text-2xl font-bold text-white mb-6">What Owly actually does</h2>
@@ -695,7 +711,7 @@ export const articles: Article[] = [
       A debt-free date that updates when you commit to a plan. Automated alerts when your fixed rate is coming up for refix. Warnings when a credit card's minimum payment isn't covering the monthly interest. A shared read-only dashboard so your partner or financial adviser can see the full picture without needing an account.
     </p>
     <p class="mb-8">
-      And Owen. A hand-drawn owl I sketched myself who lives on every page of the app and keeps a close eye on your debt so you don't have to.
+      And Owen. A hand-drawn owl I sketched myself who lives on every page of the app and keeps a close eye on your debt so you don't have to. The whole thing was built using the <a href="/articles/building-ai-apps-gemini-vercel" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">AI-first build method</a> I've been refining across several projects.
     </p>
 
     <h2 class="text-2xl font-bold text-white mb-6">The vCFO angle</h2>
@@ -722,8 +738,5 @@ export const articles: Article[] = [
       Sheridan Jamieson is a vCFO at Nurture and the founder of Owly. He is transparent about his use of AI in his work and writing.
     </p>
   `
-}
-  ];
-
-
-
+  }
+];
