@@ -14,7 +14,7 @@ const Projects = () => {
       <Nav />
 
       <div className="min-h-screen bg-[#0f172a] text-slate-300 pt-14 p-6 md:p-12 selection:bg-rose-500 selection:text-white">
-        <div className="max-w-3xl mx-auto mt-8">
+        <div className="max-w-4xl mx-auto mt-8">
 
           {/* Header */}
           <div className="mb-12">
@@ -23,26 +23,25 @@ const Projects = () => {
           </div>
 
           {/* Projects Grid */}
-          <div className="space-y-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
             {/* Owly */}
-<a href="https://owly.co.nz" target="_blank" rel="noreferrer" className="block group">
-  <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-teal-500/50 transition-all hover:shadow-lg hover:shadow-teal-500/10 relative">
-    <div className="absolute top-8 right-8 text-slate-600 group-hover:text-teal-500 transition-colors">
-      <ExternalLink size={20} />
-    </div>
-    <div className="w-12 h-12 bg-teal-500 rounded-lg flex items-center justify-center text-white font-bold text-xl mb-6 shadow-lg shadow-teal-900/20">O</div>
-    <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">Owly</h2>
-    <p className="text-slate-400 leading-relaxed">
-      The debt dashboard built for New Zealanders. See all your loans in one place and build a smarter repayment strategy.
-    </p>
-  </div>
-</a>
+            <a href="https://owly.co.nz" target="_blank" rel="noreferrer" className="block group h-full">
+              <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 hover:border-teal-500/50 transition-all hover:shadow-lg hover:shadow-teal-500/10 relative h-full flex flex-col">
+                <div className="absolute top-8 right-8 text-slate-600 group-hover:text-teal-500 transition-colors">
+                  <ExternalLink size={20} />
+                </div>
+                <div className="w-12 h-12 bg-teal-500 rounded-lg flex items-center justify-center text-white font-bold text-xl mb-6 shadow-lg shadow-teal-900/20">O</div>
+                <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">Owly</h2>
+                <p className="text-slate-400 leading-relaxed">
+                  The debt dashboard built for New Zealanders. See all your loans in one place and build a smarter repayment strategy.
+                </p>
+              </div>
+            </a>
 
-            
             {/* Learn Xero */}
-            <a href="https://learnxero.co.nz" target="_blank" rel="noreferrer" className="block group">
-              <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-pink-500/50 transition-all hover:shadow-lg hover:shadow-pink-500/10 relative">
+            <a href="https://learnxero.co.nz" target="_blank" rel="noreferrer" className="block group h-full">
+              <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 hover:border-pink-500/50 transition-all hover:shadow-lg hover:shadow-pink-500/10 relative h-full flex flex-col">
                 <div className="absolute top-8 right-8 text-slate-600 group-hover:text-pink-500 transition-colors">
                   <ExternalLink size={20} />
                 </div>
@@ -57,8 +56,8 @@ const Projects = () => {
             </a>
 
             {/* Sprix */}
-            <a href="https://sprix.run" target="_blank" rel="noreferrer" className="block group">
-              <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-rose-500/50 transition-all hover:shadow-lg hover:shadow-rose-500/10 relative">
+            <a href="https://sprix.run" target="_blank" rel="noreferrer" className="block group h-full">
+              <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 hover:border-rose-500/50 transition-all hover:shadow-lg hover:shadow-rose-500/10 relative h-full flex flex-col">
                 <div className="absolute top-8 right-8 text-slate-600 group-hover:text-rose-500 transition-colors">
                   <ExternalLink size={20} />
                 </div>
@@ -69,8 +68,8 @@ const Projects = () => {
             </a>
 
             {/* Runway */}
-            <a href="https://yourbudget.xyz" target="_blank" rel="noreferrer" className="block group">
-              <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-blue-500/50 transition-all hover:shadow-lg hover:shadow-blue-500/10 relative">
+            <a href="https://yourbudget.xyz" target="_blank" rel="noreferrer" className="block group h-full">
+              <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 hover:border-blue-500/50 transition-all hover:shadow-lg hover:shadow-blue-500/10 relative h-full flex flex-col">
                 <div className="absolute top-8 right-8 text-slate-600 group-hover:text-blue-500 transition-colors">
                   <ExternalLink size={20} />
                 </div>
@@ -81,8 +80,8 @@ const Projects = () => {
             </a>
 
             {/* Spreadsheet School */}
-            <a href="https://spreadsheet.school" target="_blank" rel="noreferrer" className="block group">
-              <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-emerald-500/50 transition-all hover:shadow-lg hover:shadow-emerald-500/10 relative">
+            <a href="https://spreadsheet.school" target="_blank" rel="noreferrer" className="block group h-full">
+              <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 hover:border-emerald-500/50 transition-all hover:shadow-lg hover:shadow-emerald-500/10 relative h-full flex flex-col">
                 <div className="absolute top-8 right-8 text-slate-600 group-hover:text-emerald-500 transition-colors">
                   <ExternalLink size={20} />
                 </div>
@@ -93,8 +92,8 @@ const Projects = () => {
             </a>
 
             {/* 5k.runwith.club */}
-            <a href="https://5k.runwith.club" target="_blank" rel="noreferrer" className="block group">
-              <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-[#D4FF00]/50 transition-all hover:shadow-lg hover:shadow-[#D4FF00]/10 relative">
+            <a href="https://5k.runwith.club" target="_blank" rel="noreferrer" className="block group h-full">
+              <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 hover:border-[#D4FF00]/50 transition-all hover:shadow-lg hover:shadow-[#D4FF00]/10 relative h-full flex flex-col">
                 <div className="absolute top-8 right-8 text-slate-600 group-hover:text-[#D4FF00] transition-colors">
                   <ExternalLink size={20} />
                 </div>
