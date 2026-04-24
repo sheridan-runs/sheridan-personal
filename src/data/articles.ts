@@ -654,7 +654,7 @@ export const articles: Article[] = [
     title: "Why a vCFO built a debt dashboard in his evenings",
     seoTitle: "Why a vCFO Built Owly: A NZ Debt Dashboard | Sheridan Jamieson",
     description: "I spend my days looking at business finances. Here's why I couldn't find a single tool to help New Zealanders manage their personal debt — so I built one.",
-    publishDate: "2026-04-13",
+    publishDate: "2026-04-14",
     category: "Finance",
     content: `
     <p class="text-xl text-slate-300 leading-relaxed mb-8">
