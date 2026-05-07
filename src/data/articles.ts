@@ -752,11 +752,11 @@ export const articles: Article[] = [
         I was listening to a running podcast recently where the host mentioned a conversation with Australian marathon legend Robert de Castella after the Adelaide Marathon. They were discussing a common, complex challenge for mass-participation events: the logistics and costs of road closures.
       </p>
 
+      <hr class="border-slate-800 my-8" />
+
       <p class="mb-8">
         Deeks made a compelling point. He noted that running events are incredibly effective, scalable public health interventions, and finding ways for cities to support them is a net positive for everyone.
       </p>
-
-      <hr class="border-slate-800 my-8" />
 
       <p class="mb-6">
         It highlighted a really tricky balancing act for civic leaders. City councils have to manage tight budgets, field complaints about traffic disruptions, and cover the immediate, tangible costs of traffic management. On a spreadsheet, closing a road for a marathon looks like an immediate expense. The long-term financial savings of a healthier, more active population are much harder to quantify in an annual budget.
