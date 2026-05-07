@@ -738,5 +738,69 @@ export const articles: Article[] = [
       Sheridan Jamieson is a vCFO at Nurture and the founder of Owly. He is transparent about his use of AI in his work and writing.
     </p>
   `
+  },
+  // --- ARTICLE 8: THE CASE FOR RUNNING ---
+  {
+    slug: "civic-case-for-mass-participation-running-events",
+    title: "The civic case for mass-participation running events",
+    seoTitle: "The Civic Case for Running Events | Sheridan Jamieson",
+    description: "Why city councils should stop seeing road closures as a cost, and start seeing them as preventative health infrastructure.",
+    publishDate: "2026-05-07",
+    category: "Strategy",
+    content: `
+      <p class="text-xl text-slate-300 leading-relaxed mb-8">
+        I was listening to a running podcast recently where the host mentioned a conversation with Australian marathon legend Robert de Castella after the Adelaide Marathon. They were discussing a common, complex challenge for mass-participation events: the logistics and costs of road closures.
+      </p>
+
+      <p class="mb-8">
+        Deeks made a compelling point. He noted that running events are incredibly effective, scalable public health interventions, and finding ways for cities to support them is a net positive for everyone.
+      </p>
+
+      <hr class="border-slate-800 my-8" />
+
+      <p class="mb-6">
+        It highlighted a really tricky balancing act for civic leaders. City councils have to manage tight budgets, field complaints about traffic disruptions, and cover the immediate, tangible costs of traffic management. On a spreadsheet, closing a road for a marathon looks like an immediate expense. The long-term financial savings of a healthier, more active population are much harder to quantify in an annual budget.
+      </p>
+      <p class="mb-6">
+        But that data <em>does</em> exist. It just tends to be buried deep inside 200-page World Health Organization reports or academic medical journals.
+      </p>
+      <p class="mb-8">
+        I thought it might be useful to pull this data out of the PDFs and put it into a format that’s easy to read, share, and reference. So, I spent some time collating research from the <em>Journal of the American College of Cardiology</em>, <em>Sport New Zealand</em>, and regional economic impact reports into a single-page brief: <strong><a href="https://thecaseforrunning.com" target="_blank" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">The Case For Running</a></strong>.
+      </p>
+
+      <h2 class="text-2xl font-bold text-white mb-6">The Data</h2>
+      <p class="mb-6">When you look at the numbers, they tell a highly compelling story across two areas that matter deeply to civic planning:</p>
+
+      <div class="grid gap-4 mb-10 not-prose">
+        <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
+          <strong class="text-emerald-400 block text-lg mb-2">1. Preventative Health Economics</strong>
+          <p class="text-slate-400 text-sm mb-3">Physical inactivity accounts for roughly 4.5% of direct national healthcare expenditures. However, research shows that for every $1 a community invests in active recreation infrastructure, there is a $2.12 social and economic return.</p>
+          <p class="text-slate-400 text-sm">Consistent runners have a 45% lower risk of heart disease and live, on average, three years longer. Helping transition citizens from the couch to a starting line is a highly effective form of preventative healthcare.</p>
+        </div>
+        <div class="bg-slate-800/50 p-5 rounded-xl border border-slate-700">
+          <strong class="text-emerald-400 block text-lg mb-2">2. The Visitor Economy</strong>
+          <p class="text-slate-400 text-sm mb-3">Beyond health, these events are significant economic drivers. The 2025 Gold Coast Marathon, for example, generated $65.6 million in direct economic impact over a single weekend.</p>
+          <p class="text-slate-400 text-sm">Thanks to the "multiplier effect," every runner on the course brings almost two non-running supporters who spend money in local hotels, cafes, and retail precincts.</p>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold text-white mb-6">The Civic Partnership</h2>
+      <p class="mb-6">
+        Civic leaders, city councils, and event organisers ultimately share the exact same goal: vibrant, healthy, and economically strong communities.
+      </p>
+      <p class="mb-8">
+        I put this site together to act as a free, objective resource to help facilitate those partnerships. Whether you are advocating for a local Parkrun, directing a city marathon, or sitting on a council looking for data to justify supporting a local fitness initiative, the link is there to be used.
+      </p>
+
+      <div class="bg-[#D4FF00] p-8 rounded-2xl text-center my-12 transform hover:scale-[1.01] transition-transform duration-300 shadow-xl shadow-emerald-900/20">
+        <h3 class="text-black font-bold text-2xl mb-4">Temporarily closing roads for a run isn't just a disruption to traffic...</h3>
+        <p class="text-black/80 text-lg mb-6 max-w-lg mx-auto">
+          ...it's a temporary transformation of public space into a community health clinic.
+        </p>
+        <a href="https://thecaseforrunning.com" target="_blank" class="inline-block bg-black text-white font-bold px-8 py-4 rounded-full hover:bg-slate-800 transition-colors">
+          Read The Case For Running ↗
+        </a>
+      </div>
+    `
   }
 ];
