@@ -233,6 +233,7 @@ function Home() {
               <a href="https://nurture.kiwi" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">nurture.kiwi</a>
               <a href="https://runwith.club" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">runwith.club</a>
               <a href="https://onepercentcollective.org" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">onepercentcollective.org</a>
+              <a href="https://thecaseforrunning.com" target="_blank" rel="noreferrer" className="hover:text-slate-300 transition-colors">thecaseforrunning.com</a>
             </div>
             <p className="text-slate-600 text-xs uppercase tracking-widest font-medium">
               &copy; {new Date().getFullYear()} Sheridan Jamieson. All Rights Reserved.
