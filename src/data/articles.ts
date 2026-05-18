@@ -788,8 +788,11 @@ export const articles: Article[] = [
       <p class="mb-6">
         Civic leaders, city councils, and event organisers ultimately share the exact same goal: vibrant, healthy, and economically strong communities.
       </p>
-      <p class="mb-8">
+      <p class="mb-6">
         I put this site together to act as a free, objective resource to help facilitate those partnerships. Whether you are advocating for a local Parkrun, directing a city marathon, or sitting on a council looking for data to justify supporting a local fitness initiative, the link is there to be used.
+      </p>
+      <p class="mb-8 text-sm text-slate-400 italic">
+        (Note: If you're curious about how I'm building these standalone tools, you can read about my <a href="/articles/building-ai-apps-gemini-vercel" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">AI-first development workflow</a> or my recent piece on <a href="/articles/why-a-vcfo-built-a-debt-dashboard" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">why I built a personal debt dashboard</a> to solve a similar lack of data visibility).
       </p>
 
       <div class="bg-[#D4FF00] p-8 rounded-2xl text-center my-12 transform hover:scale-[1.01] transition-transform duration-300 shadow-xl shadow-emerald-900/20">
