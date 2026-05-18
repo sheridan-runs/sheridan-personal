@@ -108,7 +108,7 @@ export const articles: Article[] = [
         </li>
       </ul>
       <p class="mb-8">
-        I later applied this same workflow to build a full <a href="/articles/building-a-coaching-platform-airtable-zapier-strava" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">coaching platform</a> and a <a href="/articles/building-launching-owly-nz-debt-dashboard" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">debt management app</a> — if you want to see the method applied to more complex problems, both builds are worth a read.
+        I later applied this same workflow to build a full <a href="/articles/building-a-coaching-platform-airtable-zapier-strava" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">coaching platform</a>, a <a href="/articles/building-launching-owly-nz-debt-dashboard" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">debt management app</a>, and a <a href="/articles/civic-case-for-mass-participation-running-events" class="text-emerald-400 hover:text-white underline decoration-slate-600 underline-offset-4">data-backed advocacy tool for running events</a>. If you want to see the method applied to different kinds of problems across different industries, they are all worth a read.
       </p>
 
       <h2 class="text-2xl font-bold text-white mb-6">Conclusion</h2>
