@@ -69,7 +69,7 @@ const Governance = () => {
     </div>
     <div className="flex-1 pr-6">
       <h3 className="text-xl font-bold text-white mb-1 group-hover:text-emerald-400 transition-colors">Greenpeace Aotearoa</h3>
-      <p className="text-xs font-bold text-emerald-500 mb-2 tracking-wider">BOARD OBSERVER</p>
+      <p className="text-xs font-bold text-emerald-500 mb-2 tracking-wider">TREASURER</p>
       <p className="text-slate-300 text-sm leading-relaxed m-0">
         Providing forward-looking financial perspective and strategic oversight.
       </p>
