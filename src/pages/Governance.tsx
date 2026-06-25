@@ -109,7 +109,7 @@ const Governance = () => {
                       <h3 className="text-xl font-bold text-white mb-1 group-hover:text-orange-400 transition-colors">Fairground Foundation</h3>
                       <p className="text-xs font-bold text-orange-500 mb-2 tracking-wider">BOARD TRUSTEE</p>
                       <p className="text-slate-300 text-sm leading-relaxed m-0">
-                        Serving as a strategic sounding board and advisory voice to help guide community-focused philanthropic initiatives.
+                        Serving as a strategic sounding board for community-focused philanthropy. Currently providing governance and technical oversight for the launch of <strong className="text-slate-200">Bucket</strong> - a community conservation fundraising platform.
                       </p>
                     </div>
                   </div>
