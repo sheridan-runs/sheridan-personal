@@ -1,4 +1,4 @@
-import { ExternalLink, Zap } from "lucide-react";
+import { ExternalLink, Zap, Leaf } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import Nav from "../components/Nav";
 
@@ -112,6 +112,22 @@ const Projects = () => {
                 <div className="w-12 h-12 bg-[#D4FF00] rounded-lg flex items-center justify-center text-black font-bold text-xl mb-6 shadow-lg shadow-[#D4FF00]/20">CR</div>
                 <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-[#D4FF00] transition-colors">The Case For Running</h2>
                 <p className="text-slate-400 leading-relaxed">A data-backed manifesto proving the economic and public health ROI of mass-participation running events. Built for civic leaders and race directors.</p>
+              </div>
+            </a>
+
+            {/* Bucket */}
+            <a href="https://hello.bucket.community" target="_blank" rel="noreferrer" className="block group h-full">
+              <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-6 hover:border-orange-500/50 transition-all hover:shadow-lg hover:shadow-orange-500/10 relative h-full flex flex-col">
+                <div className="absolute top-8 right-8 text-slate-600 group-hover:text-orange-500 transition-colors">
+                  <ExternalLink size={20} />
+                </div>
+                <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center text-white font-bold text-xl mb-6 shadow-lg shadow-orange-900/20">
+                  <Leaf size={24} fill="currentColor" />
+                </div>
+                <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors">Bucket</h2>
+                <p className="text-slate-400 leading-relaxed">
+                  A conservation fundraising platform built for the Fairground Foundation. Bucket connects donors directly with the 'doers' on the ground, allowing people to fund specific projects and track the real-world impact of their donations. Due to launch in late-2026.
+                </p>
               </div>
             </a>
 
