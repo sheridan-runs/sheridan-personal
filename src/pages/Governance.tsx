@@ -1,4 +1,4 @@
-import { ExternalLink, Briefcase, Globe, Heart, Shield, Linkedin } from "lucide-react";
+import { Briefcase, Globe, Heart, Shield, Linkedin } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import Nav from "../components/Nav";
 
