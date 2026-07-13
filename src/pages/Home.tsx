@@ -41,7 +41,7 @@ function Home() {
         <main className="max-w-4xl w-full space-y-24 relative z-10 animate-enter mt-12 md:mt-20">
 
           {/* ── 1. THE ANCHOR (HERO) ── */}
-          <section className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+          <section className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-10">
             <div className="flex-1 space-y-6 text-center md:text-left">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-2">
@@ -83,8 +83,8 @@ function Home() {
             <a
               href="https://bucket.community" 
               target="_blank"
-              rel="dofollow"
-              className="group block relative bg-[#1e293b]/40 border border-slate-700 rounded-2xl p-8 md:p-10 hover:border-orange-500/50 transition-all duration-300"
+              rel="noopener noreferrer"
+              className="group block relative bg-[#1e293b]/40 border border-slate-700 rounded-2xl p-8 md:p-10 hover:border-orange-500/50 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-4 focus-visible:ring-offset-[#0f172a]"
             >
               <div className="absolute top-8 right-8 text-slate-500 group-hover:text-orange-400 transition-colors">
                 <ExternalLink className="w-5 h-5" />
@@ -113,17 +113,17 @@ function Home() {
 
           {/* ── 3. THE PROOF (TWO LANES) ── */}
           <section className="w-full">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
               
               {/* Lane A: Software & Coaching */}
-              <div className="flex flex-col space-y-6">
+              <div className="flex flex-col h-full space-y-6">
                 <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500 border-b border-slate-800 pb-2">
                   Software & Coaching
                 </h2>
                 
                 <div className="flex flex-col gap-4 flex-1">
                   {/* Owly */}
-                  <a href="https://owly.co.nz" target="_blank" rel="dofollow" className="group flex-1 flex flex-col justify-center bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-teal-500/40 transition-colors">
+                  <a href="https://owly.co.nz" target="_blank" rel="noopener noreferrer" className="group flex-1 flex flex-col justify-center bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-teal-500/40 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f172a]">
                     <div className="flex items-center justify-between mb-2">
                       <h3 className="font-bold text-slate-200 group-hover:text-teal-400 transition-colors">Owly</h3>
                       <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-teal-400 transition-colors" />
@@ -132,7 +132,7 @@ function Home() {
                   </a>
 
                   {/* Run With */}
-                  <a href="https://runwith.club/" target="_blank" rel="dofollow" className="group flex-1 flex flex-col justify-center bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-[#D4FF00]/40 transition-colors">
+                  <a href="https://runwith.club/" target="_blank" rel="noopener noreferrer" className="group flex-1 flex flex-col justify-center bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-[#D4FF00]/40 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4FF00] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f172a]">
                     <div className="flex items-center justify-between mb-2">
                       <h3 className="font-bold text-slate-200 group-hover:text-[#D4FF00] transition-colors">Run With Run Club</h3>
                       <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-[#D4FF00] transition-colors" />
@@ -141,7 +141,7 @@ function Home() {
                   </a>
 
                   {/* Racetape */}
-                  <div className="flex-1 flex flex-col justify-center bg-[#1e293b]/20 border border-slate-800/50 rounded-xl p-5 cursor-default">
+                  <div className="flex-1 flex flex-col justify-center bg-[#1e293b]/20 border border-slate-800/50 rounded-xl p-5 cursor-default" aria-disabled="true">
                     <div className="flex items-center justify-between mb-2">
                       <h3 className="font-bold text-slate-400">Racetape</h3>
                       <span className="text-[9px] uppercase tracking-wider font-bold text-indigo-400/70 bg-indigo-900/20 px-2 py-0.5 rounded">In Dev</span>
@@ -152,14 +152,14 @@ function Home() {
               </div>
 
               {/* Lane B: Governance & Operations */}
-              <div className="flex flex-col space-y-6">
+              <div className="flex flex-col h-full space-y-6">
                 <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500 border-b border-slate-800 pb-2">
                   Governance & Operations
                 </h2>
                 
                 <div className="flex flex-col gap-4 flex-1">
                   {/* Greenpeace */}
-                  <a href="https://www.greenpeace.org/aotearoa/" target="_blank" rel="dofollow" className="group flex-1 flex flex-col justify-center bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-emerald-500/40 transition-colors">
+                  <a href="https://www.greenpeace.org/aotearoa/" target="_blank" rel="noopener noreferrer" className="group flex-1 flex flex-col justify-center bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-emerald-500/40 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f172a]">
                     <div className="flex items-center justify-between mb-2">
                       <h3 className="font-bold text-slate-200 group-hover:text-emerald-400 transition-colors">Greenpeace Aotearoa</h3>
                       <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-emerald-400 transition-colors" />
@@ -168,7 +168,7 @@ function Home() {
                   </a>
 
                   {/* Nurture */}
-                  <a href="https://nurture.kiwi/" target="_blank" rel="dofollow" className="group flex-1 flex flex-col justify-center bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-white/40 transition-colors">
+                  <a href="https://nurture.kiwi/" target="_blank" rel="noopener noreferrer" className="group flex-1 flex flex-col justify-center bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-white/40 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f172a]">
                     <div className="flex items-center justify-between mb-2">
                       <h3 className="font-bold text-slate-200 group-hover:text-white transition-colors">Nurture</h3>
                       <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-white transition-colors" />
@@ -177,7 +177,7 @@ function Home() {
                   </a>
 
                   {/* OPC */}
-                  <a href="https://www.onepercentcollective.org/" target="_blank" rel="dofollow" className="group flex-1 flex flex-col justify-center bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-rose-500/40 transition-colors">
+                  <a href="https://www.onepercentcollective.org/" target="_blank" rel="noopener noreferrer" className="group flex-1 flex flex-col justify-center bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-rose-500/40 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f172a]">
                     <div className="flex items-center justify-between mb-2">
                       <h3 className="font-bold text-slate-200 group-hover:text-rose-400 transition-colors">1% Collective</h3>
                       <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-rose-400 transition-colors" />
@@ -190,7 +190,7 @@ function Home() {
 
             {/* Governance Link placed below the grid to preserve alignment */}
             <div className="mt-4 flex md:justify-end">
-              <Link to="/governance" className="inline-flex items-center gap-1.5 text-xs text-slate-500 hover:text-sky-400 transition-colors group">
+              <Link to="/governance" className="inline-flex items-center gap-1.5 text-xs text-slate-500 hover:text-sky-400 transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f172a] rounded">
                 View full governance portfolio
                 <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
               </Link>
@@ -205,7 +205,7 @@ function Home() {
               </h2>
               <Link
                 to="/articles"
-                className="text-xs text-slate-500 hover:text-slate-300 transition-colors flex items-center gap-1 group"
+                className="text-xs text-slate-500 hover:text-slate-300 transition-colors flex items-center gap-1 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-300 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f172a] rounded"
               >
                 All articles
                 <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
@@ -217,7 +217,7 @@ function Home() {
                 <Link
                   key={article.slug}
                   to={`/articles/${article.slug}`}
-                  className="group flex flex-col gap-3 bg-[#1e293b]/40 border border-slate-800 rounded-xl p-6 hover:border-slate-600 transition-all duration-200"
+                  className="group flex flex-col gap-3 bg-[#1e293b]/40 border border-slate-800 rounded-xl p-6 hover:border-slate-600 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f172a]"
                 >
                   <div className="flex items-center justify-between gap-2">
                     <span className={`text-[10px] uppercase tracking-wider font-bold px-2.5 py-1 rounded-full ${getCategoryStyles(article.category)}`}>
