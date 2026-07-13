@@ -1,4 +1,4 @@
-import { ExternalLink, MapPin, Briefcase, ArrowRight, Leaf, Activity, Globe } from 'lucide-react';
+import { ExternalLink, MapPin, ArrowRight, Leaf } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { articles } from '../data/articles';
@@ -38,12 +38,30 @@ function Home() {
         {/* Background radial glow */}
         <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-[radial-gradient(circle,rgba(16,185,129,0.08)_0%,transparent_70%)] pointer-events-none z-0"></div>
 
-        <main className="max-w-5xl w-full space-y-16 relative z-10 animate-enter mt-12">
+        <main className="max-w-4xl w-full space-y-24 relative z-10 animate-enter mt-12 md:mt-20">
 
-          {/* ── HEADER (Jargon-Free) ── */}
-          <section className="text-center space-y-6">
-            <div className="relative inline-block group">
-              <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-slate-700 shadow-xl mx-auto transition-transform duration-500 group-hover:scale-105 relative z-10 bg-slate-800">
+          {/* ── 1. THE ANCHOR (HERO) ── */}
+          <section className="flex flex-col-reverse md:flex-row items-center md:items-start justify-between gap-10">
+            <div className="flex-1 space-y-6 text-center md:text-left">
+              <div>
+                <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-2">
+                  Sheridan Jamieson
+                </h1>
+                <p className="text-slate-400 text-base flex items-center justify-center md:justify-start gap-2">
+                  <MapPin className="w-4 h-4" />
+                  Palmerston North, NZ
+                </p>
+              </div>
+              <p className="text-slate-300 text-lg md:text-xl leading-relaxed max-w-xl">
+                I translate complex problems into simple, effective systems. 
+              </p>
+              <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-xl">
+                Whether I'm untangling financial data, writing endurance training plans, or building software for conservation, my focus is always the same: helping ambitious people and organisations find their edge, sustainably.
+              </p>
+            </div>
+            
+            <div className="shrink-0 relative group">
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-slate-700 shadow-xl transition-transform duration-500 group-hover:scale-105 relative z-10 bg-slate-800">
                 <img
                   src="/profile.jpg"
                   alt="Sheridan Jamieson"
@@ -51,155 +69,134 @@ function Home() {
                 />
               </div>
             </div>
-
-            <div className="space-y-2">
-              <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
-                Sheridan Jamieson
-              </h1>
-              <p className="text-slate-400 text-base flex items-center justify-center gap-2">
-                <MapPin className="w-4 h-4" />
-                Palmerston North, NZ
-              </p>
-            </div>
-
-            <p className="text-slate-300 text-lg leading-relaxed max-w-2xl mx-auto">
-              I translate complex problems into simple, effective systems. Whether I'm untangling financial data, writing endurance training plans, or building software for conservation, my focus is always the same: helping ambitious people and organisations find their edge, sustainably.
-            </p>
           </section>
 
-          {/* ── THE ECOSYSTEM (BENTO BOX GRID) ── */}
+          {/* ── 2. THE MAIN EVENT (BUCKET) ── */}
           <section className="w-full">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[200px]">
+            <div className="mb-4">
+              <h2 className="text-xs font-bold uppercase tracking-widest text-orange-500 flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+                Current Focus
+              </h2>
+            </div>
+            
+            <a
+              href="https://bucket.community" 
+              target="_blank"
+              rel="dofollow"
+              className="group block relative bg-gradient-to-br from-[#1e293b]/80 to-black/80 border border-slate-700 rounded-2xl p-8 md:p-10 hover:border-orange-500/50 transition-all duration-300"
+            >
+              <div className="absolute top-8 right-8 text-slate-500 group-hover:text-orange-400 transition-colors">
+                <ExternalLink className="w-5 h-5" />
+              </div>
               
-              {/* BUCKET (Span 2 Columns) */}
-              <a
-                href="https://bucket.community" 
-                target="_blank"
-                rel="dofollow"
-                className="group relative md:col-span-2 bg-[#1e293b]/60 backdrop-blur-sm border border-slate-700 rounded-3xl p-6 hover:border-orange-500/50 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between overflow-hidden"
-              >
-                <div className="flex justify-between items-start z-10">
-                  <span className="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-orange-400 bg-orange-500/10 rounded-full border border-orange-500/20">
-                    Software / Launching 2026
-                  </span>
-                  <ExternalLink className="w-5 h-5 text-slate-500 group-hover:text-orange-400 transition-colors" />
+              <div className="max-w-2xl space-y-6">
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-orange-500/10 border border-orange-500/20">
+                  <Leaf className="w-6 h-6 text-orange-500" />
                 </div>
-                <div className="z-10 mt-4">
-                  <h2 className="text-2xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">Bucket</h2>
-                  <p className="text-slate-300 text-sm leading-relaxed max-w-md">
-                    A conservation fundraising platform connecting everyday Kiwis directly with the 'doers' on the ground to fund specific projects.
+                
+                <div>
+                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">
+                    Bucket
+                  </h3>
+                  <p className="text-slate-300 text-base md:text-lg leading-relaxed">
+                    Bucket is a conservation fundraising platform that connects everyday Kiwis who want to contribute directly to the work of the people out there protecting Aotearoa's wild places.
                   </p>
                 </div>
-                <Leaf className="absolute -bottom-4 -right-4 w-32 h-32 text-orange-500/5 rotate-12 group-hover:scale-110 transition-transform duration-500" />
-              </a>
-
-              {/* GREENPEACE (Span 1 Column) */}
-              <div className="group relative bg-[#1e293b]/60 backdrop-blur-sm border border-slate-700 rounded-3xl p-6 hover:border-emerald-500/50 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between overflow-hidden">
-                <div className="flex justify-between items-start z-10">
-                  <span className="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 rounded-full border border-emerald-500/20">
-                    Governance
-                  </span>
-                  <Globe className="w-5 h-5 text-slate-500 group-hover:text-emerald-400 transition-colors" />
-                </div>
-                <div className="z-10 mt-4">
-                  <h2 className="text-xl font-bold text-white mb-1 group-hover:text-emerald-400 transition-colors">Greenpeace Aotearoa</h2>
-                  <p className="text-slate-400 text-sm">Board Member & Treasurer</p>
-                </div>
+                
+                <p className="text-slate-400 text-sm md:text-base leading-relaxed border-l-2 border-slate-700 pl-4">
+                  Top up your personal Bucket wallet with as little as $5 a month. Your money sits there until you decide where it goes. <strong className="text-slate-200 font-semibold">More than a donation. A direct connection.</strong>
+                </p>
               </div>
+            </a>
+          </section>
 
-              {/* OWLY (Span 1 Column) */}
-              <a
-                href="https://owly.co.nz"
-                target="_blank"
-                rel="dofollow"
-                className="group relative bg-[#1e293b]/60 backdrop-blur-sm border border-slate-700 rounded-3xl p-6 hover:border-teal-500/50 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between overflow-hidden"
-              >
-                <div className="flex justify-between items-start z-10">
-                  <span className="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-teal-400 bg-teal-500/10 rounded-full border border-teal-500/20">
-                    Software
-                  </span>
-                  <ExternalLink className="w-4 h-4 text-slate-500 group-hover:text-teal-400 transition-colors" />
-                </div>
-                <div className="z-10 mt-4">
-                  <h2 className="text-xl font-bold text-white mb-1 group-hover:text-teal-400 transition-colors">Owly</h2>
-                  <p className="text-slate-400 text-sm">Visualise your debt and build a smarter repayment strategy.</p>
-                </div>
-              </a>
-
-              {/* NURTURE (Span 1 Column) */}
-              <a
-                href="https://nurture.kiwi/"
-                target="_blank"
-                rel="dofollow"
-                className="group relative bg-[#1e293b]/60 backdrop-blur-sm border border-slate-700 rounded-3xl p-6 hover:border-white/50 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between overflow-hidden"
-              >
-                <div className="flex justify-between items-start z-10">
-                  <span className="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-slate-300 bg-slate-500/10 rounded-full border border-slate-500/20">
-                    Advisory
-                  </span>
-                  <ExternalLink className="w-4 h-4 text-slate-500 group-hover:text-white transition-colors" />
-                </div>
-                <div className="z-10 mt-4">
-                  <h2 className="text-xl font-bold text-white mb-1 group-hover:text-slate-200 transition-colors">Nurture</h2>
-                  <p className="text-slate-400 text-sm">Director & vCFO providing strategic financial guidance.</p>
-                </div>
-              </a>
-
-              {/* RUN WITH (Span 1 Column) */}
-              <a
-                href="https://runwith.club/"
-                target="_blank"
-                rel="dofollow"
-                className="group relative bg-[#1e293b]/60 backdrop-blur-sm border border-slate-700 rounded-3xl p-6 hover:border-[#D4FF00]/50 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between overflow-hidden"
-              >
-                <div className="flex justify-between items-start z-10">
-                  <span className="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-[#D4FF00] bg-[#D4FF00]/10 rounded-full border border-[#D4FF00]/20">
-                    Coaching
-                  </span>
-                  <ExternalLink className="w-4 h-4 text-slate-500 group-hover:text-[#D4FF00] transition-colors" />
-                </div>
-                <div className="z-10 mt-4">
-                  <h2 className="text-xl font-bold text-white mb-1 group-hover:text-[#D4FF00] transition-colors">Run With Run Club</h2>
-                  <p className="text-slate-400 text-sm">Science-backed training to take you from jogger to athlete.</p>
-                </div>
-              </a>
-
-              {/* RACETAPE (Span 1 Column - In Dev) */}
-              <div className="group relative bg-[#1e293b]/30 backdrop-blur-sm border border-slate-800 rounded-3xl p-6 flex flex-col justify-between overflow-hidden cursor-default">
-                <div className="flex justify-between items-start z-10">
-                  <span className="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-indigo-400 bg-indigo-500/10 rounded-full border border-indigo-500/20">
-                    In Development
-                  </span>
-                  <Activity className="w-4 h-4 text-indigo-900/50" />
-                </div>
-                <div className="z-10 mt-4">
-                  <h2 className="text-xl font-bold text-slate-300 mb-1">Racetape</h2>
-                  <p className="text-slate-500 text-sm">Strava analysis tool to prepare data summaries for AI coaches.</p>
-                </div>
-              </div>
-
-              {/* ONE PERCENT COLLECTIVE & OTHER GOVERNANCE (Span 2 Columns) */}
-              <div className="md:col-span-2 group relative bg-[#1e293b]/60 backdrop-blur-sm border border-slate-700 rounded-3xl p-6 flex flex-col md:flex-row gap-6 justify-between items-start md:items-center overflow-hidden">
-                <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-2">
-                    <span className="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-rose-400 bg-rose-500/10 rounded-full border border-rose-500/20">
-                      Operations & Impact
-                    </span>
+          {/* ── 3. THE PROOF (TWO LANES) ── */}
+          <section className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            
+            {/* Lane A: Software & Coaching */}
+            <div className="space-y-6">
+              <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500 border-b border-slate-800 pb-2">
+                Software & Coaching
+              </h2>
+              
+              <div className="space-y-4">
+                {/* Owly */}
+                <a href="https://owly.co.nz" target="_blank" rel="dofollow" className="group block bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-teal-500/40 transition-colors">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="font-bold text-slate-200 group-hover:text-teal-400 transition-colors">Owly</h3>
+                    <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-teal-400 transition-colors" />
                   </div>
-                  <h2 className="text-xl font-bold text-white mb-1">1% Collective & Fairground</h2>
-                  <p className="text-slate-400 text-sm">Head of Operations at One Percent Collective. Trustee for Fairground Foundation and FARA NZ.</p>
-                </div>
-                <Briefcase className="w-12 h-12 text-slate-700 shrink-0 hidden md:block" />
-              </div>
+                  <p className="text-sm text-slate-400 leading-relaxed">A free, privacy-first debt dashboard for New Zealanders. Visualise your loans in one place and build a smarter repayment strategy.</p>
+                </a>
 
+                {/* Run With */}
+                <a href="https://runwith.club/" target="_blank" rel="dofollow" className="group block bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-[#D4FF00]/40 transition-colors">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="font-bold text-slate-200 group-hover:text-[#D4FF00] transition-colors">Run With Run Club</h3>
+                    <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-[#D4FF00] transition-colors" />
+                  </div>
+                  <p className="text-sm text-slate-400 leading-relaxed">Science-backed running coaching adapted for real people with real lives. Serious training delivered with empathy to prevent burnout.</p>
+                </a>
+
+                {/* Racetape */}
+                <div className="bg-[#1e293b]/20 border border-slate-800/50 rounded-xl p-5">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="font-bold text-slate-400">Racetape</h3>
+                    <span className="text-[9px] uppercase tracking-wider font-bold text-indigo-400/70 bg-indigo-900/20 px-2 py-0.5 rounded">In Dev</span>
+                  </div>
+                  <p className="text-sm text-slate-500 leading-relaxed">An analysis tool for Strava users to visualise training blocks and prepare data summaries for AI coaches.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Lane B: Governance & Operations */}
+            <div className="space-y-6">
+              <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500 border-b border-slate-800 pb-2">
+                Governance & Operations
+              </h2>
+              
+              <div className="space-y-4">
+                {/* Greenpeace */}
+                <a href="https://www.greenpeace.org/aotearoa/" target="_blank" rel="dofollow" className="group block bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-emerald-500/40 transition-colors">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="font-bold text-slate-200 group-hover:text-emerald-400 transition-colors">Greenpeace Aotearoa</h3>
+                    <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-emerald-400 transition-colors" />
+                  </div>
+                  <p className="text-sm text-slate-400 leading-relaxed">Board Member & Treasurer.</p>
+                </a>
+
+                {/* Nurture */}
+                <a href="https://nurture.kiwi/" target="_blank" rel="dofollow" className="group block bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-white/40 transition-colors">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="font-bold text-slate-200 group-hover:text-white transition-colors">Nurture</h3>
+                    <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-white transition-colors" />
+                  </div>
+                  <p className="text-sm text-slate-400 leading-relaxed">Director & vCFO. Empowering impactful businesses to achieve sustainable growth through expert strategic guidance, turning financial complexity into clarity.</p>
+                </a>
+
+                {/* OPC */}
+                <a href="https://www.onepercentcollective.org/" target="_blank" rel="dofollow" className="group block bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-rose-500/40 transition-colors">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="font-bold text-slate-200 group-hover:text-rose-400 transition-colors">1% Collective</h3>
+                    <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-rose-400 transition-colors" />
+                  </div>
+                  <p className="text-sm text-slate-400 leading-relaxed">Head of Operations. Making regular giving easy. A positive change subscription that lets Kiwis donate to multiple trusted charities with one simple signup.</p>
+                </a>
+
+                <Link to="/governance" className="inline-flex items-center gap-1.5 text-xs text-slate-500 hover:text-sky-400 transition-colors mt-2 group">
+                  View full governance portfolio
+                  <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
+                </Link>
+              </div>
             </div>
           </section>
 
-          {/* ── LATEST ARTICLES STRIP ── */}
-          <section className="w-full pt-8">
-            <div className="flex items-center justify-between mb-4">
+          {/* ── 4. THE THINKING (ARTICLES) ── */}
+          <section className="w-full pt-12 border-t border-slate-800/60">
+            <div className="flex items-center justify-between mb-6">
               <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500">
-                Latest Writing
+                Insights & Thinking
               </h2>
               <Link
                 to="/articles"
@@ -215,13 +212,13 @@ function Home() {
                 <Link
                   key={article.slug}
                   to={`/articles/${article.slug}`}
-                  className="group flex flex-col gap-2 bg-[#1e293b]/60 border border-slate-800 rounded-2xl p-5 hover:border-slate-600 hover:bg-[#1e293b]/80 transition-all duration-200"
+                  className="group flex flex-col gap-3 bg-[#1e293b]/40 border border-slate-800 rounded-xl p-6 hover:border-slate-600 transition-all duration-200"
                 >
                   <div className="flex items-center justify-between gap-2">
                     <span className={`text-[10px] uppercase tracking-wider font-bold px-2.5 py-1 rounded-full ${getCategoryStyles(article.category)}`}>
                       {article.category}
                     </span>
-                    <span className="text-xs text-slate-600">
+                    <span className="text-xs text-slate-500">
                       {new Date(article.publishDate).toLocaleDateString('en-NZ', {
                         month: 'short',
                         year: 'numeric',
@@ -231,7 +228,7 @@ function Home() {
                   <h3 className="text-base font-bold text-slate-200 group-hover:text-white transition-colors leading-snug">
                     {article.title}
                   </h3>
-                  <p className="text-sm text-slate-500 leading-relaxed line-clamp-2">
+                  <p className="text-sm text-slate-400 leading-relaxed line-clamp-2">
                     {article.description}
                   </p>
                 </Link>
@@ -240,7 +237,7 @@ function Home() {
           </section>
 
           {/* ── FOOTER ── */}
-          <div className="text-center pb-6 border-t border-slate-800/60 pt-8 mt-12">
+          <div className="text-center pb-8 pt-12">
             <div className="flex justify-center gap-6 text-xs text-slate-600 mb-4 flex-wrap">
               <a href="https://nurture.kiwi" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">nurture.kiwi</a>
               <a href="https://runwith.club" target="_blank" rel="noopener noreferrer" className="hover:text-slate-400 transition-colors">runwith.club</a>
