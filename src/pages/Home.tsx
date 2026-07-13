@@ -1,4 +1,4 @@
-import { ExternalLink, MapPin, Heart, Briefcase, ArrowRight, Leaf, Activity, PieChart, Globe } from 'lucide-react';
+import { ExternalLink, MapPin, Briefcase, ArrowRight, Leaf, Activity, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { articles } from '../data/articles';
