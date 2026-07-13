@@ -1,4 +1,4 @@
-import { ExternalLink, Leaf } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import Nav from "../components/Nav";
 
@@ -18,7 +18,7 @@ const Projects = () => {
         {/* Background radial glow (Subtle Sky Blue for Tools) */}
         <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-[radial-gradient(circle,rgba(14,165,233,0.06)_0%,transparent_70%)] pointer-events-none z-0"></div>
 
-        <main className="max-w-4xl w-full space-y-16 relative z-10 animate-enter mt-12 md:mt-20">
+        <main className="max-w-4xl w-full space-y-12 relative z-10 animate-enter mt-12 md:mt-20">
 
           {/* ── HEADER ── */}
           <section className="space-y-4">
@@ -30,54 +30,26 @@ const Projects = () => {
             </p>
           </section>
 
-          {/* ── FEATURED: BUCKET ── */}
-          <section className="w-full">
-            <div className="mb-4">
-              <h2 className="text-xs font-bold uppercase tracking-widest text-orange-500 flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
-                In Development
-              </h2>
-            </div>
-            
-            <a
-              href="https://hello.bucket.community" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group block relative bg-[#1e293b]/40 border border-slate-700 rounded-2xl p-8 md:p-10 hover:border-orange-500/50 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-4 focus-visible:ring-offset-[#0f172a]"
-            >
-              <div className="absolute top-8 right-8 text-slate-500 group-hover:text-orange-400 transition-colors">
-                <ExternalLink className="w-5 h-5" />
-              </div>
-              
-              <div className="max-w-2xl space-y-6">
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-orange-500/10 border border-orange-500/20 text-orange-500">
-                  <Leaf className="w-6 h-6" />
-                </div>
-                
-                <div>
-                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors">
-                    Bucket
-                  </h3>
-                  <p className="text-slate-300 text-base md:text-lg leading-relaxed">
-                    A conservation fundraising platform connecting donors directly with the 'doers' on the ground.
-                  </p>
-                </div>
-                
-                <p className="text-slate-400 text-sm md:text-base leading-relaxed border-l-2 border-slate-700 pl-4">
-                  Built for the Fairground Foundation, Bucket allows people to fund specific projects and track the real-world impact of their donations. Due to launch in late-2026.
-                </p>
-              </div>
-            </a>
-          </section>
-
           {/* ── THE TOOLKIT GRID ── */}
-          <section className="space-y-6">
-            <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500 border-b border-slate-800 pb-2">
-              Live Projects
-            </h2>
-            
+          <section>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
               
+              {/* Bucket (Moved into grid) */}
+              <a href="https://hello.bucket.community" target="_blank" rel="noopener noreferrer" className="group flex flex-col justify-between h-full bg-[#1e293b]/40 border border-slate-800 rounded-xl p-6 hover:border-orange-500/40 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f172a]">
+                <div className="flex items-start justify-between mb-6">
+                  <span className="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-orange-400 bg-orange-500/10 rounded-full border border-orange-500/20">
+                    Conservation Platform
+                  </span>
+                  <ExternalLink className="w-5 h-5 text-slate-600 group-hover:text-orange-400 transition-colors" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-slate-200 mb-2 group-hover:text-orange-400 transition-colors">Bucket</h3>
+                  <p className="text-sm text-slate-400 leading-relaxed">
+                    A fundraising platform connecting donors directly with the 'doers' on the ground. Built for the Fairground Foundation. Launching late-2026.
+                  </p>
+                </div>
+              </a>
+
               {/* Owly */}
               <a href="https://owly.co.nz" target="_blank" rel="noopener noreferrer" className="group flex flex-col justify-between h-full bg-[#1e293b]/40 border border-slate-800 rounded-xl p-6 hover:border-teal-500/40 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f172a]">
                 <div className="flex items-start justify-between mb-6">
@@ -194,7 +166,7 @@ const Projects = () => {
           </section>
 
           {/* ── FOOTER ── */}
-          <div className="text-center pb-8 pt-8">
+          <div className="text-center pb-8 pt-8 border-t border-slate-800/60 mt-12">
             <p className="text-slate-600 text-xs uppercase tracking-widest font-medium">
               &copy; {new Date().getFullYear()} Sheridan Jamieson. All Rights Reserved.
             </p>
