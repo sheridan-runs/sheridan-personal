@@ -41,7 +41,7 @@ function Home() {
         <main className="max-w-4xl w-full space-y-24 relative z-10 animate-enter mt-12 md:mt-20">
 
           {/* ── 1. THE ANCHOR (HERO) ── */}
-          <section className="flex flex-col-reverse md:flex-row items-center md:items-start justify-between gap-10">
+          <section className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
             <div className="flex-1 space-y-6 text-center md:text-left">
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-2">
@@ -56,7 +56,7 @@ function Home() {
                 I translate complex problems into simple, effective systems. 
               </p>
               <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-xl">
-                Whether I'm untangling financial data, writing endurance training plans, or building software for conservation, my focus is always the same: helping ambitious people and organisations find their edge, sustainably.
+                Whether I'm untangling <span className="underline decoration-dotted decoration-slate-600 underline-offset-4 hover:text-emerald-400 transition-colors duration-300 cursor-default">financial data</span>, writing <span className="underline decoration-dotted decoration-slate-600 underline-offset-4 hover:text-[#D4FF00] transition-colors duration-300 cursor-default">endurance training plans</span>, or building <span className="underline decoration-dotted decoration-slate-600 underline-offset-4 hover:text-orange-500 transition-colors duration-300 cursor-default">software for conservation</span>, my focus is always the same: helping ambitious people and organisations find their edge, sustainably.
               </p>
             </div>
             
@@ -84,7 +84,7 @@ function Home() {
               href="https://bucket.community" 
               target="_blank"
               rel="dofollow"
-              className="group block relative bg-gradient-to-br from-[#1e293b]/80 to-black/80 border border-slate-700 rounded-2xl p-8 md:p-10 hover:border-orange-500/50 transition-all duration-300"
+              className="group block relative bg-[#1e293b]/40 border border-slate-700 rounded-2xl p-8 md:p-10 hover:border-orange-500/50 transition-all duration-300"
             >
               <div className="absolute top-8 right-8 text-slate-500 group-hover:text-orange-400 transition-colors">
                 <ExternalLink className="w-5 h-5" />
@@ -112,83 +112,88 @@ function Home() {
           </section>
 
           {/* ── 3. THE PROOF (TWO LANES) ── */}
-          <section className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            
-            {/* Lane A: Software & Coaching */}
-            <div className="space-y-6">
-              <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500 border-b border-slate-800 pb-2">
-                Software & Coaching
-              </h2>
+          <section className="w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               
-              <div className="space-y-4">
-                {/* Owly */}
-                <a href="https://owly.co.nz" target="_blank" rel="dofollow" className="group block bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-teal-500/40 transition-colors">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="font-bold text-slate-200 group-hover:text-teal-400 transition-colors">Owly</h3>
-                    <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-teal-400 transition-colors" />
-                  </div>
-                  <p className="text-sm text-slate-400 leading-relaxed">A free, privacy-first debt dashboard for New Zealanders. Visualise your loans in one place and build a smarter repayment strategy.</p>
-                </a>
+              {/* Lane A: Software & Coaching */}
+              <div className="flex flex-col space-y-6">
+                <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500 border-b border-slate-800 pb-2">
+                  Software & Coaching
+                </h2>
+                
+                <div className="flex flex-col gap-4 flex-1">
+                  {/* Owly */}
+                  <a href="https://owly.co.nz" target="_blank" rel="dofollow" className="group flex-1 flex flex-col justify-center bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-teal-500/40 transition-colors">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="font-bold text-slate-200 group-hover:text-teal-400 transition-colors">Owly</h3>
+                      <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-teal-400 transition-colors" />
+                    </div>
+                    <p className="text-sm text-slate-400 leading-relaxed">A free, privacy-first debt dashboard for New Zealanders. Visualise your loans in one place and build a smarter repayment strategy.</p>
+                  </a>
 
-                {/* Run With */}
-                <a href="https://runwith.club/" target="_blank" rel="dofollow" className="group block bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-[#D4FF00]/40 transition-colors">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="font-bold text-slate-200 group-hover:text-[#D4FF00] transition-colors">Run With Run Club</h3>
-                    <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-[#D4FF00] transition-colors" />
-                  </div>
-                  <p className="text-sm text-slate-400 leading-relaxed">Science-backed running coaching adapted for real people with real lives. Serious training delivered with empathy to prevent burnout.</p>
-                </a>
+                  {/* Run With */}
+                  <a href="https://runwith.club/" target="_blank" rel="dofollow" className="group flex-1 flex flex-col justify-center bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-[#D4FF00]/40 transition-colors">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="font-bold text-slate-200 group-hover:text-[#D4FF00] transition-colors">Run With Run Club</h3>
+                      <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-[#D4FF00] transition-colors" />
+                    </div>
+                    <p className="text-sm text-slate-400 leading-relaxed">Science-backed running coaching adapted for real people with real lives. Serious training delivered with empathy to prevent burnout.</p>
+                  </a>
 
-                {/* Racetape */}
-                <div className="bg-[#1e293b]/20 border border-slate-800/50 rounded-xl p-5">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="font-bold text-slate-400">Racetape</h3>
-                    <span className="text-[9px] uppercase tracking-wider font-bold text-indigo-400/70 bg-indigo-900/20 px-2 py-0.5 rounded">In Dev</span>
+                  {/* Racetape */}
+                  <div className="flex-1 flex flex-col justify-center bg-[#1e293b]/20 border border-slate-800/50 rounded-xl p-5 cursor-default">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="font-bold text-slate-400">Racetape</h3>
+                      <span className="text-[9px] uppercase tracking-wider font-bold text-indigo-400/70 bg-indigo-900/20 px-2 py-0.5 rounded">In Dev</span>
+                    </div>
+                    <p className="text-sm text-slate-500 leading-relaxed">An analysis tool for Strava users to visualise training blocks and prepare data summaries for AI coaches.</p>
                   </div>
-                  <p className="text-sm text-slate-500 leading-relaxed">An analysis tool for Strava users to visualise training blocks and prepare data summaries for AI coaches.</p>
+                </div>
+              </div>
+
+              {/* Lane B: Governance & Operations */}
+              <div className="flex flex-col space-y-6">
+                <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500 border-b border-slate-800 pb-2">
+                  Governance & Operations
+                </h2>
+                
+                <div className="flex flex-col gap-4 flex-1">
+                  {/* Greenpeace */}
+                  <a href="https://www.greenpeace.org/aotearoa/" target="_blank" rel="dofollow" className="group flex-1 flex flex-col justify-center bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-emerald-500/40 transition-colors">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="font-bold text-slate-200 group-hover:text-emerald-400 transition-colors">Greenpeace Aotearoa</h3>
+                      <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-emerald-400 transition-colors" />
+                    </div>
+                    <p className="text-sm text-slate-400 leading-relaxed">Board Member & Treasurer.</p>
+                  </a>
+
+                  {/* Nurture */}
+                  <a href="https://nurture.kiwi/" target="_blank" rel="dofollow" className="group flex-1 flex flex-col justify-center bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-white/40 transition-colors">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="font-bold text-slate-200 group-hover:text-white transition-colors">Nurture</h3>
+                      <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-white transition-colors" />
+                    </div>
+                    <p className="text-sm text-slate-400 leading-relaxed">Director & vCFO. Empowering impactful businesses to achieve sustainable growth through expert strategic guidance, turning financial complexity into clarity.</p>
+                  </a>
+
+                  {/* OPC */}
+                  <a href="https://www.onepercentcollective.org/" target="_blank" rel="dofollow" className="group flex-1 flex flex-col justify-center bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-rose-500/40 transition-colors">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="font-bold text-slate-200 group-hover:text-rose-400 transition-colors">1% Collective</h3>
+                      <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-rose-400 transition-colors" />
+                    </div>
+                    <p className="text-sm text-slate-400 leading-relaxed">Head of Operations. Making regular giving easy. A positive change subscription that lets Kiwis donate to multiple trusted charities with one simple signup.</p>
+                  </a>
                 </div>
               </div>
             </div>
 
-            {/* Lane B: Governance & Operations */}
-            <div className="space-y-6">
-              <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500 border-b border-slate-800 pb-2">
-                Governance & Operations
-              </h2>
-              
-              <div className="space-y-4">
-                {/* Greenpeace */}
-                <a href="https://www.greenpeace.org/aotearoa/" target="_blank" rel="dofollow" className="group block bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-emerald-500/40 transition-colors">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="font-bold text-slate-200 group-hover:text-emerald-400 transition-colors">Greenpeace Aotearoa</h3>
-                    <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-emerald-400 transition-colors" />
-                  </div>
-                  <p className="text-sm text-slate-400 leading-relaxed">Board Member & Treasurer.</p>
-                </a>
-
-                {/* Nurture */}
-                <a href="https://nurture.kiwi/" target="_blank" rel="dofollow" className="group block bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-white/40 transition-colors">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="font-bold text-slate-200 group-hover:text-white transition-colors">Nurture</h3>
-                    <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-white transition-colors" />
-                  </div>
-                  <p className="text-sm text-slate-400 leading-relaxed">Director & vCFO. Empowering impactful businesses to achieve sustainable growth through expert strategic guidance, turning financial complexity into clarity.</p>
-                </a>
-
-                {/* OPC */}
-                <a href="https://www.onepercentcollective.org/" target="_blank" rel="dofollow" className="group block bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-rose-500/40 transition-colors">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="font-bold text-slate-200 group-hover:text-rose-400 transition-colors">1% Collective</h3>
-                    <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-rose-400 transition-colors" />
-                  </div>
-                  <p className="text-sm text-slate-400 leading-relaxed">Head of Operations. Making regular giving easy. A positive change subscription that lets Kiwis donate to multiple trusted charities with one simple signup.</p>
-                </a>
-
-                <Link to="/governance" className="inline-flex items-center gap-1.5 text-xs text-slate-500 hover:text-sky-400 transition-colors mt-2 group">
-                  View full governance portfolio
-                  <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
-                </Link>
-              </div>
+            {/* Governance Link placed below the grid to preserve alignment */}
+            <div className="mt-4 flex md:justify-end">
+              <Link to="/governance" className="inline-flex items-center gap-1.5 text-xs text-slate-500 hover:text-sky-400 transition-colors group">
+                View full governance portfolio
+                <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
+              </Link>
             </div>
           </section>
 
