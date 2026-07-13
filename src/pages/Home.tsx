@@ -28,7 +28,7 @@ function Home() {
     <>
       <Helmet>
         <title>Sheridan Jamieson | Impact Builder & Strategist</title>
-        <meta name="description" content="I build efficient tools and systems to help people, organizations, and the planet thrive. Creator of Bucket, Owly, and Founder of Run With Run Club." />
+        <meta name="description" content="I translate complex problems into efficient, scalable systems. Creator of Bucket, Owly, and Founder of Run With Run Club." />
         <link rel="canonical" href="https://sheridanjamieson.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sheridanjamieson.com/" />
@@ -45,7 +45,7 @@ function Home() {
         {/* Background radial glow */}
         <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-[radial-gradient(circle,rgba(99,102,241,0.12)_0%,transparent_70%)] pointer-events-none z-0"></div>
 
-        <main className="max-w-5xl w-full space-y-16 relative z-10 animate-enter mt-12">
+        <main className="max-w-4xl w-full space-y-20 relative z-10 animate-enter mt-12">
 
           {/* ── HEADER ── */}
           <section className="text-center space-y-6">
@@ -70,26 +70,30 @@ function Home() {
               </p>
             </div>
 
-            <p className="text-slate-300 text-lg md:text-xl leading-relaxed max-w-xl mx-auto">
-              I build efficient{' '}
-              <span className="underline decoration-dotted decoration-slate-600 underline-offset-4 hover:text-white transition-colors duration-300 cursor-default">
-                tools and systems
-              </span>{' '}
-              to help people, organizations, and the{' '}
+            <p className="text-slate-300 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+              I translate complex problems into efficient, scalable systems. Whether I'm building{' '}
               <span className="underline decoration-dotted decoration-slate-600 underline-offset-4 hover:text-emerald-400 transition-colors duration-300 cursor-default">
-                planet thrive
+                civic technology
               </span>
-              . I believe in high-impact work, without the 24/7 hustle.
+              , untangling financial data, or coaching{' '}
+              <span className="underline decoration-dotted decoration-slate-600 underline-offset-4 hover:text-[#D4FF00] transition-colors duration-300 cursor-default">
+                endurance athletes
+              </span>
+              , my goal is to create sustainable, high-impact outcomes—without defaulting to the 24/7 hustle.
             </p>
           </section>
 
           {/* ── MAIN EVENT: BUCKET ── */}
           <section className="w-full">
-            <h2 className="text-xs font-bold uppercase tracking-widest text-emerald-500 mb-4">
-              Current Focus
-            </h2>
+            <div className="mb-6 border-l-2 border-orange-500/50 pl-4">
+              <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-1">
+                01 / Current Focus
+              </h2>
+              <p className="text-slate-300">Right now, my absolute priority is building the infrastructure for grassroots conservation.</p>
+            </div>
+            
             <a
-              href="https://bucket.org.nz" // Update with actual URL when ready
+              href="https://bucket.community" 
               target="_blank"
               rel="dofollow"
               className="group block relative bg-gradient-to-br from-[#1e293b] to-black border-2 border-orange-500/30 rounded-3xl p-6 md:p-8 hover:border-orange-500/60 transition-all duration-300 shadow-xl shadow-orange-500/5 hover:-translate-y-1"
@@ -117,83 +121,86 @@ function Home() {
           </section>
 
           {/* ── ACTIVE PROJECTS: 2 COLUMNS ── */}
-          <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            
-            {/* Column 1: Performance */}
-            <div className="space-y-4">
-              <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-4">
-                Performance & Health
+          <section className="w-full">
+            <div className="mb-6 border-l-2 border-slate-600 pl-4">
+              <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-1">
+                02 / The Sandbox
               </h2>
-              
-              <a
-                href="https://runwith.club/"
-                target="_blank"
-                rel="dofollow"
-                className="group relative bg-[#1e293b]/60 backdrop-blur-sm border border-slate-700 rounded-2xl p-6 hover:border-[#D4FF00]/50 transition-all duration-300 hover:-translate-y-1 flex flex-col h-48"
-              >
-                <div className="flex items-start justify-between mb-4">
-                  <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-zinc-900 shadow-inner">
-                    <img src="/rwrc.png?v=ZOOM_FIX" alt="Run Club" className="w-full h-full object-cover scale-110" />
-                  </div>
-                  <ExternalLink className="w-4 h-4 text-slate-600 group-hover:text-[#D4FF00] transition-colors" />
-                </div>
-                <h3 className="text-lg font-bold text-white mb-1 group-hover:text-[#D4FF00] transition-colors">Run With Run Club</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">
-                  Founder & Coach. Adaptive plans that take you from 'Jogger' to 'Athlete'. Serious training delivered with empathy to prevent burnout.
-                </p>
-              </a>
-
-              <a
-                href="https://racetape.vercel.app" // Update URL as needed
-                target="_blank"
-                rel="dofollow"
-                className="group relative bg-[#1e293b]/60 backdrop-blur-sm border border-slate-700 rounded-2xl p-6 hover:border-indigo-500/50 transition-all duration-300 hover:-translate-y-1 flex flex-col h-48"
-              >
-                <div className="flex items-start justify-between mb-4">
-                  <div className="w-10 h-10 rounded-lg flex items-center justify-center bg-indigo-500/10 border border-indigo-500/20">
-                    <Activity className="w-5 h-5 text-indigo-400" />
-                  </div>
-                  <ExternalLink className="w-4 h-4 text-slate-600 group-hover:text-indigo-400 transition-colors" />
-                </div>
-                <h3 className="text-lg font-bold text-white mb-1 group-hover:text-indigo-400 transition-colors">Racetape</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">
-                  A running analysis tool for Strava users to visualise training blocks and prepare data summaries for AI coaches. 
-                </p>
-              </a>
+              <p className="text-slate-300">Developing independent tools and communities to solve specific friction points in finance and athletic performance.</p>
             </div>
 
-            {/* Column 2: Sandbox / Tech */}
-            <div className="space-y-4">
-              <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-4">
-                Civic & FinTech
-              </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               
-              <a
-                href="https://owly.co.nz"
-                target="_blank"
-                rel="dofollow"
-                className="group relative bg-[#1e293b]/60 backdrop-blur-sm border border-slate-700 rounded-2xl p-6 hover:border-teal-500/50 transition-all duration-300 hover:-translate-y-1 flex flex-col h-48"
-              >
-                <div className="flex items-start justify-between mb-4">
-                  <div className="w-10 h-10 rounded-lg flex items-center justify-center bg-teal-500/10 border border-teal-500/20">
-                    <PieChart className="w-5 h-5 text-teal-400" />
+              {/* Column 1: Performance */}
+              <div className="space-y-6">
+                <a
+                  href="https://runwith.club/"
+                  target="_blank"
+                  rel="dofollow"
+                  className="group relative bg-[#1e293b]/60 backdrop-blur-sm border border-slate-700 rounded-2xl p-6 hover:border-[#D4FF00]/50 transition-all duration-300 hover:-translate-y-1 flex flex-col h-48"
+                >
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-zinc-900 shadow-inner">
+                      <img src="/rwrc.png?v=ZOOM_FIX" alt="Run Club" className="w-full h-full object-cover scale-110" />
+                    </div>
+                    <ExternalLink className="w-4 h-4 text-slate-600 group-hover:text-[#D4FF00] transition-colors" />
                   </div>
-                  <ExternalLink className="w-4 h-4 text-slate-600 group-hover:text-teal-400 transition-colors" />
-                </div>
-                <h3 className="text-lg font-bold text-white mb-1 group-hover:text-teal-400 transition-colors">Owly</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">
-                  The debt dashboard built for New Zealanders. See all your loans in one place, visualise your data, and build a smarter repayment strategy.
-                </p>
-              </a>
-            </div>
+                  <h3 className="text-lg font-bold text-white mb-1 group-hover:text-[#D4FF00] transition-colors">Run With Run Club</h3>
+                  <p className="text-slate-400 text-sm leading-relaxed">
+                    Founder & Coach. Adaptive plans that take you from 'Jogger' to 'Athlete'. Serious training delivered with empathy to prevent burnout.
+                  </p>
+                </a>
 
+                {/* Racetape - In Development (Not clickable) */}
+                <div className="group relative bg-[#1e293b]/40 backdrop-blur-sm border border-slate-800 rounded-2xl p-6 flex flex-col h-48 cursor-default">
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="w-10 h-10 rounded-lg flex items-center justify-center bg-indigo-500/5 border border-indigo-500/10">
+                      <Activity className="w-5 h-5 text-indigo-900/50" />
+                    </div>
+                    <span className="px-2 py-1 text-[9px] font-bold uppercase tracking-wider text-indigo-400 bg-indigo-500/10 rounded-full border border-indigo-500/20">
+                      In Development
+                    </span>
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-300 mb-1">Racetape</h3>
+                  <p className="text-slate-500 text-sm leading-relaxed">
+                    A running analysis tool for Strava users to visualise training blocks and prepare data summaries for AI coaches. 
+                  </p>
+                </div>
+              </div>
+
+              {/* Column 2: Sandbox / Tech */}
+              <div className="space-y-6">
+                <a
+                  href="https://owly.co.nz"
+                  target="_blank"
+                  rel="dofollow"
+                  className="group relative bg-[#1e293b]/60 backdrop-blur-sm border border-slate-700 rounded-2xl p-6 hover:border-teal-500/50 transition-all duration-300 hover:-translate-y-1 flex flex-col h-48"
+                >
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="w-10 h-10 rounded-lg flex items-center justify-center bg-teal-500/10 border border-teal-500/20">
+                      <PieChart className="w-5 h-5 text-teal-400" />
+                    </div>
+                    <ExternalLink className="w-4 h-4 text-slate-600 group-hover:text-teal-400 transition-colors" />
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-1 group-hover:text-teal-400 transition-colors">Owly</h3>
+                  <p className="text-slate-400 text-sm leading-relaxed">
+                    The debt dashboard built for New Zealanders. See all your loans in one place, visualise your data, and build a smarter repayment strategy.
+                  </p>
+                </a>
+              </div>
+
+            </div>
           </section>
 
           {/* ── THE ENGINE ROOM (FOUNDATION) ── */}
-          <section className="pt-8 border-t border-slate-800/60">
-            <h2 className="text-xs font-bold uppercase tracking-widest text-slate-600 mb-6 text-center">
-              The Engine Room: Operations & Governance
-            </h2>
+          <section className="w-full pt-8 border-t border-slate-800/60">
+            <div className="mb-6 text-center max-w-xl mx-auto">
+              <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-2">
+                03 / The Engine Room
+              </h2>
+              <p className="text-slate-400 text-sm">All of this is underpinned by my day-to-day work—bringing strategic oversight and financial rigour to ambitious organisations.</p>
+            </div>
+            
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               
               {/* Nurture */}
@@ -234,10 +241,10 @@ function Home() {
           </section>
 
           {/* ── LATEST ARTICLES STRIP ── */}
-          <section className="pt-8">
+          <section className="w-full pt-8">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-xs font-bold uppercase tracking-widest text-slate-500">
-                Latest Writing
+                04 / Latest Writing
               </h2>
               <Link
                 to="/articles"
