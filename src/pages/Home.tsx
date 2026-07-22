@@ -146,7 +146,7 @@ function Home() {
                       <h3 className="font-bold text-slate-200 group-hover:text-[#D4FF00] transition-colors">Racetape</h3>
                       <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-[#D4FF00] transition-colors" />
                     </div>
-                    <p className="text-sm text-slate-400 leading-relaxed">An analysis tool for Strava users to visualise training blocks and prepare data summaries for AI coaches.</p>
+                    <p className="text-sm text-slate-400 leading-relaxed">turns your Strava history into structured training blocks anchored to your goal races, with a rich export ready to paste into any AI coach.</p>
                   </a>
                 </div>
               </div>
