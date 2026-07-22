@@ -148,6 +148,7 @@ function Home() {
                       <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-[#D4FF00] transition-colors" />
                     </div>
                     <p className="text-sm text-slate-500 leading-relaxed">An analysis tool for Strava users to visualise training blocks and prepare data summaries for AI coaches.</p>
+                    </a>
                   </div>
                 </div>
               </div>
