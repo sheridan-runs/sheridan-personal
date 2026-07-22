@@ -142,13 +142,11 @@ function Home() {
 
                   {/* Racetape */}
                   <a href="https://www.racetape.app/" target="_blank" rel="noopener noreferrer" className="group flex-1 flex flex-col justify-center bg-[#1e293b]/40 border border-slate-800 rounded-xl p-5 hover:border-[#D4FF00]/40 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4FF00] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f172a]">
-                    <div className="flex-1 flex flex-col justify-center bg-[#1e293b]/20 border border-slate-800/50 rounded-xl p-5 cursor-default" aria-disabled="true">
-                      <div className="flex items-center justify-between mb-2">
-                        <h3 className="font-bold text-slate-400">Racetape</h3>
-                        <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-[#D4FF00] transition-colors" />
-                      </div>
-                      <p className="text-sm text-slate-500 leading-relaxed">An analysis tool for Strava users to visualise training blocks and prepare data summaries for AI coaches.</p>
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="font-bold text-slate-200 group-hover:text-[#D4FF00] transition-colors">Racetape</h3>
+                      <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover:text-[#D4FF00] transition-colors" />
                     </div>
+                    <p className="text-sm text-slate-400 leading-relaxed">An analysis tool for Strava users to visualise training blocks and prepare data summaries for AI coaches.</p>
                   </a>
                 </div>
               </div>
