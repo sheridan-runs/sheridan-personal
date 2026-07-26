@@ -28,7 +28,7 @@ function Home() {
       <Helmet>
         <title>Sheridan Jamieson | Impact Builder & Strategist</title>
         <meta name="description" content="I translate complex problems into simple, effective systems." />
-        <link rel="canonical" href="https://sheridanjamieson.com/" />
+        <link rel="canonical" href="https://www.sheridanjamieson.com/" />
       </Helmet>
 
       <Nav />
