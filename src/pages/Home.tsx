@@ -100,12 +100,12 @@ function Home() {
                     Bucket
                   </h3>
                   <p className="text-slate-300 text-base md:text-lg leading-relaxed">
-                    Bucket is a conservation fundraising platform that connects everyday Kiwis who want to contribute directly to the work of the people out there protecting Aotearoa's wild places.
+                   Bucket is a conservation fundraising platform that connects everyday Kiwis directly with the people doing the mahi to protect Aotearoa's wild places.
                   </p>
                 </div>
                 
                 <p className="text-slate-400 text-sm md:text-base leading-relaxed border-l-2 border-slate-700 pl-4">
-                  Top up your personal Bucket wallet with as little as $5 a month. Your money sits there until you decide where it goes. <strong className="text-slate-200 font-semibold">More than a donation. A direct connection.</strong>
+                  Top up your personal Bucket wallet whenever you like, then decide where your money goes. <strong className="text-slate-200 font-semibold">More than a donation. A direct connection.</strong>
                 </p>
               </div>
             </a>
