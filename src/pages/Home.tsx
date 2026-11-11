@@ -11,10 +11,11 @@ const DESCRIPTION =
 
 type WayKey = 'owly' | 'rwrc' | 'nurture';
 
-const ways: { key: WayKey; audience: string; mark: string; pillOn: string; name: string; href: string; stat: string; text: string; cta: string; card: string; tone: string }[] = [
+const ways: { key: WayKey; audience: string; short: string; mark: string; pillOn: string; name: string; href: string; stat: string; text: string; cta: string; card: string; tone: string }[] = [
   {
     key: 'owly',
     audience: 'Personal finances',
+    short: 'Personal',
     mark: 'bg-money',
     pillOn: 'bg-money-tint text-money',
     name: 'Owly',
@@ -28,6 +29,7 @@ const ways: { key: WayKey; audience: string; mark: string; pillOn: string; name:
   {
     key: 'rwrc',
     audience: 'Running coaching',
+    short: 'Running',
     mark: 'bg-run-mark',
     pillOn: 'bg-run-tint text-run',
     name: 'Run With Run Club',
@@ -41,6 +43,7 @@ const ways: { key: WayKey; audience: string; mark: string; pillOn: string; name:
   {
     key: 'nurture',
     audience: 'Business finances',
+    short: 'Business',
     mark: 'bg-biz',
     pillOn: 'bg-biz-tint text-biz',
     name: 'Nurture',
@@ -92,14 +95,14 @@ export default function Home() {
       <main>
         {/* Hero */}
         <section className={`${gutter} pt-10 md:pt-[88px] pb-9 md:pb-14`}>
-          <div className={`${inner} grid grid-cols-[minmax(0,1fr)_84px] sm:grid-cols-[minmax(0,1fr)_clamp(200px,26vw,300px)] gap-x-4 sm:gap-x-10 lg:gap-x-14`}>
-            <h1 className="col-start-1 row-start-1 self-center sm:self-end font-serif font-semibold text-[clamp(44px,7.4vw,92px)] leading-none tracking-[-0.025em] [text-wrap:balance]">
+          <div className={`${inner} grid grid-cols-1 sm:grid-cols-[minmax(0,1fr)_clamp(200px,26vw,300px)] sm:gap-x-10 lg:gap-x-14`}>
+            <h1 className="sm:col-start-1 sm:row-start-1 sm:self-end font-serif font-semibold text-[clamp(44px,7.4vw,92px)] leading-none tracking-[-0.025em] [text-wrap:balance]">
               Making money make sense.
             </h1>
 
             {/* Two sides of the same person: hover (or tap) to switch between work and race day.
                 The colour block behind the photo switches too: teal for work, lime for running. */}
-            <figure className="col-start-2 row-start-1 sm:row-span-3 self-center sm:self-start m-0 grid content-start gap-4 sm:gap-6">
+            <figure className="order-last sm:order-none sm:col-start-2 sm:row-start-1 sm:row-span-3 sm:self-start m-0 mt-9 sm:mt-0 flex sm:grid items-center sm:content-start gap-6">
               <button
                 type="button"
                 // Mouse users get the swap on hover; touch and keyboard users toggle on tap/press
@@ -107,11 +110,11 @@ export default function Home() {
                 onPointerLeave={(e) => e.pointerType === 'mouse' && setRunning(false)}
                 onClick={(e) => (e.nativeEvent as PointerEvent).pointerType !== 'mouse' && setRunning((r) => !r)}
                 aria-label={running ? 'Show Sheridan at work' : 'Show Sheridan on race day'}
-                className="relative block w-[78px] sm:w-[calc(100%-14px)] ml-auto mr-[6px] sm:mr-0 mb-[6px] sm:mb-[14px]"
+                className="relative block shrink-0 w-[46%] sm:w-[calc(100%-14px)] ml-[10px] sm:ml-auto mb-[10px] sm:mb-[14px]"
               >
                 <span
                   aria-hidden="true"
-                  className={`absolute inset-0 translate-x-[-6px] translate-y-[6px] sm:translate-x-[-14px] sm:translate-y-[14px] rounded-[10px] transition-colors duration-500 ${running ? 'bg-run-mark' : 'bg-money'}`}
+                  className={`absolute inset-0 translate-x-[-10px] translate-y-[10px] sm:translate-x-[-14px] sm:translate-y-[14px] rounded-[10px] transition-colors duration-500 ${running ? 'bg-run-mark' : 'bg-money'}`}
                 />
                 <span className="relative block aspect-[4/5] overflow-hidden rounded-[10px] bg-band">
                   <img
@@ -131,8 +134,8 @@ export default function Home() {
                   />
                 </span>
               </button>
-              <figcaption className="hidden sm:flex justify-center">
-                <span className="inline-flex rounded-full bg-band p-1 text-sm font-medium" role="group" aria-label="Switch photo">
+              <figcaption className="flex sm:justify-center">
+                <span className="inline-flex flex-col sm:flex-row rounded-2xl sm:rounded-full bg-band p-1 text-[15px] sm:text-sm font-medium" role="group" aria-label="Switch photo">
                   <button
                     type="button"
                     aria-pressed={!running}
@@ -153,15 +156,15 @@ export default function Home() {
               </figcaption>
             </figure>
 
-            <p className="col-span-2 sm:col-span-1 mt-5 font-serif text-[clamp(18px,1.9vw,21px)] leading-relaxed text-ink-soft max-w-[36em]">
+            <p className="mt-5 font-serif text-[clamp(18px,1.9vw,21px)] leading-relaxed text-ink-soft max-w-[36em]">
               I help people and organisations get their numbers straight, then make good decisions with them. Usually that means money. Sometimes it means marathon training.
             </p>
-            <div className="col-span-2 sm:col-span-1 flex flex-wrap gap-2.5 mt-6 self-start">
-              <a href="https://owly.co.nz" className="bg-money text-white font-semibold px-5 py-3 rounded-md hover:bg-[#09494e] transition-colors">
+            <div className="flex gap-2.5 mt-6 self-start">
+              <a href="https://owly.co.nz" className="bg-money text-white font-semibold px-4 sm:px-5 py-3 rounded-md whitespace-nowrap hover:bg-[#09494e] transition-colors">
                 Try Owly free
               </a>
-              <a href="#work" className="font-semibold px-5 py-3 rounded-md shadow-[inset_0_0_0_1.5px_#172626] hover:bg-band transition-colors">
-                Ways to work with me
+              <a href="#work" className="font-semibold px-4 sm:px-5 py-3 rounded-md whitespace-nowrap shadow-[inset_0_0_0_1.5px_#172626] hover:bg-band transition-colors">
+                Work with me
               </a>
             </div>
           </div>
@@ -174,8 +177,8 @@ export default function Home() {
               Work with me
             </h2>
 
-            {/* Which card is for what. Picking one highlights its card. */}
-            <div className="flex flex-wrap items-center gap-2 mt-4 mb-5" role="group" aria-label="Highlight a service">
+            {/* Which card is for what. Picking one shows only that card while cards are stacked, or highlights it when they sit side by side. */}
+            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mt-4 mb-5" role="group" aria-label="Highlight a service">
               {ways.map((w) => {
                 const on = focus === w.key;
                 return (
@@ -184,12 +187,13 @@ export default function Home() {
                     type="button"
                     aria-pressed={on}
                     onClick={() => setFocus(on ? null : w.key)}
-                    className={`inline-flex items-center gap-2 h-9 px-3.5 rounded-full text-[15px] font-medium transition-colors ${
+                    className={`inline-flex items-center gap-2 h-9 px-3 sm:px-3.5 rounded-full text-[15px] font-medium transition-colors ${
                       on ? `${w.pillOn} shadow-[inset_0_0_0_1.5px_currentColor]` : 'shadow-[inset_0_0_0_1.5px_#dfe4e2] hover:shadow-[inset_0_0_0_1.5px_#172626]'
                     }`}
                   >
                     <span className={`w-2.5 h-2.5 rounded-[2px] ${w.mark}`} aria-hidden="true" />
-                    {w.audience}
+                    <span className="sm:hidden">{w.short}</span>
+                    <span className="hidden sm:inline">{w.audience}</span>
                   </button>
                 );
               })}
@@ -206,7 +210,7 @@ export default function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`group relative grid grid-cols-[minmax(0,1fr)_auto] grid-rows-[auto_1fr_auto] gap-x-3 rounded-[10px] border-t-[3px] md:border-t-4 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_10px_24px_-12px_rgba(23,38,38,0.35)] ${w.card} ${
-                      dimmed ? 'opacity-40 saturate-50' : ''
+                      dimmed ? 'max-[1099px]:hidden opacity-40 saturate-50' : ''
                     } ${picked ? 'shadow-[0_10px_24px_-12px_rgba(23,38,38,0.35)] -translate-y-0.5' : ''}`}
                   >
                     {w.key === 'owly' && (

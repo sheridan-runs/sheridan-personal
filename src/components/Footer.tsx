@@ -13,7 +13,7 @@ const groups = [
     title: 'On this site',
     links: [
       { to: '/articles', label: 'Writing' },
-      { to: '/projects', label: 'Tools' },
+      { to: '/projects', label: 'Projects' },
       { to: '/governance', label: 'Governance' },
     ],
   },
