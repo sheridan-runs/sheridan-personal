@@ -14,7 +14,7 @@ type WayKey = 'owly' | 'rwrc' | 'nurture';
 const ways: { key: WayKey; audience: string; mark: string; pillOn: string; name: string; href: string; stat: string; text: string; cta: string; card: string; tone: string }[] = [
   {
     key: 'owly',
-    audience: 'My money',
+    audience: 'Personal finances',
     mark: 'bg-money',
     pillOn: 'bg-money-tint text-money',
     name: 'Owly',
@@ -27,7 +27,7 @@ const ways: { key: WayKey; audience: string; mark: string; pillOn: string; name:
   },
   {
     key: 'rwrc',
-    audience: 'My running',
+    audience: 'Running coaching',
     mark: 'bg-run-mark',
     pillOn: 'bg-run-tint text-run',
     name: 'Run With Run Club',
@@ -40,7 +40,7 @@ const ways: { key: WayKey; audience: string; mark: string; pillOn: string; name:
   },
   {
     key: 'nurture',
-    audience: 'My business',
+    audience: 'Business finances',
     mark: 'bg-biz',
     pillOn: 'bg-biz-tint text-biz',
     name: 'Nurture',
@@ -97,32 +97,39 @@ export default function Home() {
               Making money make sense.
             </h1>
 
-            {/* Two sides of the same person: hover (or tap) to switch between desk and race day */}
-            <figure className="col-start-2 row-start-1 sm:row-span-3 self-center sm:self-stretch m-0 grid content-start gap-3">
+            {/* Two sides of the same person: hover (or tap) to switch between work and race day.
+                The colour block behind the photo switches too: teal for work, lime for running. */}
+            <figure className="col-start-2 row-start-1 sm:row-span-3 self-center sm:self-start m-0 grid content-start gap-4 sm:gap-6">
               <button
                 type="button"
                 // Mouse users get the swap on hover; touch and keyboard users toggle on tap/press
                 onPointerEnter={(e) => e.pointerType === 'mouse' && setRunning(true)}
                 onPointerLeave={(e) => e.pointerType === 'mouse' && setRunning(false)}
                 onClick={(e) => (e.nativeEvent as PointerEvent).pointerType !== 'mouse' && setRunning((r) => !r)}
-                aria-label={running ? 'Show Sheridan at his desk' : 'Show Sheridan on race day'}
-                className="relative block w-[84px] h-[105px] sm:w-full sm:h-auto sm:aspect-[4/5] overflow-hidden rounded-t-full rounded-b-[10px] bg-band"
+                aria-label={running ? 'Show Sheridan at work' : 'Show Sheridan on race day'}
+                className="relative block w-[78px] sm:w-[calc(100%-14px)] ml-auto mr-[6px] sm:mr-0 mb-[6px] sm:mb-[14px]"
               >
-                <img
-                  src="/sheridan-desk.jpg"
-                  alt="Sheridan Jamieson smiling, in a black t-shirt"
-                  width={600}
-                  height={750}
-                  className={`absolute inset-0 w-full h-full object-cover transition-all duration-500 ease-out ${running ? 'opacity-0 scale-105' : 'opacity-100 scale-100'}`}
+                <span
+                  aria-hidden="true"
+                  className={`absolute inset-0 translate-x-[-6px] translate-y-[6px] sm:translate-x-[-14px] sm:translate-y-[14px] rounded-[10px] transition-colors duration-500 ${running ? 'bg-run-mark' : 'bg-money'}`}
                 />
-                <img
-                  src="/sheridan-running.jpg"
-                  alt="Sheridan running a 10k race, wearing bib 5097"
-                  width={340}
-                  height={425}
-                  loading="lazy"
-                  className={`absolute inset-0 w-full h-full object-cover transition-all duration-500 ease-out motion-reduce:transition-none ${running ? 'opacity-100 scale-100' : 'opacity-0 scale-105'}`}
-                />
+                <span className="relative block aspect-[4/5] overflow-hidden rounded-[10px] bg-band">
+                  <img
+                    src="/sheridan-work.jpg"
+                    alt="Sheridan mid-conversation, explaining something with his hands"
+                    width={640}
+                    height={800}
+                    className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 motion-reduce:transition-none ${running ? 'opacity-0' : 'opacity-100'}`}
+                  />
+                  <img
+                    src="/sheridan-running.jpg"
+                    alt="Sheridan running the Wellington Marathon along Oriental Bay"
+                    width={640}
+                    height={800}
+                    loading="lazy"
+                    className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 motion-reduce:transition-none ${running ? 'opacity-100' : 'opacity-0'}`}
+                  />
+                </span>
               </button>
               <figcaption className="hidden sm:flex justify-center">
                 <span className="inline-flex rounded-full bg-band p-1 text-sm font-medium" role="group" aria-label="Switch photo">
@@ -132,7 +139,7 @@ export default function Home() {
                     onClick={() => setRunning(false)}
                     className={`px-3 py-1 rounded-full transition-colors ${!running ? 'bg-white shadow-sm text-ink' : 'text-ink-soft hover:text-ink'}`}
                   >
-                    At the desk
+                    At work
                   </button>
                   <button
                     type="button"
@@ -167,9 +174,8 @@ export default function Home() {
               Work with me
             </h2>
 
-            {/* Who each card is for. Picking one highlights its card. */}
-            <div className="flex flex-wrap items-center gap-2 mt-4 mb-12" role="group" aria-label="Show what's for">
-              <span className="text-[15px] text-ink-soft mr-1">I'm here for</span>
+            {/* Which card is for what. Picking one highlights its card. */}
+            <div className="flex flex-wrap items-center gap-2 mt-4 mb-5" role="group" aria-label="Highlight a service">
               {ways.map((w) => {
                 const on = focus === w.key;
                 return (
@@ -204,14 +210,15 @@ export default function Home() {
                     } ${picked ? 'shadow-[0_10px_24px_-12px_rgba(23,38,38,0.35)] -translate-y-0.5' : ''}`}
                   >
                     {w.key === 'owly' && (
-                      <img
-                        src="/owen-sketch.png"
-                        alt=""
-                        aria-hidden="true"
-                        width={44}
-                        height={63}
-                        className="absolute right-5 -top-[50px] w-[44px] h-auto origin-bottom transition-transform duration-300 group-hover:-rotate-6 motion-reduce:transition-none"
-                      />
+                      <span aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden rounded-[10px]">
+                        <img
+                          src="/owen-sketch.png"
+                          alt=""
+                          width={96}
+                          height={137}
+                          className="absolute right-3 -bottom-6 w-[72px] md:w-[76px] h-auto opacity-90 origin-bottom transition-transform duration-300 group-hover:-rotate-3 group-hover:-translate-y-1 motion-reduce:transition-none"
+                        />
+                      </span>
                     )}
                     <span className="col-start-1 row-start-1 pt-4 pl-4 md:pt-5 md:pl-5 font-serif font-semibold text-[28px] md:text-[clamp(28px,3vw,38px)] leading-none tracking-[-0.02em] whitespace-nowrap">
                       {w.stat}
@@ -219,7 +226,7 @@ export default function Home() {
                     <span className={`col-start-2 row-start-1 pt-[18px] pr-4 md:pt-[22px] md:pr-5 text-sm font-semibold text-right ${w.tone}`}>
                       {w.name}
                     </span>
-                    <span className="col-span-2 row-start-2 px-4 md:px-5 pt-2 md:pt-2.5 pb-3.5 md:pb-[18px] text-sm md:text-[15px] text-ink-soft">
+                    <span className={`relative col-span-2 row-start-2 px-4 md:px-5 pt-2 md:pt-2.5 pb-3.5 md:pb-[18px] text-sm md:text-[15px] text-ink-soft ${w.key === 'owly' ? 'pr-[80px] md:pr-[88px]' : ''}`}>
                       {w.text}
                     </span>
                     <span className={`col-span-2 row-start-3 px-4 md:px-5 py-[11px] md:py-[13px] border-t border-ink/10 font-semibold ${w.tone} group-hover:underline underline-offset-[3px]`}>
