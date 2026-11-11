@@ -48,3 +48,12 @@ body {
 .article-body .bg-slate-900\/80 { background-color: #f3f5f4; }
 .article-body .hover\:bg-slate-800:hover { background-color: #e9eeec; }
 .article-body .shadow-emerald-900\/20 { box-shadow: none; }
+
+/* Buttons and dark blocks inside articles keep their own colours:
+   white text stays white on black, and hover stays dark. */
+.article-body .bg-black.text-white,
+.article-body .bg-black .text-white { color: #ffffff; }
+.article-body .bg-black.hover\:bg-slate-800:hover { background-color: #2a3a3a; }
+.article-body a.bg-black { text-decoration: none; }
+/* Bright lime text was written for a dark page; use the readable running tone instead */
+.article-body .text-\[\#D4FF00\] { color: #4f6b00; }

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { articles } from '../data/articles';
@@ -8,8 +9,14 @@ import { articleTheme, themeMark } from '../lib/themes';
 const DESCRIPTION =
   'vCFO, running coach and founder of Owly. I help people and organisations get their numbers straight, then make good decisions with them.';
 
-const ways = [
+type WayKey = 'owly' | 'rwrc' | 'nurture';
+
+const ways: { key: WayKey; audience: string; mark: string; pillOn: string; name: string; href: string; stat: string; text: string; cta: string; card: string; tone: string }[] = [
   {
+    key: 'owly',
+    audience: 'My money',
+    mark: 'bg-money',
+    pillOn: 'bg-money-tint text-money',
     name: 'Owly',
     href: 'https://owly.co.nz',
     stat: '$25m+',
@@ -19,6 +26,10 @@ const ways = [
     tone: 'text-money',
   },
   {
+    key: 'rwrc',
+    audience: 'My running',
+    mark: 'bg-run-mark',
+    pillOn: 'bg-run-tint text-run',
     name: 'Run With Run Club',
     href: 'https://runwith.club',
     stat: '4,100+ km',
@@ -28,6 +39,10 @@ const ways = [
     tone: 'text-run',
   },
   {
+    key: 'nurture',
+    audience: 'My business',
+    mark: 'bg-biz',
+    pillOn: 'bg-biz-tint text-biz',
     name: 'Nurture',
     href: 'https://nurture.kiwi',
     stat: '40+ clients',
@@ -59,6 +74,9 @@ const rowGrid = 'grid grid-cols-[10px_minmax(0,1fr)_auto] gap-x-3.5 items-baseli
 const marker = 'w-2.5 h-2.5 rounded-[2px] translate-y-px';
 
 export default function Home() {
+  const [running, setRunning] = useState(false);
+  const [focus, setFocus] = useState<WayKey | null>(null);
+
   return (
     <>
       <Helmet>
@@ -74,18 +92,61 @@ export default function Home() {
       <main>
         {/* Hero */}
         <section className={`${gutter} pt-10 md:pt-[88px] pb-9 md:pb-14`}>
-          <div className={`${inner} grid grid-cols-[minmax(0,1fr)_84px] sm:grid-cols-[minmax(0,1fr)_clamp(200px,24vw,280px)] gap-x-4 sm:gap-x-12 lg:gap-x-16`}>
-            <h1 className="col-start-1 row-start-1 self-center sm:self-end font-serif font-semibold text-[clamp(44px,7vw,84px)] leading-none tracking-[-0.025em] [text-wrap:balance]">
+          <div className={`${inner} grid grid-cols-[minmax(0,1fr)_84px] sm:grid-cols-[minmax(0,1fr)_clamp(200px,26vw,300px)] gap-x-4 sm:gap-x-10 lg:gap-x-14`}>
+            <h1 className="col-start-1 row-start-1 self-center sm:self-end font-serif font-semibold text-[clamp(44px,7.4vw,92px)] leading-none tracking-[-0.025em] [text-wrap:balance]">
               Making money make sense.
             </h1>
-            <img
-              src="/profile.jpg"
-              alt="Sheridan Jamieson"
-              width={280}
-              height={350}
-              className="col-start-2 row-start-1 sm:row-span-3 self-center sm:self-stretch w-[84px] h-[105px] sm:w-full sm:h-full sm:min-h-[260px] rounded-[10px] object-cover object-[50%_30%]"
-            />
-            <p className="col-span-2 sm:col-span-1 mt-5 font-serif text-[clamp(18px,1.9vw,21px)] leading-relaxed text-ink-soft max-w-[31em]">
+
+            {/* Two sides of the same person: hover (or tap) to switch between desk and race day */}
+            <figure className="col-start-2 row-start-1 sm:row-span-3 self-center sm:self-stretch m-0 grid content-start gap-3">
+              <button
+                type="button"
+                // Mouse users get the swap on hover; touch and keyboard users toggle on tap/press
+                onPointerEnter={(e) => e.pointerType === 'mouse' && setRunning(true)}
+                onPointerLeave={(e) => e.pointerType === 'mouse' && setRunning(false)}
+                onClick={(e) => (e.nativeEvent as PointerEvent).pointerType !== 'mouse' && setRunning((r) => !r)}
+                aria-label={running ? 'Show Sheridan at his desk' : 'Show Sheridan on race day'}
+                className="relative block w-[84px] h-[105px] sm:w-full sm:h-auto sm:aspect-[4/5] overflow-hidden rounded-t-full rounded-b-[10px] bg-band"
+              >
+                <img
+                  src="/sheridan-desk.jpg"
+                  alt="Sheridan Jamieson smiling, in a black t-shirt"
+                  width={600}
+                  height={750}
+                  className={`absolute inset-0 w-full h-full object-cover transition-all duration-500 ease-out ${running ? 'opacity-0 scale-105' : 'opacity-100 scale-100'}`}
+                />
+                <img
+                  src="/sheridan-running.jpg"
+                  alt="Sheridan running a 10k race, wearing bib 5097"
+                  width={340}
+                  height={425}
+                  loading="lazy"
+                  className={`absolute inset-0 w-full h-full object-cover transition-all duration-500 ease-out motion-reduce:transition-none ${running ? 'opacity-100 scale-100' : 'opacity-0 scale-105'}`}
+                />
+              </button>
+              <figcaption className="hidden sm:flex justify-center">
+                <span className="inline-flex rounded-full bg-band p-1 text-sm font-medium" role="group" aria-label="Switch photo">
+                  <button
+                    type="button"
+                    aria-pressed={!running}
+                    onClick={() => setRunning(false)}
+                    className={`px-3 py-1 rounded-full transition-colors ${!running ? 'bg-white shadow-sm text-ink' : 'text-ink-soft hover:text-ink'}`}
+                  >
+                    At the desk
+                  </button>
+                  <button
+                    type="button"
+                    aria-pressed={running}
+                    onClick={() => setRunning(true)}
+                    className={`px-3 py-1 rounded-full transition-colors ${running ? 'bg-white shadow-sm text-ink' : 'text-ink-soft hover:text-ink'}`}
+                  >
+                    On race day
+                  </button>
+                </span>
+              </figcaption>
+            </figure>
+
+            <p className="col-span-2 sm:col-span-1 mt-5 font-serif text-[clamp(18px,1.9vw,21px)] leading-relaxed text-ink-soft max-w-[36em]">
               I help people and organisations get their numbers straight, then make good decisions with them. Usually that means money. Sometimes it means marathon training.
             </p>
             <div className="col-span-2 sm:col-span-1 flex flex-wrap gap-2.5 mt-6 self-start">
@@ -102,32 +163,71 @@ export default function Home() {
         {/* Work with me */}
         <section id="work" className={`${gutter} pb-12 md:pb-[72px] scroll-mt-20`}>
           <div className={inner}>
-            <h2 className="font-serif font-semibold text-[clamp(26px,3vw,32px)] leading-tight tracking-[-0.01em] mb-5">
+            <h2 className="font-serif font-semibold text-[clamp(26px,3vw,32px)] leading-tight tracking-[-0.01em]">
               Work with me
             </h2>
+
+            {/* Who each card is for. Picking one highlights its card. */}
+            <div className="flex flex-wrap items-center gap-2 mt-4 mb-12" role="group" aria-label="Show what's for">
+              <span className="text-[15px] text-ink-soft mr-1">I'm here for</span>
+              {ways.map((w) => {
+                const on = focus === w.key;
+                return (
+                  <button
+                    key={w.key}
+                    type="button"
+                    aria-pressed={on}
+                    onClick={() => setFocus(on ? null : w.key)}
+                    className={`inline-flex items-center gap-2 h-9 px-3.5 rounded-full text-[15px] font-medium transition-colors ${
+                      on ? `${w.pillOn} shadow-[inset_0_0_0_1.5px_currentColor]` : 'shadow-[inset_0_0_0_1.5px_#dfe4e2] hover:shadow-[inset_0_0_0_1.5px_#172626]'
+                    }`}
+                  >
+                    <span className={`w-2.5 h-2.5 rounded-[2px] ${w.mark}`} aria-hidden="true" />
+                    {w.audience}
+                  </button>
+                );
+              })}
+            </div>
+
             <div className="grid min-[1100px]:grid-cols-3 gap-2.5 md:gap-3">
-              {ways.map((w) => (
-                <a
-                  key={w.name}
-                  href={w.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`group grid grid-cols-[minmax(0,1fr)_auto] grid-rows-[auto_1fr_auto] gap-x-3 rounded-[10px] border-t-[3px] md:border-t-4 ${w.card}`}
-                >
-                  <span className="col-start-1 row-start-1 pt-4 pl-4 md:pt-5 md:pl-5 font-serif font-semibold text-[28px] md:text-[clamp(28px,3vw,38px)] leading-none tracking-[-0.02em] whitespace-nowrap">
-                    {w.stat}
-                  </span>
-                  <span className={`col-start-2 row-start-1 pt-[18px] pr-4 md:pt-[22px] md:pr-5 text-sm font-semibold text-right ${w.tone}`}>
-                    {w.name}
-                  </span>
-                  <span className="col-span-2 row-start-2 px-4 md:px-5 pt-2 md:pt-2.5 pb-3.5 md:pb-[18px] text-sm md:text-[15px] text-ink-soft">
-                    {w.text}
-                  </span>
-                  <span className={`col-span-2 row-start-3 px-4 md:px-5 py-[11px] md:py-[13px] border-t border-ink/10 font-semibold ${w.tone} group-hover:underline underline-offset-[3px]`}>
-                    {w.cta}
-                  </span>
-                </a>
-              ))}
+              {ways.map((w) => {
+                const dimmed = focus !== null && focus !== w.key;
+                const picked = focus === w.key;
+                return (
+                  <a
+                    key={w.key}
+                    href={w.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`group relative grid grid-cols-[minmax(0,1fr)_auto] grid-rows-[auto_1fr_auto] gap-x-3 rounded-[10px] border-t-[3px] md:border-t-4 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_10px_24px_-12px_rgba(23,38,38,0.35)] ${w.card} ${
+                      dimmed ? 'opacity-40 saturate-50' : ''
+                    } ${picked ? 'shadow-[0_10px_24px_-12px_rgba(23,38,38,0.35)] -translate-y-0.5' : ''}`}
+                  >
+                    {w.key === 'owly' && (
+                      <img
+                        src="/owen-sketch.png"
+                        alt=""
+                        aria-hidden="true"
+                        width={44}
+                        height={63}
+                        className="absolute right-5 -top-[50px] w-[44px] h-auto origin-bottom transition-transform duration-300 group-hover:-rotate-6 motion-reduce:transition-none"
+                      />
+                    )}
+                    <span className="col-start-1 row-start-1 pt-4 pl-4 md:pt-5 md:pl-5 font-serif font-semibold text-[28px] md:text-[clamp(28px,3vw,38px)] leading-none tracking-[-0.02em] whitespace-nowrap">
+                      {w.stat}
+                    </span>
+                    <span className={`col-start-2 row-start-1 pt-[18px] pr-4 md:pt-[22px] md:pr-5 text-sm font-semibold text-right ${w.tone}`}>
+                      {w.name}
+                    </span>
+                    <span className="col-span-2 row-start-2 px-4 md:px-5 pt-2 md:pt-2.5 pb-3.5 md:pb-[18px] text-sm md:text-[15px] text-ink-soft">
+                      {w.text}
+                    </span>
+                    <span className={`col-span-2 row-start-3 px-4 md:px-5 py-[11px] md:py-[13px] border-t border-ink/10 font-semibold ${w.tone} group-hover:underline underline-offset-[3px]`}>
+                      {w.cta}
+                    </span>
+                  </a>
+                );
+              })}
             </div>
           </div>
         </section>
