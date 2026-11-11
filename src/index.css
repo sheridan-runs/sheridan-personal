@@ -3,63 +3,48 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[#0f172a] text-slate-200 antialiased;
+  @apply bg-white text-ink font-sans antialiased;
 }
 
-/* FADE IN ANIMATION */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Visible keyboard focus everywhere */
+:focus-visible {
+  outline: 3px solid #172626;
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
-.animate-enter {
-  animation: fadeInUp 0.8s ease-out forwards;
-}
+/* ---------------------------------------------------------------
+   Article bodies
+   Article HTML in src/data/articles.ts was written for the old dark
+   theme, using Tailwind colour classes directly. Rather than rewrite
+   every article, these rules remap those classes to the light palette
+   inside .article-body only. --accent is set per article theme.
+---------------------------------------------------------------- */
+.article-body { --accent: #0c5e64; font-size: 18px; line-height: 1.7; color: #2b3b3b; }
+.article-body h2, .article-body h3 { font-family: "Source Serif 4", Georgia, serif; letter-spacing: -0.01em; line-height: 1.25; }
+.article-body a { text-decoration: underline; text-underline-offset: 3px; }
+.article-body ul:not([class*="list-"]) { list-style: disc; padding-left: 1.25em; }
+.article-body ol:not([class*="list-"]) { list-style: decimal; padding-left: 1.25em; }
 
-/* --- MOBILE HEARTBEAT ANIMATIONS --- */
-
-/* 1. Nurture (Rose) */
-@keyframes pulseRose {
-  0%, 100% { border-color: rgb(51 65 85); box-shadow: 0 0 0 transparent; }
-  50% { border-color: rgba(244, 63, 94, 0.8); box-shadow: 0 0 15px rgba(244, 63, 94, 0.4); }
-}
-
-/* 2. Run Club (Neon) */
-@keyframes pulseNeon {
-  0%, 100% { border-color: rgb(39 39 42); box-shadow: 0 0 0 transparent; }
-  50% { border-color: rgba(212, 255, 0, 0.8); box-shadow: 0 0 15px rgba(212, 255, 0, 0.4); }
-}
-
-/* 3. One Percent (Red/Orange) */
-@keyframes pulseRed {
-  0%, 100% { border-color: rgb(51 65 85); box-shadow: 0 0 0 transparent; }
-  50% { border-color: rgba(239, 68, 68, 0.8); box-shadow: 0 0 15px rgba(239, 68, 68, 0.4); }
-}
-
-/* Apply Animations with Staggered Timing */
-.animate-nurture-mobile {
-  animation: pulseRose 3s infinite ease-in-out;
-}
-
-.animate-rwrc-mobile {
-  animation: pulseNeon 3s infinite ease-in-out;
-  animation-delay: 1s;
-}
-
-.animate-opc-mobile {
-  animation: pulseRed 3s infinite ease-in-out;
-  animation-delay: 2s; /* Creates a 1-2-3 rhythm */
-}
-
-/* Disable on Desktop */
-@media (min-width: 768px) {
-  .animate-nurture-mobile, .animate-rwrc-mobile, .animate-opc-mobile {
-    animation: none;
-  }
-}
+.article-body .text-white,
+.article-body .text-slate-200,
+.article-body .hover\:text-white:hover { color: #172626; }
+.article-body .text-slate-300 { color: #2b3b3b; }
+.article-body .text-slate-400 { color: #4b5c5c; }
+.article-body .text-slate-500 { color: #6b7b79; }
+.article-body .text-emerald-400,
+.article-body .text-emerald-500,
+.article-body .hover\:text-emerald-400:hover { color: var(--accent); }
+.article-body .marker\:text-emerald-500 *::marker,
+.article-body .marker\:text-emerald-500::marker { color: var(--accent); }
+.article-body .border-emerald-500 { border-color: var(--accent); }
+.article-body .border-slate-700,
+.article-body .border-slate-800 { border-color: #dfe4e2; }
+.article-body .decoration-slate-600 { text-decoration-color: #b9c4c2; }
+.article-body .bg-slate-800,
+.article-body .bg-slate-800\/50,
+.article-body .bg-slate-800\/30,
+.article-body .bg-slate-900\/50,
+.article-body .bg-slate-900\/80 { background-color: #f3f5f4; }
+.article-body .hover\:bg-slate-800:hover { background-color: #e9eeec; }
+.article-body .shadow-emerald-900\/20 { box-shadow: none; }

@@ -1,95 +1,75 @@
-import { Link, useLocation } from 'react-router-dom';
-import { Mail, Wrench, BookOpen, Briefcase } from 'lucide-react';
+import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
-const Strava = ({ className }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="currentColor" className={className} xmlns="http://www.w3.org/2000/svg">
-    <path d="M10.2325 9.87618L12.3215 5.75918L14.4095 9.87618H17.4745L12.3215 -0.294824L7.16748 9.87618H10.2325Z" transform="translate(0 2)" />
-    <path d="M15.3875 17.944L13.2985 13.828H10.2335L15.3875 24.0001L20.5425 13.828H17.4765L15.3875 17.944Z" transform="translate(0 -2)" />
-  </svg>
-);
+const links = [
+  { to: '/articles', label: 'Writing' },
+  { to: '/projects', label: 'Tools' },
+  { to: '/governance', label: 'Governance' },
+];
 
-// LinkedIn SVG (lucide doesn't have a great one for brand use)
-const LinkedInIcon = ({ className }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="currentColor" className={className} xmlns="http://www.w3.org/2000/svg">
-    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-  </svg>
-);
+const outlined =
+  'inline-flex items-center h-[38px] px-3.5 rounded-md text-[15px] font-medium whitespace-nowrap shadow-[inset_0_0_0_1.5px_#172626] hover:bg-band transition-colors';
 
 export default function Nav() {
-  const location = useLocation();
-
-  const navLink = (to: string, icon: React.ReactNode, label: string) => {
-    const isActive = location.pathname === to;
-    return (
-      <Link
-        to={to}
-        className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${
-          isActive
-            ? 'text-white bg-slate-800'
-            : 'text-slate-400 hover:text-white hover:bg-slate-800/60'
-        }`}
-      >
-        {icon}
-        <span className="hidden sm:inline">{label}</span>
-      </Link>
-    );
-  };
+  const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0f172a]/80 backdrop-blur-md border-b border-slate-800/60">
-      <div className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
-
-        {/* Logo — SJ mark only, spins on hover */}
-        <Link to="/" className="group flex items-center">
-          <img
-            src="/favicon.png"
-            alt="Sheridan Jamieson"
-            className="w-7 h-7 rounded-full opacity-90 group-hover:opacity-100 transition-all duration-500 group-hover:rotate-[360deg]"
-            style={{ transition: 'transform 0.5s ease, opacity 0.2s ease' }}
-          />
+    <nav
+      aria-label="Main"
+      className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-rule px-4 sm:px-6"
+    >
+      <div className="max-w-[1120px] mx-auto h-16 flex items-center justify-between gap-4">
+        <Link to="/" className="font-serif font-semibold text-xl tracking-tight whitespace-nowrap">
+          Sheridan Jamieson
         </Link>
 
-        {/* Nav links */}
         <div className="flex items-center gap-1">
-          {/* Social */}
-          <a
-            href="https://www.linkedin.com/in/sheridanjamieson"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="LinkedIn"
-            className="flex items-center gap-2 px-3 py-1.5 rounded-lg text-slate-400 hover:text-[#0077b5] hover:bg-slate-800/60 transition-all text-sm font-medium"
-          >
-            <LinkedInIcon className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">LinkedIn</span>
+          {links.map((l) => (
+            <NavLink
+              key={l.to}
+              to={l.to}
+              className={({ isActive }) =>
+                `hidden md:inline-flex px-3 py-2 rounded-md text-[15px] font-medium hover:bg-band transition-colors ${
+                  isActive ? 'underline underline-offset-[6px] decoration-2' : ''
+                }`
+              }
+            >
+              {l.label}
+            </NavLink>
+          ))}
+          <a href="#contact" className={`${outlined} ml-1.5 hidden min-[440px]:inline-flex`}>
+            Get in touch
           </a>
-          <a
-            href="https://www.strava.com/athletes/106248796"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Strava"
-            className="flex items-center gap-2 px-3 py-1.5 rounded-lg text-slate-400 hover:text-[#fc4c02] hover:bg-slate-800/60 transition-all text-sm font-medium"
+          <button
+            type="button"
+            className={`${outlined} ml-1.5 md:hidden`}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+            onClick={() => setOpen((o) => !o)}
           >
-            <Strava className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">Strava</span>
-          </a>
-
-          <div className="w-px h-4 bg-slate-700 mx-1" />
-
-          {/* Site pages */}
-          {navLink('/projects', <Wrench className="w-3.5 h-3.5" />, 'Tools')}
-          {navLink('/articles', <BookOpen className="w-3.5 h-3.5" />, 'Articles')}
-          {navLink('/governance', <Briefcase className="w-3.5 h-3.5" />, 'Governance')}
-
-          <a
-            href="mailto:sheridan@nurture.kiwi"
-            className="ml-2 flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 hover:text-white hover:border-slate-500 transition-all text-sm font-medium"
-          >
-            <Mail className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">Contact</span>
-          </a>
+            {open ? 'Close' : 'Menu'}
+          </button>
         </div>
-
       </div>
+
+      {open && (
+        <div id="mobile-menu" className="md:hidden max-w-[1120px] mx-auto pb-4">
+          <ul className="grid border-t border-rule">
+            {links.map((l) => (
+              <li key={l.to} className="border-b border-rule">
+                <Link to={l.to} onClick={() => setOpen(false)} className="block py-3 text-base font-medium">
+                  {l.label}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <a href="#contact" onClick={() => setOpen(false)} className="block py-3 text-base font-medium">
+                Get in touch
+              </a>
+            </li>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 }
