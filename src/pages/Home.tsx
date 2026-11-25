@@ -20,7 +20,7 @@ const ways: { key: WayKey; audience: string; short: string; mark: string; pillOn
     pillOn: 'bg-money-tint text-money',
     name: 'Owly',
     href: 'https://owly.co.nz',
-    stat: '$25m+',
+    stat: '$43m+',
     text: 'of debt and investments tracked by Kiwis. See what you owe, what you own and your net worth in one free dashboard.',
     cta: 'Try Owly free',
     card: 'bg-money-tint border-money',
